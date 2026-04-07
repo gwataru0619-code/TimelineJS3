@@ -302,11 +302,7 @@ export async function jsonFromGoogleURL(google_url, options) {
         throw new TLError("Proxy option must be set to read data from Google")
     }
 
-    var timeline_json = await readGoogleAsCSV(google_url, options['sheets_proxy']);
-
-    if (timeline_json) {
-        return timeline_json;
-    }
+    return await readGoogleAsCSV(google_url, options['sheets_proxy']);
 }
 
 /**
