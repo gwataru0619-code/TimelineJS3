@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TimelineJS3 JSON Test</title>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    #timeline-embed {
+      width: 100%;
+      height: 620px;
+      margin: 20px 0;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 240px;
+      padding: 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin: 12px 0;
+    }
+
+    button {
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    .note {
+      line-height: 1.6;
+    }
+
+    .error {
+      color: #b00020;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>TimelineJS3 JSON Test</h1>
+    <p class="note">
+      下のJSONを編集して「JSONから再読み込み」を押すと、独自データでTimelineJS3の表示を確認できます。
+      ローカルのJSONファイルを選んで読み込むこともできます。
+    </p>
+
+    <div id="timeline-embed"></div>
+
+    <div class="controls">
+      <button type="button" id="load-json">JSONから再読み込み</button>
+      <label>
+        JSONファイル:
+        <input type="file" id="json-file" accept="application/json,.json">
+      </label>
+      <span id="status" aria-live="polite"></span>
+    </div>
+
+    <textarea id="json-source" spellcheck="false"></textarea>
+  </main>
+
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <script>
+    const sampleData = {
+      title: {
+        text: {
+          headline: "TYPE-MOON作品 年表テスト",
+          text: "my_test.html に埋め込んだサンプルJSONです。ここを自作年表のタイトルに置き換えてください。"
+        }
+      },
+      events: [
+        {
+          start_date: { year: "2000", month: "12" },
+          text: {
+            headline: "月姫",
+            text: "同人ゲームとして頒布されたビジュアルノベル。"
+          }
+        },
+        {
+          start_date: { year: "2004", month: "1", day: "30" },
+          text: {
+            headline: "Fate/stay night",
+            text: "TYPE-MOONの商業デビュー作。"
+          }
+        },
+        {
+          start_date: { year: "2015", month: "7", day: "30" },
+          text: {
+            headline: "Fate/Grand Order",
+            text: "スマートフォン向けRPGとしてサービス開始。"
+          }
+        }
+      ]
+    };
+
+    const textarea = document.getElementById("json-source");
+    const status = document.getElementById("status");
+    const timelineContainer = document.getElementById("timeline-embed");
+    let timeline;
+
+    function renderTimeline(data) {
+      timelineContainer.innerHTML = "";
+      timeline = new TL.Timeline("timeline-embed", data, {
+        language: "ja",
+        initial_zoom: 2
+      });
+      status.textContent = "読み込みました。";
+      status.className = "";
+    }
+
+    function loadFromTextarea() {
+      try {
+        const data = JSON.parse(textarea.value);
+        renderTimeline(data);
+      } catch (error) {
+        status.textContent = "JSONの読み込みに失敗しました: " + error.message;
+        status.className = "error";
+      }
+    }
+
+    document.getElementById("load-json").addEventListener("click", loadFromTextarea);
+
+    document.getElementById("json-file").addEventListener("change", function(event) {
+      const file = event.target.files[0];
+      if (!file) {
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.addEventListener("load", function() {
+        textarea.value = reader.result;
+        loadFromTextarea();
+      });
+      reader.addEventListener("error", function() {
+        status.textContent = "ファイルの読み込みに失敗しました。";
+        status.className = "error";
+      });
+      reader.readAsText(file);
+    });
+
+    textarea.value = JSON.stringify(sampleData, null, 2);
+    renderTimeline(sampleData);
+  </script>
+</body>
+</html>
