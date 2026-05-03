@@ -3,167 +3,175 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TimelineJS3 JSON Test</title>
+  <title>TYPE-MOON Interactive Timeline</title>
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
   <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    #timeline-embed {
-      width: 100%;
-      height: 620px;
-      margin: 20px 0;
-      background: #fff;
-      border: 1px solid #ddd;
-    }
-
-    textarea {
-      box-sizing: border-box;
-      width: 100%;
-      min-height: 240px;
-      padding: 12px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: 14px;
-    }
-
-    .controls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      margin: 12px 0;
-    }
-
-    button {
-      padding: 8px 14px;
-      cursor: pointer;
-    }
-
-    .note {
-      line-height: 1.6;
-    }
-
-    .error {
-      color: #b00020;
-      font-weight: 700;
-    }
+    html, body { margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #f0f2f5; }
+    main { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    #timeline-embed { width: 100%; height: 600px; background: #fff; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+    
+    /* フィルタUIのスタイル */
+    .filter-panel { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .filter-group { display: flex; flex-wrap: wrap; gap: 15px; align-items: center; margin-bottom: 10px; }
+    .filter-title { font-weight: bold; min-width: 80px; }
+    .search-box { flex-grow: 1; min-width: 250px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+    
+    label { cursor: pointer; display: flex; align-items: center; gap: 4px; font-size: 14px; }
+    textarea { width: 100%; min-height: 150px; margin-top: 20px; font-family: monospace; font-size: 12px; }
+    .error { color: #d32f2f; font-weight: bold; margin-top: 10px; }
   </style>
 </head>
 <body>
   <main>
-    <h1>TimelineJS3 JSON Test</h1>
-    <p class="note">
-      下のJSONを編集して「JSONから再読み込み」を押すと、独自データでTimelineJS3の表示を確認できます。
-      ローカルのJSONファイルを選んで読み込むこともできます。
-    </p>
+    <h1>TYPE-MOON Interactive Timeline</h1>
+
+    <div class="filter-panel">
+      <div class="filter-group">
+        <span class="filter-title">検索:</span>
+        <input type="text" id="search-input" class="search-box" placeholder="キーワードを入力（例：セイバー、アルク）">
+      </div>
+      <div class="filter-group">
+        <span class="filter-title">シリーズ:</span>
+        <label><input type="checkbox" class="filter-series" value="Fate" checked> Fate</label>
+        <label><input type="checkbox" class="filter-series" value="Tsukihime" checked> 月姫</label>
+        <label><input type="checkbox" class="filter-series" value="Other" checked> その他</label>
+      </div>
+      <div class="filter-group">
+        <span class="filter-title">メディア:</span>
+        <label><input type="checkbox" class="filter-media" value="Game" checked> ゲーム</label>
+        <label><input type="checkbox" class="filter-media" value="Manga" checked> 漫画</label>
+        <label><input type="checkbox" class="filter-media" value="Anime" checked> アニメ</label>
+      </div>
+      <div class="filter-group">
+        <button id="apply-filters">フィルタを適用</button>
+        <span id="status"></span>
+      </div>
+    </div>
 
     <div id="timeline-embed"></div>
 
-    <div class="controls">
-      <button type="button" id="load-json">JSONから再読み込み</button>
-      <label>
-        JSONファイル:
-        <input type="file" id="json-file" accept="application/json,.json">
-      </label>
-      <span id="status" aria-live="polite"></span>
-    </div>
-
-    <textarea id="json-source" spellcheck="false"></textarea>
+    <details>
+      <summary>JSONソース表示/編集</summary>
+      <textarea id="json-source" spellcheck="false"></textarea>
+      <button id="load-from-text">テキストエリアから読み込み</button>
+    </details>
   </main>
 
   <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <script>
-    const sampleData = {
-      title: {
-        text: {
-          headline: "TYPE-MOON作品 年表テスト",
-          text: "my_test.html に埋め込んだサンプルJSONです。ここを自作年表のタイトルに置き換えてください。"
-        }
-      },
+    // --- 初期データ (マスターデータ) ---
+    const masterData = {
+      title: { text: { headline: "TYPE-MOON全史", text: "連載バーをクリックすると単行本情報が追加されます" } },
       events: [
         {
-          start_date: { year: "2000", month: "12" },
-          text: {
-            headline: "月姫",
-            text: "同人ゲームとして頒布されたビジュアルノベル。"
-          }
+          id: "manga_tsukihime",
+          start_date: { year: "2003", month: "10" },
+          end_date: { year: "2010", month: "09" },
+          text: { headline: "真月譚 月姫 (漫画版)", text: "作画：佐々木少年。クリックすると単行本データが追加されます。" },
+          group: "漫画連載",
+          custom_tags: { series: "Tsukihime", media: "Manga", type: "series_bar" }
         },
         {
+          parent_id: "manga_tsukihime",
+          start_date: { year: "2004", month: "6", day: "1" },
+          text: { headline: "真月譚 月姫 1巻", text: "単行本第1巻発売" },
+          group: "単行本詳細",
+          custom_tags: { series: "Tsukihime", media: "Manga", type: "volume_dot" }
+        },
+        {
+          id: "game_fsn",
           start_date: { year: "2004", month: "1", day: "30" },
-          text: {
-            headline: "Fate/stay night",
-            text: "TYPE-MOONの商業デビュー作。"
-          }
+          text: { headline: "Fate/stay night", text: "PC版発売。伝説の始まり。" },
+          group: "ゲーム",
+          custom_tags: { series: "Fate", media: "Game", type: "series_bar" }
         },
         {
-          start_date: { year: "2015", month: "7", day: "30" },
-          text: {
-            headline: "Fate/Grand Order",
-            text: "スマートフォン向けRPGとしてサービス開始。"
-          }
+          id: "anime_ubw",
+          start_date: { year: "2014", month: "10", day: "4" },
+          text: { headline: "Fate/stay night [UBW]", text: "ufotable制作。テレビアニメシリーズ。" },
+          group: "アニメ",
+          custom_tags: { series: "Fate", media: "Anime", type: "series_bar" }
         }
       ]
     };
 
-    const textarea = document.getElementById("json-source");
-    const status = document.getElementById("status");
-    const timelineContainer = document.getElementById("timeline-embed");
     let timeline;
+    let currentDisplayedEvents = [];
 
-    function renderTimeline(data) {
-      timelineContainer.innerHTML = "";
+    // --- フィルタリング & 描画ロジック ---
+    function updateTimeline() {
+      const searchText = document.getElementById('search-input').value.toLowerCase();
+      const selectedSeries = Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value);
+      const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
+
+      // 1. フィルタリング (初期表示は series_bar のみ)
+      const filteredEvents = masterData.events.filter(ev => {
+        const matchesSearch = ev.text.headline.toLowerCase().includes(searchText) || 
+                              ev.text.text.toLowerCase().includes(searchText);
+        const matchesSeries = selectedSeries.includes(ev.custom_tags.series);
+        const matchesMedia = selectedMedia.includes(ev.custom_tags.media);
+        const isSeriesBar = ev.custom_tags.type === 'series_bar';
+
+        return matchesSearch && matchesSeries && matchesMedia && isSeriesBar;
+      });
+
+      currentDisplayedEvents = [...filteredEvents];
+      render(currentDisplayedEvents);
+    }
+
+    function render(events) {
+      const data = { ...masterData, events: events };
+      document.getElementById("timeline-embed").innerHTML = "";
       timeline = new TL.Timeline("timeline-embed", data, {
         language: "ja",
         initial_zoom: 2
       });
-      status.textContent = "読み込みました。";
-      status.className = "";
+
+      // --- 詳細追加ロジック (イベント監視) ---
+      timeline.on('change', (e) => {
+        const currentSlide = timeline.getCurrentSlide();
+        const slideData = currentSlide.data;
+
+        if (slideData && slideData.id) {
+          // parent_id が一致する詳細データを masterData から探す
+          const details = masterData.events.filter(ev => ev.parent_id === slideData.id);
+          
+          if (details.length > 0) {
+            let added = false;
+            details.forEach(detail => {
+              // 重複チェック
+              if (!currentDisplayedEvents.find(curr => curr.headline === detail.headline)) {
+                currentDisplayedEvents.push(detail);
+                added = true;
+              }
+            });
+
+            if (added) {
+              // データを追加して静かに再描画（全体リロードは避けるのが理想だが、簡易版では再描画）
+              console.log("詳細データを追加しました:", slideData.id);
+              render(currentDisplayedEvents);
+              // 追加後に元のスライドへ戻る（再描画でリセットされるのを防ぐ）
+              timeline.goToId(slideData.id);
+            }
+          }
+        }
+      });
     }
 
-    function loadFromTextarea() {
-      try {
-        const data = JSON.parse(textarea.value);
-        renderTimeline(data);
-      } catch (error) {
-        status.textContent = "JSONの読み込みに失敗しました: " + error.message;
-        status.className = "error";
-      }
-    }
-
-    document.getElementById("load-json").addEventListener("click", loadFromTextarea);
-
-    document.getElementById("json-file").addEventListener("change", function(event) {
-      const file = event.target.files[0];
-      if (!file) {
-        return;
-      }
-
-      const reader = new FileReader();
-      reader.addEventListener("load", function() {
-        textarea.value = reader.result;
-        loadFromTextarea();
-      });
-      reader.addEventListener("error", function() {
-        status.textContent = "ファイルの読み込みに失敗しました。";
-        status.className = "error";
-      });
-      reader.readAsText(file);
+    // --- イベント設定 ---
+    document.getElementById('apply-filters').addEventListener('click', updateTimeline);
+    document.getElementById('load-from-text').addEventListener('click', () => {
+        try {
+            const newData = JSON.parse(document.getElementById('json-source').value);
+            masterData.events = newData.events;
+            updateTimeline();
+        } catch(e) { alert("JSONエラー: " + e.message); }
     });
 
-    textarea.value = JSON.stringify(sampleData, null, 2);
-    renderTimeline(sampleData);
+    // 初期起動
+    document.getElementById('json-source').value = JSON.stringify(masterData, null, 2);
+    updateTimeline();
+
   </script>
 </body>
 </html>
