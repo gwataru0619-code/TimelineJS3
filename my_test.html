@@ -61,40 +61,85 @@
   <script>
     // --- 初期データ (マスターデータ) ---
     const masterData = {
-      title: { text: { headline: "TYPE-MOON全史", text: "連載バーをクリックすると単行本情報が追加されます" } },
+      title: { text: { headline: "TYPE-MOON メディアミックス年表", text: "同時期の連載や発売日の重なりを確認できます" } },
       events: [
+        // --- 漫画セクション (時期が重なるもの) ---
         {
           id: "manga_tsukihime",
           start_date: { year: "2003", month: "10" },
           end_date: { year: "2010", month: "09" },
-          text: { headline: "真月譚 月姫 (漫画版)", text: "作画：佐々木少年。クリックすると単行本データが追加されます。" },
+          text: { headline: "真月譚 月姫", text: "佐々木少年版。月姫の代表的なコミカライズ。" },
           group: "漫画連載",
           custom_tags: { series: "Tsukihime", media: "Manga", type: "series_bar" }
         },
         {
-          parent_id: "manga_tsukihime",
-          start_date: { year: "2004", month: "6", day: "1" },
-          text: { headline: "真月譚 月姫 1巻", text: "単行本第1巻発売" },
-          group: "単行本詳細",
-          custom_tags: { series: "Tsukihime", media: "Manga", type: "volume_dot" }
+          id: "manga_fsn",
+          start_date: { year: "2006", month: "2" },
+          end_date: { year: "2012", month: "12" },
+          text: { headline: "Fate/stay night (漫画版)", text: "西脇だっと版。少年エース連載。" },
+          group: "漫画連載",
+          custom_tags: { series: "Fate", media: "Manga", type: "series_bar" }
         },
         {
-          id: "game_fsn",
-          start_date: { year: "2004", month: "1", day: "30" },
-          text: { headline: "Fate/stay night", text: "PC版発売。伝説の始まり。" },
+          id: "manga_prism_illya",
+          start_date: { year: "2007", month: "11" },
+          end_date: { year: "2009", month: "1" },
+          text: { headline: "プリズマ☆イリヤ", text: "ひろやまひろし。ここからシリーズが多角化。" },
+          group: "漫画連載",
+          custom_tags: { series: "Fate", media: "Manga", type: "series_bar" }
+        },
+
+        // --- アニメセクション ---
+        {
+          id: "anime_deen",
+          start_date: { year: "2006", month: "1", day: "7" },
+          end_date: { year: "2006", month: "6", day: "17" },
+          text: { headline: "アニメ Fate/stay night", text: "スタジオディーン版。セイバールート中心。" },
+          group: "アニメ",
+          custom_tags: { series: "Fate", media: "Anime", type: "series_bar" }
+        },
+        {
+          id: "anime_zero",
+          start_date: { year: "2011", month: "10" },
+          end_date: { year: "2012", month: "6" },
+          text: { headline: "アニメ Fate/Zero", text: "ufotable制作。4次聖杯戦争。" },
+          group: "アニメ",
+          custom_tags: { series: "Fate", media: "Anime", type: "series_bar" }
+        },
+
+        // --- ゲームセクション ---
+        {
+          id: "game_hollow",
+          start_date: { year: "2005", month: "10", day: "28" },
+          text: { headline: "Fate/hollow ataraxia", text: "ファンディスクにして正当続編。" },
           group: "ゲーム",
           custom_tags: { series: "Fate", media: "Game", type: "series_bar" }
         },
         {
-          id: "anime_ubw",
-          start_date: { year: "2014", month: "10", day: "4" },
-          text: { headline: "Fate/stay night [UBW]", text: "ufotable制作。テレビアニメシリーズ。" },
-          group: "アニメ",
-          custom_tags: { series: "Fate", media: "Anime", type: "series_bar" }
+          id: "game_extra",
+          start_date: { year: "2010", month: "7", day: "22" },
+          text: { headline: "Fate/EXTRA", text: "SE.RA.PHを舞台にしたRPG。" },
+          group: "ゲーム",
+          custom_tags: { series: "Fate", media: "Game", type: "series_bar" }
+        },
+
+        // --- 詳細ドット（月姫の単行本例） ---
+        {
+          parent_id: "manga_tsukihime",
+          start_date: { year: "2004", month: "6" },
+          text: { headline: "月姫 1巻", text: "2004年6月発売" },
+          group: "単行本詳細",
+          custom_tags: { series: "Tsukihime", media: "Manga", type: "volume_dot" }
+        },
+        {
+          parent_id: "manga_tsukihime",
+          start_date: { year: "2005", month: "2" },
+          text: { headline: "月姫 2巻", text: "2005年2月発売" },
+          group: "単行本詳細",
+          custom_tags: { series: "Tsukihime", media: "Manga", type: "volume_dot" }
         }
       ]
     };
-
     let timeline;
     let currentDisplayedEvents = [];
 
