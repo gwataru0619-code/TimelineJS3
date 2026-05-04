@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPE-MOON Archive Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+            background: #1a1a1a; /* 型月っぽいダークな背景 */
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: #2a2a2a;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #444;
+        }
+        h1 {
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        p {
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #1a1a1a;
+        }
+        .btn-primary {
+            background: #cd122d; /* 月姫・Fateを意識した赤 */
+            border-color: #cd122d;
+        }
+        .btn-primary:hover {
+            background: #ff1a3c;
+            border-color: #ff1a3c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TYPE-MOON Archive</h1>
+        <p>4-Step Database System</p>
+        
+        <div class="menu">
+            <a href="TMindex.html" class="btn btn-primary">年表モードを表示</a>
+            <a href="TMlist.html" class="btn">台帳モードを表示</a>
+        </div>
+    </div>
+
+</body>
+</html>
