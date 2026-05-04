@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>TM Data Ledger</title>
+    <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
+    <style>body { padding: 20px; font-family: sans-serif; } nav { margin-bottom: 20px; }</style>
+</head>
+<body>
+    <nav>
+        <a href="TMindex.html">年表モード</a> | <strong>台帳モード</strong>
+    </nav>
+    <h1>作品管理台帳</h1>
+    <div id="data-table"></div>
+
+    <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
+    <script>
+        fetch('TMdata.json').then(r => r.json()).then(data => {
+            new Tabulator("#data-table", {
+                data: data.events,
+                layout: "fitColumns",
+                columns: [
+                    {title:"ID", field:"id"},
+                    {title:"親ID", field:"parent_id"},
+                    {title:"見出し", field:"text.headline"},
+                    {title:"開始年", field:"start_date.year"},
+                    {title:"媒体", field:"custom_tags.media"},
+                    {title:"シリーズ", field:"custom_tags.series"}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
