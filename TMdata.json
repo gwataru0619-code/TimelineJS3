@@ -1,0 +1,42 @@
+{
+  "title": {
+    "text": {
+      "headline": "TYPE-MOON Archive",
+      "text": "4段階フレームワークに基づいた型月全史データベース"
+    }
+  },
+  "events": [
+    {
+      "id": "game_fsn_original",
+      "start_date": { "year": "2004", "month": "1", "day": "30" },
+      "text": { "headline": "Fate/stay night (Game)", "text": "PC版発売。" },
+      "custom_tags": { "media": "Game", "series": "Fate", "project_id": "fsn_cluster", "type": "series_bar" }
+    },
+    {
+      "id": "manga_fsn_nishiwaki",
+      "start_date": { "year": "2006", "month": "2" },
+      "end_date": { "year": "2012", "month": "12" },
+      "text": { "headline": "Fate/stay night (Manga)", "text": "西脇だっと版。バーを選択すると単行本情報が出ます。" },
+      "custom_tags": { "media": "Manga", "series": "Fate", "project_id": "fsn_cluster", "type": "series_bar" }
+    },
+    {
+      "parent_id": "manga_fsn_nishiwaki",
+      "start_date": { "year": "2006", "month": "5" },
+      "text": { "headline": "Fate(漫) 1巻", "text": "第4段階データ" },
+      "custom_tags": { "media": "Manga", "series": "Fate", "project_id": "fsn_cluster", "type": "volume_dot" }
+    },
+    {
+      "id": "manga_tsukihime_sasaki",
+      "start_date": { "year": "2003", "month": "10" },
+      "end_date": { "year": "2010", "month": "09" },
+      "text": { "headline": "真月譚 月姫 (Manga)", "text": "佐々木少年版。傑作コミカライズ。" },
+      "custom_tags": { "media": "Manga", "series": "Tsukihime", "project_id": "tsuki_cluster", "type": "series_bar" }
+    },
+    {
+      "parent_id": "manga_tsukihime_sasaki",
+      "start_date": { "year": "2004", "month": "6" },
+      "text": { "headline": "月姫(漫) 1巻", "text": "第4段階データ" },
+      "custom_tags": { "media": "Manga", "series": "Tsukihime", "project_id": "tsuki_cluster", "type": "volume_dot" }
+    }
+  ]
+}
