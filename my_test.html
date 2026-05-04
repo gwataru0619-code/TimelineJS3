@@ -61,85 +61,86 @@
   <script>
     // --- 初期データ (マスターデータ) ---
     const masterData = {
-      title: { text: { headline: "TYPE-MOON メディアミックス年表", text: "同時期の連載や発売日の重なりを確認できます" } },
-      events: [
-        // --- 漫画セクション (時期が重なるもの) ---
-        {
-          id: "manga_tsukihime",
-          start_date: { year: "2003", month: "10" },
-          end_date: { year: "2010", month: "09" },
-          text: { headline: "真月譚 月姫", text: "佐々木少年版。月姫の代表的なコミカライズ。" },
-          group: "漫画連載",
-          custom_tags: { series: "Tsukihime", media: "Manga", type: "series_bar" }
-        },
-        {
-          id: "manga_fsn",
-          start_date: { year: "2006", month: "2" },
-          end_date: { year: "2012", month: "12" },
-          text: { headline: "Fate/stay night (漫画版)", text: "西脇だっと版。少年エース連載。" },
-          group: "漫画連載",
-          custom_tags: { series: "Fate", media: "Manga", type: "series_bar" }
-        },
-        {
-          id: "manga_prism_illya",
-          start_date: { year: "2007", month: "11" },
-          end_date: { year: "2009", month: "1" },
-          text: { headline: "プリズマ☆イリヤ", text: "ひろやまひろし。ここからシリーズが多角化。" },
-          group: "漫画連載",
-          custom_tags: { series: "Fate", media: "Manga", type: "series_bar" }
-        },
+  title: {
+    text: {
+      headline: "TYPE-MOON 4段階フレームワーク・テストデータ",
+      text: "メディア(1)・大シリーズ(2)・プロジェクト(3)・親子関係(4)の動作確認用です。"
+    }
+  },
+  events: [
+    // --- 【Project: Fate/stay night】 (第3段階のクラスター) ---
+    {
+      id: "game_fsn_original",
+      start_date: { year: "2004", month: "1", day: "30" },
+      text: { headline: "Fate/stay night (Game)", text: "第1:Game / 第2:Fate / 第3:fsn_cluster" },
+      group: "ゲーム (Fate)",
+      custom_tags: { 
+        media: "Game",       // 第1段階
+        series: "Fate",     // 第2段階
+        project_id: "fsn_cluster", // 第3段階
+        type: "series_bar"   // 第4段階（親）
+      }
+    },
+    {
+      id: "manga_fsn_nishiwaki",
+      start_date: { year: "2006", month: "2" },
+      end_date: { year: "2012", month: "12" },
+      text: { headline: "Fate/stay night (Manga)", text: "作画：西脇だっと。第3段階でGame版と紐付け。" },
+      group: "漫画 (Fate)",
+      custom_tags: { 
+        media: "Manga", 
+        series: "Fate", 
+        project_id: "fsn_cluster", 
+        type: "series_bar" 
+      }
+    },
+    // 第4段階：漫画版の子データ（単行本）
+    {
+      parent_id: "manga_fsn_nishiwaki",
+      start_date: { year: "2006", month: "5" },
+      text: { headline: "Fate(漫) 1巻", text: "第4段階：親子関係のテスト（子）" },
+      group: "詳細データ",
+      custom_tags: { media: "Manga", series: "Fate", project_id: "fsn_cluster", type: "volume_dot" }
+    },
 
-        // --- アニメセクション ---
-        {
-          id: "anime_deen",
-          start_date: { year: "2006", month: "1", day: "7" },
-          end_date: { year: "2006", month: "6", day: "17" },
-          text: { headline: "アニメ Fate/stay night", text: "スタジオディーン版。セイバールート中心。" },
-          group: "アニメ",
-          custom_tags: { series: "Fate", media: "Anime", type: "series_bar" }
-        },
-        {
-          id: "anime_zero",
-          start_date: { year: "2011", month: "10" },
-          end_date: { year: "2012", month: "6" },
-          text: { headline: "アニメ Fate/Zero", text: "ufotable制作。4次聖杯戦争。" },
-          group: "アニメ",
-          custom_tags: { series: "Fate", media: "Anime", type: "series_bar" }
-        },
+    // --- 【Project: 真月譚 月姫】 (第3段階のクラスター) ---
+    {
+      id: "manga_tsukihime_sasaki",
+      start_date: { year: "2003", month: "10" },
+      end_date: { year: "2010", month: "09" },
+      text: { headline: "真月譚 月姫 (Manga)", text: "作画：佐々木少年。第3段階：tsuki_cluster" },
+      group: "漫画 (月姫)",
+      custom_tags: { 
+        media: "Manga", 
+        series: "Tsukihime", 
+        project_id: "tsuki_cluster", 
+        type: "series_bar" 
+      }
+    },
+    // 第4段階：月姫漫画版の子データ
+    {
+      parent_id: "manga_tsukihime_sasaki",
+      start_date: { year: "2004", month: "6" },
+      text: { headline: "月姫(漫) 1巻", text: "第4段階：親子関係のテスト（子）" },
+      group: "詳細データ",
+      custom_tags: { media: "Manga", series: "Tsukihime", project_id: "tsuki_cluster", type: "volume_dot" }
+    },
 
-        // --- ゲームセクション ---
-        {
-          id: "game_hollow",
-          start_date: { year: "2005", month: "10", day: "28" },
-          text: { headline: "Fate/hollow ataraxia", text: "ファンディスクにして正当続編。" },
-          group: "ゲーム",
-          custom_tags: { series: "Fate", media: "Game", type: "series_bar" }
-        },
-        {
-          id: "game_extra",
-          start_date: { year: "2010", month: "7", day: "22" },
-          text: { headline: "Fate/EXTRA", text: "SE.RA.PHを舞台にしたRPG。" },
-          group: "ゲーム",
-          custom_tags: { series: "Fate", media: "Game", type: "series_bar" }
-        },
-
-        // --- 詳細ドット（月姫の単行本例） ---
-        {
-          parent_id: "manga_tsukihime",
-          start_date: { year: "2004", month: "6" },
-          text: { headline: "月姫 1巻", text: "2004年6月発売" },
-          group: "単行本詳細",
-          custom_tags: { series: "Tsukihime", media: "Manga", type: "volume_dot" }
-        },
-        {
-          parent_id: "manga_tsukihime",
-          start_date: { year: "2005", month: "2" },
-          text: { headline: "月姫 2巻", text: "2005年2月発売" },
-          group: "単行本詳細",
-          custom_tags: { series: "Tsukihime", media: "Manga", type: "volume_dot" }
-        }
-      ]
-    };
+    // --- 【第1・第2段階のみの独立作品】 ---
+    {
+      id: "anime_knk_movie",
+      start_date: { year: "2007", month: "12", day: "1" },
+      text: { headline: "空の境界 第一章", text: "第2段階：Other(KnK) として分類" },
+      group: "映画 (その他)",
+      custom_tags: { 
+        media: "Movie", 
+        series: "Other", 
+        project_id: "knk_cluster", 
+        type: "series_bar" 
+      }
+    }
+  ]
+};
     let timeline;
     let currentDisplayedEvents = [];
 
