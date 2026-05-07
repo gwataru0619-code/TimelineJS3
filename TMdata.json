@@ -1283,7 +1283,7 @@
         "media": "Novel",
         "series": "others",
         "project_id": "TheGardenofSinners",
-        "type": "volume_dot"
+        "type": "series_bar"
       }
     },
     {
@@ -1485,7 +1485,7 @@
         "media": "Novel",
         "series": "others",
         "project_id": "others",
-        "type": "volume_dot"
+        "type": "series_bar"
       }
     },
     {
@@ -1728,7 +1728,7 @@
         "type": "volume_dot"
       },
       "parent_id": "Novel_others_firegirl"
-    }
+    },
       
     {
       "id": "game_fsn_original",
