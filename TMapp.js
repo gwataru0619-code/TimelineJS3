@@ -182,21 +182,36 @@ function updateTimeline() {
         return isSeriesBar && matchesFilters(ev, searchText, selectedSeries, selectedMedia);
     });
 
-    // 「展開ボタン」が押されている項目の「詳細（子）」を選び出します
-    const visibleParentIds = new Set(parents.map(ev => ev.unique_id));
-    const details = masterData.events.filter(ev => {
-        if (!ev.parent_id || !expandedParentIds.has(ev.parent_id)) return false;
-        if (!visibleParentIds.has(ev.parent_id)) return false;
-        return matchesFilters(ev, searchText, selectedSeries, selectedMedia);
+    // 親→その親の詳細→次の親、の順に並べることで、詳細グループが親の直後に出やすくします
+    currentDisplayedEvents = [];
+
+    parents.forEach(parent => {
+        currentDisplayedEvents.push({
+            ...parent,
+            group: getGroupName(parent, groupMode)
+        });
+
+        if (!expandedParentIds.has(parent.unique_id)) return;
+
+        // 子データは親の unique_id をグループ名にして、親専用の詳細行にまとめます
+        const detailGroupName = getDetailGroupName(parent);
+        const details = masterData.events
+            .filter(child => child.parent_id === parent.unique_id)
+            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia))
+            .map(child => ({
+                ...child,
+                group: detailGroupName
+            }));
+
+        currentDisplayedEvents.push(...details);
     });
 
-    // 表示するものが決まったので、グループ名をセットして表示準備完了です
-    currentDisplayedEvents = [...parents, ...details].map(ev => ({
-        ...ev,
-        group: getGroupName(ev, groupMode)
-    }));
-
     render(currentDisplayedEvents, pendingSlideId);
+}
+
+// 詳細グループ名は表示名ではなく親の unique_id を使い、データ上の親子関係と一致させます
+function getDetailGroupName(parent) {
+    return parent.unique_id;
 }
 
 // あるイベントが、検索条件やチェックボックスに合格しているか判定します
