@@ -12,11 +12,16 @@ const timelineOptions = {
     language: "ja",                   // 日本語表示
     initial_zoom: 2,                  // 最初のズーム倍率
     timenav_height_percentage: 55,    // 下側の年表ナビの高さ（％）
-    timenav_height_min: 560,          // 最小の高さ（ピクセル）
     marker_height_min: 36,            // マーカーの最小の高さ
     marker_width_min: 140,            // マーカーの最小の幅
     marker_padding: 8                 // マーカー同士の隙間
 };
+
+// 手動で縦幅を伸ばすための基準値と増分です
+const baseTimelineHeight = 1100;
+const baseTimenavHeightMin = 560;
+const heightIncreaseStep = 300;
+const timenavIncreaseStep = 180;
 
 // アプリ全体で使う「作業用ポケット（変数）」です
 let masterData = null;                // 読み込んだ全てのデータ
@@ -24,6 +29,8 @@ let currentDisplayedEvents = [];      // 今、画面に表示しているデー
 let timeline = null;                  // 作成された年表本体
 let expandedParentIds = new Set();    // 今、詳細が開かれている項目のリスト
 let pendingSlideId = null;            // 次に表示したいスライドの予約番号
+let timelineHeight = baseTimelineHeight;       // 現在のタイムライン表示領域の高さ
+let timenavHeightMin = baseTimenavHeightMin;   // 現在の時間軸ナビの最小高さ
 
 // --- アプリ起動の処理 ---
 
@@ -229,9 +236,11 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia) {
 // 実際にHTMLの中に年表を書き込みます
 function render(events, slideIdToRestore) {
     const data = { ...masterData, events: events };
-    document.getElementById("timeline-embed").innerHTML = ""; // 一旦まっさらにする
+    const container = document.getElementById("timeline-embed");
+    container.style.height = `${timelineHeight}px`;
+    container.innerHTML = ""; // 一旦まっさらにする
     
-    timeline = new TL.Timeline("timeline-embed", data, timelineOptions);
+    timeline = new TL.Timeline("timeline-embed", data, getTimelineOptions());
 
     // 年表が完成した後の仕上げ処理です
     timeline.on('loaded', () => {
@@ -245,6 +254,14 @@ function render(events, slideIdToRestore) {
 
     // スライドが切り替わった時の動きを監視します
     timeline.on('change', handleTimelineChange);
+}
+
+// 現在の手動高さを反映したTimelineJS設定を作ります
+function getTimelineOptions() {
+    return {
+        ...timelineOptions,
+        timenav_height_min: timenavHeightMin
+    };
 }
 
 // 詳細用の小さなドット（マーカー）に、CSSで色などを変えるためのクラスをつけます
@@ -284,11 +301,23 @@ function collapseDetails() {
     updateTimeline();
 }
 
+// ボタンを押すたびに表示領域と時間軸の縦幅を増やして、同じ表示内容で描き直します
+function increaseTimelineHeight() {
+    timelineHeight += heightIncreaseStep;
+    timenavHeightMin += timenavIncreaseStep;
+
+    const currentSlide = timeline && timeline.getCurrentSlide ? timeline.getCurrentSlide() : null;
+    const currentId = currentSlide && currentSlide.data ? currentSlide.data.unique_id : pendingSlideId;
+    render(currentDisplayedEvents, currentId);
+}
+
 // --- 最後の仕上げ：ボタンと機能を紐付ける ---
 
 // ページが読み込まれたらスタート！
 document.addEventListener('DOMContentLoaded', initApp);
 // 「フィルター適用」ボタンを押したら更新！
 document.getElementById('apply-filters').addEventListener('click', updateTimeline);
+// 「縦に広げる」ボタンを押したら、年表の表示領域を少しずつ伸ばします
+document.getElementById('increase-height').addEventListener('click', increaseTimelineHeight);
 // 「詳細を閉じる」ボタンを押したらリセット！
 document.getElementById('collapse-details').addEventListener('click', collapseDetails);
