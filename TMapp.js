@@ -137,6 +137,13 @@ function handleTimelineChange() {
     }
 }
 
+function collapseDetails() {
+    expandedParentIds.clear();
+    pendingSlideId = null;
+    updateTimeline();
+}
+
 // 起動
 document.addEventListener('DOMContentLoaded', initApp);
 document.getElementById('apply-filters').addEventListener('click', updateTimeline);
+document.getElementById('collapse-details').addEventListener('click', collapseDetails);
