@@ -5,6 +5,16 @@ const projectNames = {
     "knk_cluster": "空の境界 Project"
 };
 
+const timelineOptions = {
+    language: "ja",
+    initial_zoom: 2,
+    timenav_height_percentage: 55,
+    timenav_height_min: 560,
+    marker_height_min: 36,
+    marker_width_min: 140,
+    marker_padding: 8
+};
+
 let masterData = null;
 let currentDisplayedEvents = [];
 let timeline = null;
@@ -171,10 +181,7 @@ function render(events, slideIdToRestore) {
     const data = { ...masterData, events: events };
     document.getElementById("timeline-embed").innerHTML = "";
     
-    timeline = new TL.Timeline("timeline-embed", data, {
-        language: "ja",
-        initial_zoom: 2
-    });
+    timeline = new TL.Timeline("timeline-embed", data, timelineOptions);
 
     timeline.on('loaded', () => {
         if (slideIdToRestore && currentDisplayedEvents.some(ev => ev.unique_id === slideIdToRestore)) {
