@@ -306,6 +306,19 @@ function increaseTimelineHeight() {
     timelineHeight += heightIncreaseStep;
     timenavHeightMin += timenavIncreaseStep;
 
+    rerenderTimelineAtCurrentSlide();
+}
+
+// 広げた分を同じ段階で戻します。基準値より小さくはしません
+function decreaseTimelineHeight() {
+    timelineHeight = Math.max(baseTimelineHeight, timelineHeight - heightIncreaseStep);
+    timenavHeightMin = Math.max(baseTimenavHeightMin, timenavHeightMin - timenavIncreaseStep);
+
+    rerenderTimelineAtCurrentSlide();
+}
+
+// 高さだけを変えた後、現在見ているスライドをなるべく維持して描き直します
+function rerenderTimelineAtCurrentSlide() {
     const currentSlide = timeline && timeline.getCurrentSlide ? timeline.getCurrentSlide() : null;
     const currentId = currentSlide && currentSlide.data ? currentSlide.data.unique_id : pendingSlideId;
     render(currentDisplayedEvents, currentId);
@@ -319,5 +332,7 @@ document.addEventListener('DOMContentLoaded', initApp);
 document.getElementById('apply-filters').addEventListener('click', updateTimeline);
 // 「縦に広げる」ボタンを押したら、年表の表示領域を少しずつ伸ばします
 document.getElementById('increase-height').addEventListener('click', increaseTimelineHeight);
+// 「縦に縮める」ボタンを押したら、広げた分を同じ段階で戻します
+document.getElementById('decrease-height').addEventListener('click', decreaseTimelineHeight);
 // 「詳細を閉じる」ボタンを押したらリセット！
 document.getElementById('collapse-details').addEventListener('click', collapseDetails);
