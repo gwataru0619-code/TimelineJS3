@@ -8,16 +8,53 @@ const projectNames = {
 let masterData = null;
 let currentDisplayedEvents = [];
 let timeline = null;
+let expandedParentIds = new Set();
+let pendingSlideId = null;
 
 // JSONの読み込み
 async function initApp() {
     try {
         const response = await fetch('TMdata.json');
-        masterData = await response.json();
+        masterData = normalizeTimelineData(await response.json());
         updateTimeline();
     } catch (error) {
         console.error("データの読み込みに失敗しました:", error);
     }
+}
+
+function normalizeTimelineData(data) {
+    const usedIds = new Set();
+
+    data.events = data.events.map((event, index) => {
+        const normalized = { ...event };
+
+        if (!normalized.unique_id) {
+            normalized.unique_id = normalized.id || makeEventId(normalized, index);
+        }
+
+        if (!normalized.id) {
+            normalized.id = normalized.unique_id;
+        }
+
+        if (usedIds.has(normalized.unique_id)) {
+            normalized.unique_id = `${normalized.unique_id}_${index}`;
+        }
+
+        usedIds.add(normalized.unique_id);
+        return normalized;
+    });
+
+    return data;
+}
+
+function makeEventId(event, index) {
+    const headline = event.text && event.text.headline ? event.text.headline : `event_${index}`;
+    return headline
+        .toString()
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, "_")
+        .replace(/[^\w-]/g, "") || `event_${index}`;
 }
 
 function getGroupName(event, mode) {
@@ -34,23 +71,36 @@ function updateTimeline() {
     const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
 
-    const filtered = masterData.events.filter(ev => {
-        const matchesSearch = ev.text.headline.toLowerCase().includes(searchText);
-        const matchesSeries = selectedSeries.includes(ev.custom_tags.series);
-        const matchesMedia = selectedMedia.includes(ev.custom_tags.media);
+    const parents = masterData.events.filter(ev => {
         const isSeriesBar = ev.custom_tags.type === 'series_bar';
-        return matchesSearch && matchesSeries && matchesMedia && isSeriesBar;
+        return isSeriesBar && matchesFilters(ev, searchText, selectedSeries, selectedMedia);
     });
 
-    currentDisplayedEvents = filtered.map(ev => ({
+    const visibleParentIds = new Set(parents.map(ev => ev.unique_id));
+    const details = masterData.events.filter(ev => {
+        if (!ev.parent_id || !expandedParentIds.has(ev.parent_id)) return false;
+        if (!visibleParentIds.has(ev.parent_id)) return false;
+        return matchesFilters(ev, searchText, selectedSeries, selectedMedia);
+    });
+
+    currentDisplayedEvents = [...parents, ...details].map(ev => ({
         ...ev,
         group: getGroupName(ev, groupMode)
     }));
 
-    render(currentDisplayedEvents);
+    render(currentDisplayedEvents, pendingSlideId);
 }
 
-function render(events) {
+function matchesFilters(event, searchText, selectedSeries, selectedMedia) {
+    const headline = event.text && event.text.headline ? event.text.headline.toLowerCase() : "";
+    const body = event.text && event.text.text ? event.text.text.toLowerCase() : "";
+    const matchesSearch = !searchText || headline.includes(searchText) || body.includes(searchText);
+    const matchesSeries = selectedSeries.includes(event.custom_tags.series);
+    const matchesMedia = selectedMedia.includes(event.custom_tags.media);
+    return matchesSearch && matchesSeries && matchesMedia;
+}
+
+function render(events, slideIdToRestore) {
     const data = { ...masterData, events: events };
     document.getElementById("timeline-embed").innerHTML = "";
     
@@ -59,26 +109,32 @@ function render(events) {
         initial_zoom: 2
     });
 
-    timeline.on('change', () => {
-        const slide = timeline.getCurrentSlide();
-        const slideData = slide.data;
-        const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
-
-        if (slideData && slideData.id) {
-            const details = masterData.events.filter(ev => ev.parent_id === slideData.id);
-            let added = false;
-            details.forEach(detail => {
-                if (!currentDisplayedEvents.find(curr => curr.headline === detail.headline)) {
-                    currentDisplayedEvents.push({ ...detail, group: getGroupName(detail, groupMode) });
-                    added = true;
-                }
-            });
-            if (added) {
-                render(currentDisplayedEvents);
-                timeline.goToId(slideData.id);
-            }
+    timeline.on('loaded', () => {
+        if (slideIdToRestore && currentDisplayedEvents.some(ev => ev.unique_id === slideIdToRestore)) {
+            timeline.goToId(slideIdToRestore);
+            pendingSlideId = null;
         }
     });
+
+    timeline.on('change', handleTimelineChange);
+}
+
+function handleTimelineChange() {
+    const slide = timeline.getCurrentSlide();
+    const slideData = slide && slide.data;
+
+    if (!slideData || !slideData.unique_id) {
+        return;
+    }
+
+    if (slideData.custom_tags && slideData.custom_tags.type === 'series_bar') {
+        const details = masterData.events.filter(ev => ev.parent_id === slideData.unique_id);
+        if (details.length > 0 && !expandedParentIds.has(slideData.unique_id)) {
+            expandedParentIds.add(slideData.unique_id);
+            pendingSlideId = slideData.unique_id;
+            updateTimeline();
+        }
+    }
 }
 
 // 起動
