@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TYPE-MOON Interactive Timeline (4-Step Framework)</title>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <style>
+    html, body { margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #f0f2f5; }
+    main { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    #timeline-embed { width: 100%; height: 600px; background: #fff; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+    
+    .filter-panel { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .filter-group { display: flex; flex-wrap: wrap; gap: 15px; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+    .filter-group:last-child { border-bottom: none; }
+    .filter-title { font-weight: bold; min-width: 100px; color: #555; }
+    .search-box { flex-grow: 1; min-width: 250px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+    
+    label { cursor: pointer; display: flex; align-items: center; gap: 4px; font-size: 14px; }
+    textarea { width: 100%; min-height: 150px; margin-top: 20px; font-family: monospace; font-size: 12px; }
+    .error { color: #d32f2f; font-weight: bold; margin-top: 10px; }
+    button { padding: 8px 16px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>TYPE-MOON Interactive Timeline</h1>
+
+    <div class="filter-panel">
+      <div class="filter-group">
+        <span class="filter-title">検索:</span>
+        <input type="text" id="search-input" class="search-box" placeholder="キーワードを入力（例：セイバー、アルク）">
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-title">グループ化:</span>
+        <label><input type="radio" name="group-mode" value="media" checked> 媒体別 (第1段階)</label>
+        <label><input type="radio" name="group-mode" value="project"> プロジェクト別 (第3段階)</label>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-title">シリーズ:</span>
+        <label><input type="checkbox" class="filter-series" value="Fate" checked> Fate</label>
+        <label><input type="checkbox" class="filter-series" value="Tsukihime" checked> 月姫</label>
+        <label><input type="checkbox" class="filter-series" value="Other" checked> その他</label>
+      </div>
+      <div class="filter-group">
+        <span class="filter-title">メディア:</span>
+        <label><input type="checkbox" class="filter-media" value="Game" checked> ゲーム</label>
+        <label><input type="checkbox" class="filter-media" value="Manga" checked> 漫画</label>
+        <label><input type="checkbox" class="filter-media" value="Anime" checked> アニメ</label>
+      </div>
+      
+      <div class="filter-group">
+        <button id="apply-filters">設定を適用</button>
+        <span id="status" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
+      </div>
+    </div>
+
+    <div id="timeline-embed"></div>
+
+    <details>
+      <summary>JSONソース表示/編集</summary>
+      <textarea id="json-source" spellcheck="false"></textarea>
+      <button id="load-from-text">テキストエリアから読み込み</button>
+    </details>
+  </main>
+
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <script>
+    // --- プロジェクトIDを表示用の名前に変換する辞書 ---
+    const projectNames = {
+      "fsn_cluster": "Fate/stay night Project",
+      "tsuki_cluster": "真月譚 月姫 Project",
+      "knk_cluster": "空の境界 Project",
+      "fgo_cluster": "Fate/Grand Order Project"
+    };
+
+    // --- 初期データ ---
+    const masterData = {
+      title: { text: { headline: "TYPE-MOON 4-Step DB", text: "グループ化を切り替えて歴史を分析できます" } },
+      events: [
+        {
+          id: "game_fsn_original",
+          start_date: { year: "2004", month: "1", day: "30" },
+          text: { headline: "Fate/stay night (Game)", text: "PC版発売。" },
+          custom_tags: { media: "Game", series: "Fate", project_id: "fsn_cluster", type: "series_bar" }
+        },
+        {
+          id: "manga_fsn_nishiwaki",
+          start_date: { year: "2006", month: "2" },
+          end_date: { year: "2012", month: "12" },
+          text: { headline: "Fate/stay night (Manga)", text: "西脇だっと版。バーを選択すると単行本情報が出ます。" },
+          custom_tags: { media: "Manga", series: "Fate", project_id: "fsn_cluster", type: "series_bar" }
+        },
+        {
+          parent_id: "manga_fsn_nishiwaki",
+          start_date: { year: "2006", month: "5" },
+          text: { headline: "Fate(漫) 1巻", text: "第4段階データ" },
+          custom_tags: { media: "Manga", series: "Fate", project_id: "fsn_cluster", type: "volume_dot" }
+        },
+        {
+          id: "manga_tsukihime_sasaki",
+          start_date: { year: "2003", month: "10" },
+          end_date: { year: "2010", month: "09" },
+          text: { headline: "真月譚 月姫 (Manga)", text: "佐々木少年版。傑作コミカライズ。" },
+          custom_tags: { media: "Manga", series: "Tsukihime", project_id: "tsuki_cluster", type: "series_bar" }
+        },
+        {
+          parent_id: "manga_tsukihime_sasaki",
+          start_date: { year: "2004", month: "6" },
+          text: { headline: "月姫(漫) 1巻", text: "第4段階データ" },
+          custom_tags: { media: "Manga", series: "Tsukihime", project_id: "tsuki_cluster", type: "volume_dot" }
+        },
+        {
+          id: "anime_knk_movie",
+          start_date: { year: "2007", month: "12", day: "1" },
+          text: { headline: "空の境界 第一章", text: "劇場版アニメプロジェクト開始。" },
+          custom_tags: { media: "Anime", series: "Other", project_id: "knk_cluster", type: "series_bar" }
+        }
+      ]
+    };
+
+    let timeline;
+    let currentDisplayedEvents = [];
+
+    // グループ名を決定する関数
+    function getGroupName(event, mode) {
+      if (mode === 'media') {
+        return event.custom_tags.media;
+      } else {
+        const pid = event.custom_tags.project_id;
+        return projectNames[pid] || pid;
+      }
+    }
+
+    function updateTimeline() {
+      const searchText = document.getElementById('search-input').value.toLowerCase();
+      const selectedSeries = Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value);
+      const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
+      const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
+
+      // 1. フィルタリング (初期は親要素 'series_bar' のみ表示)
+      const filteredEvents = masterData.events.filter(ev => {
+        const matchesSearch = ev.text.headline.toLowerCase().includes(searchText) || 
+                              ev.text.text.toLowerCase().includes(searchText);
+        const matchesSeries = selectedSeries.includes(ev.custom_tags.series);
+        const matchesMedia = selectedMedia.includes(ev.custom_tags.media);
+        const isSeriesBar = ev.custom_tags.type === 'series_bar';
+        return matchesSearch && matchesSeries && matchesMedia && isSeriesBar;
+      });
+
+      // 2. 現在のモードに合わせてグループ名を一括設定
+      currentDisplayedEvents = filteredEvents.map(ev => ({
+        ...ev,
+        group: getGroupName(ev, groupMode)
+      }));
+
+      render(currentDisplayedEvents);
+      document.getElementById('status').textContent = `表示中: ${currentDisplayedEvents.length}件`;
+    }
+
+    function render(events) {
+      const data = { ...masterData, events: events };
+      document.getElementById("timeline-embed").innerHTML = "";
+      
+      timeline = new TL.Timeline("timeline-embed", data, {
+        language: "ja",
+        initial_zoom: 2,
+        marker_height_min: 30
+      });
+
+      // --- 詳細追加ロジック ---
+      timeline.on('change', (e) => {
+        const currentSlide = timeline.getCurrentSlide();
+        const slideData = currentSlide.data;
+        const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
+
+        if (slideData && slideData.id) {
+          const details = masterData.events.filter(ev => ev.parent_id === slideData.id);
+          
+          if (details.length > 0) {
+            let added = false;
+            details.forEach(detail => {
+              if (!currentDisplayedEvents.find(curr => curr.headline === detail.headline)) {
+                // 子データも現在のグループ化ルールに従ってグループ名を付与
+                const detailWithGroup = {
+                  ...detail,
+                  group: getGroupName(detail, groupMode)
+                };
+                currentDisplayedEvents.push(detailWithGroup);
+                added = true;
+              }
+            });
+
+            if (added) {
+              render(currentDisplayedEvents);
+              timeline.goToId(slideData.id); // 再描画後、元の位置を維持
+            }
+          }
+        }
+      });
+    }
+
+    // --- イベント設定 ---
+    document.getElementById('apply-filters').addEventListener('click', updateTimeline);
+    document.getElementById('load-from-text').addEventListener('click', () => {
+        try {
+            const newData = JSON.parse(document.getElementById('json-source').value);
+            masterData.events = newData.events;
+            updateTimeline();
+        } catch(e) { alert("JSONエラー: " + e.message); }
+    });
+
+    // 初期起動
+    document.getElementById('json-source').value = JSON.stringify(masterData, null, 2);
+    updateTimeline();
+
+  </script>
+</body>
+</html>
