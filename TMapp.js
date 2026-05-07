@@ -16,6 +16,7 @@ async function initApp() {
     try {
         const response = await fetch('TMdata.json');
         masterData = normalizeTimelineData(await response.json());
+        buildFilterControls();
         updateTimeline();
     } catch (error) {
         console.error("データの読み込みに失敗しました:", error);
@@ -28,6 +29,12 @@ function normalizeTimelineData(data) {
     data.events = data.events.map((event, index) => {
         const normalized = { ...event };
 
+        normalized.text = {
+            headline: "",
+            text: "",
+            ...(normalized.text || {})
+        };
+
         if (!normalized.unique_id) {
             normalized.unique_id = normalized.id || makeEventId(normalized, index);
         }
@@ -36,8 +43,17 @@ function normalizeTimelineData(data) {
             normalized.id = normalized.unique_id;
         }
 
+        normalized.custom_tags = {
+            media: "Other",
+            series: "Other",
+            project_id: "other_cluster",
+            type: normalized.parent_id ? "volume_dot" : "series_bar",
+            ...(normalized.custom_tags || {})
+        };
+
         if (usedIds.has(normalized.unique_id)) {
             normalized.unique_id = `${normalized.unique_id}_${index}`;
+            normalized.id = normalized.unique_id;
         }
 
         usedIds.add(normalized.unique_id);
@@ -55,6 +71,43 @@ function makeEventId(event, index) {
         .toLowerCase()
         .replace(/\s+/g, "_")
         .replace(/[^\w-]/g, "") || `event_${index}`;
+}
+
+function buildFilterControls() {
+    buildCheckboxGroup('series-filters', 'filter-series', uniqueValues('series'));
+    buildCheckboxGroup('media-filters', 'filter-media', uniqueValues('media'));
+}
+
+function buildCheckboxGroup(containerId, className, values) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
+
+    values.forEach(value => {
+        const label = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = className;
+        checkbox.value = value;
+        checkbox.checked = true;
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(` ${displayFilterName(value)}`));
+        container.appendChild(label);
+    });
+}
+
+function uniqueValues(key) {
+    return [...new Set(masterData.events.map(ev => ev.custom_tags[key]).filter(Boolean))].sort();
+}
+
+function displayFilterName(value) {
+    const names = {
+        Anime: "アニメ",
+        Game: "ゲーム",
+        Manga: "漫画",
+        Other: "その他",
+        Tsukihime: "月姫"
+    };
+    return names[value] || value;
 }
 
 function getGroupName(event, mode) {
