@@ -15,20 +15,11 @@ const timelineOptions = {
     marker_padding: 8
 };
 
-const baseTimenavHeightMin = timelineOptions.timenav_height_min;
-const baseTimelineContainerHeight = 1100;
-const autoLayoutIncrement = 300;
-const maxAutoLayoutPasses = 30;
-const autoLayoutCheckDelay = 350;
-
 let masterData = null;
 let currentDisplayedEvents = [];
 let timeline = null;
 let expandedParentIds = new Set();
 let pendingSlideId = null;
-let currentTimenavHeightMin = baseTimenavHeightMin;
-let autoLayoutPasses = 0;
-let renderGeneration = 0;
 
 // JSONの読み込み
 async function initApp() {
@@ -152,8 +143,6 @@ function getGroupName(event, mode) {
 function updateTimeline() {
     if (!masterData) return;
 
-    resetAutoLayout();
-
     const searchText = document.getElementById('search-input').value.toLowerCase();
     const selectedSeries = Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value);
     const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
@@ -190,12 +179,9 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia) {
 
 function render(events, slideIdToRestore) {
     const data = { ...masterData, events: events };
-    const generation = ++renderGeneration;
-    const container = document.getElementById("timeline-embed");
-    setTimelineContainerHeight();
-    container.innerHTML = "";
+    document.getElementById("timeline-embed").innerHTML = "";
     
-    timeline = new TL.Timeline("timeline-embed", data, getTimelineOptions());
+    timeline = new TL.Timeline("timeline-embed", data, timelineOptions);
 
     timeline.on('loaded', () => {
         if (slideIdToRestore && currentDisplayedEvents.some(ev => ev.unique_id === slideIdToRestore)) {
@@ -203,89 +189,9 @@ function render(events, slideIdToRestore) {
             pendingSlideId = null;
         }
         tagChildDetailMarkers();
-        scheduleAutoLayoutCheck(events, slideIdToRestore, generation);
     });
 
     timeline.on('change', handleTimelineChange);
-}
-
-function getTimelineOptions() {
-    return {
-        ...timelineOptions,
-        timenav_height_min: currentTimenavHeightMin
-    };
-}
-
-function resetAutoLayout() {
-    currentTimenavHeightMin = baseTimenavHeightMin;
-    autoLayoutPasses = 0;
-    updateLayoutDebug(0, 0);
-}
-
-function setTimelineContainerHeight() {
-    const container = document.getElementById("timeline-embed");
-    const desiredHeight = Math.max(baseTimelineContainerHeight, currentTimenavHeightMin + 540);
-    container.style.height = `${desiredHeight}px`;
-}
-
-function scheduleAutoLayoutCheck(events, slideIdToRestore, generation) {
-    setTimeout(() => {
-        if (generation !== renderGeneration) return;
-
-        const overlaps = detectMarkerOverlaps();
-        const ellipsized = detectEllipsizedMarkers();
-        updateLayoutDebug(overlaps.length, ellipsized.length);
-
-        if ((overlaps.length > 0 || ellipsized.length > 0) && autoLayoutPasses < maxAutoLayoutPasses) {
-            autoLayoutPasses += 1;
-            currentTimenavHeightMin += autoLayoutIncrement;
-            render(events, slideIdToRestore);
-        }
-    }, autoLayoutCheckDelay);
-}
-
-function detectMarkerOverlaps() {
-    const markers = Array.from(document.querySelectorAll('#timeline-embed .tl-timemarker'));
-    const overlaps = [];
-
-    for (let i = 0; i < markers.length; i++) {
-        const firstRect = markers[i].getBoundingClientRect();
-
-        for (let j = i + 1; j < markers.length; j++) {
-            const secondRect = markers[j].getBoundingClientRect();
-            if (rectsOverlap(firstRect, secondRect)) {
-                overlaps.push([markers[i].id, markers[j].id]);
-            }
-        }
-    }
-
-    return overlaps;
-}
-
-function rectsOverlap(first, second) {
-    return !(
-        first.right <= second.left ||
-        first.left >= second.right ||
-        first.bottom <= second.top ||
-        first.top >= second.bottom
-    );
-}
-
-function detectEllipsizedMarkers() {
-    return Array.from(document.querySelectorAll('#timeline-embed .tl-timemarker-content'))
-        .filter(el => el.scrollWidth > el.clientWidth);
-}
-
-function updateLayoutDebug(overlapCount, ellipsizedCount) {
-    const debug = document.getElementById('layout-debug');
-    if (!debug) return;
-
-    debug.textContent = [
-        `layout pass: ${autoLayoutPasses}/${maxAutoLayoutPasses}`,
-        `timenav min: ${currentTimenavHeightMin}px`,
-        `overlaps: ${overlapCount}`,
-        `ellipsis: ${ellipsizedCount}`
-    ].join('\n');
 }
 
 function tagChildDetailMarkers() {
