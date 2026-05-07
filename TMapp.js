@@ -188,9 +188,19 @@ function render(events, slideIdToRestore) {
             timeline.goToId(slideIdToRestore);
             pendingSlideId = null;
         }
+        tagChildDetailMarkers();
     });
 
     timeline.on('change', handleTimelineChange);
+}
+
+function tagChildDetailMarkers() {
+    currentDisplayedEvents.forEach(event => {
+        const marker = document.getElementById(`${event.unique_id}-marker`);
+        if (!marker) return;
+
+        marker.classList.toggle('tm-child-detail-marker', Boolean(event.parent_id));
+    });
 }
 
 function handleTimelineChange() {
