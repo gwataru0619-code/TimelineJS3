@@ -23,6 +23,23 @@ const baseTimenavHeightMin = 560;
 const heightIncreaseStep = 300;
 const timenavIncreaseStep = 180;
 
+// project_idごとに自動色分けするための色候補です
+const projectColorPalette = [
+    "#c62828",
+    "#ad1457",
+    "#6a1b9a",
+    "#4527a0",
+    "#283593",
+    "#1565c0",
+    "#0277bd",
+    "#00838f",
+    "#2e7d32",
+    "#558b2f",
+    "#ef6c00",
+    "#6d4c41"
+];
+const fallbackMarkerColor = "#666666";
+
 // アプリ全体で使う「作業用ポケット（変数）」です
 let masterData = null;                // 読み込んだ全てのデータ
 let currentDisplayedEvents = [];      // 今、画面に表示しているデータ
@@ -250,6 +267,7 @@ function render(events, slideIdToRestore) {
             pendingSlideId = null;
         }
         tagChildDetailMarkers(); // 詳細ドットに見た目用の印をつける
+        applyMarkerColors(); // 親は背景色、子は文字色だけを変える
     });
 
     // スライドが切り替わった時の動きを監視します
@@ -272,6 +290,45 @@ function tagChildDetailMarkers() {
 
         marker.classList.toggle('tm-child-detail-marker', Boolean(event.parent_id));
     });
+}
+
+// custom_tags.color → project_id由来の色 → グレー、の順で色を決めてマーカーへ反映します
+function applyMarkerColors() {
+    currentDisplayedEvents.forEach(event => {
+        const marker = document.getElementById(`${event.unique_id}-marker`);
+        if (!marker) return;
+
+        const color = getMarkerColor(event);
+        marker.style.setProperty("--tm-marker-color", color);
+        marker.style.setProperty("--tm-marker-text-color", getReadableTextColor(color));
+        marker.classList.toggle("tm-parent-colored-marker", !event.parent_id);
+    });
+}
+
+function getMarkerColor(event) {
+    const tags = event.custom_tags || {};
+    if (tags.color) return tags.color;
+    if (tags.project_id) return getProjectColor(tags.project_id);
+    return fallbackMarkerColor;
+}
+
+function getProjectColor(projectId) {
+    let hash = 0;
+    for (let i = 0; i < projectId.length; i++) {
+        hash = (hash * 31 + projectId.charCodeAt(i)) >>> 0;
+    }
+    return projectColorPalette[hash % projectColorPalette.length];
+}
+
+function getReadableTextColor(color) {
+    const hex = color.replace("#", "");
+    if (hex.length !== 6) return "#ffffff";
+
+    const r = parseInt(hex.slice(0, 2), 16);
+    const g = parseInt(hex.slice(2, 4), 16);
+    const b = parseInt(hex.slice(4, 6), 16);
+    const luminance = (r * 299 + g * 587 + b * 114) / 1000;
+    return luminance > 150 ? "#222222" : "#ffffff";
 }
 
 // ユーザーがスライドを切り替えた時の処理です

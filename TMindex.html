@@ -11,6 +11,15 @@
     .row { display: flex; gap: 20px; margin-bottom: 10px; align-items: center; }
     label { font-size: 14px; cursor: pointer; }
     nav { margin-bottom: 10px; }
+    #timeline-embed .tm-parent-colored-marker .tl-timemarker-content-container,
+    #timeline-embed .tm-parent-colored-marker .tl-timemarker-timespan-content {
+      background: var(--tm-marker-color) !important;
+      border-color: var(--tm-marker-color) !important;
+      color: var(--tm-marker-text-color) !important;
+    }
+    #timeline-embed .tm-parent-colored-marker .tl-timemarker-content {
+      color: var(--tm-marker-text-color) !important;
+    }
     #timeline-embed .tm-child-detail-marker .tl-timemarker-content-container {
       background: transparent !important;
       box-shadow: none !important;
@@ -23,6 +32,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: var(--tm-marker-color, #666) !important;
     }
     #timeline-embed .tm-child-detail-marker:hover .tl-timemarker-content-container,
     #timeline-embed .tm-child-detail-marker.tl-timemarker-active .tl-timemarker-content-container {
