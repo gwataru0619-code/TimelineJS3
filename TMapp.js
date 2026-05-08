@@ -23,21 +23,20 @@ const baseTimenavHeightMin = 560;
 const heightIncreaseStep = 300;
 const timenavIncreaseStep = 180;
 
-// project_idごとに自動色分けするための色候補です
-const projectColorPalette = [
-    "#c62828",
-    "#ad1457",
-    "#6a1b9a",
-    "#4527a0",
-    "#283593",
-    "#1565c0",
-    "#0277bd",
-    "#00838f",
-    "#2e7d32",
-    "#558b2f",
-    "#ef6c00",
-    "#6d4c41"
-];
+// project_idごとの色設定です。必要に応じてここを書き換えれば色を固定できます
+const projectColors = {
+    Zero: "#7b1fa2",
+    Apocrypha: "#c62828",
+    Prototype: "#1565c0",
+    "El-MelloiII": "#6d4c41",
+    strangeFake: "#ef6c00",
+    Requiem: "#00838f",
+    LostEinherjar: "#558b2f",
+    TheGardenofSinners: "#283593",
+    fsn_cluster: "#ad1457",
+    tsuki_cluster: "#0277bd",
+    others: "#666666"
+};
 const fallbackMarkerColor = "#666666";
 
 // アプリ全体で使う「作業用ポケット（変数）」です
@@ -302,6 +301,12 @@ function applyMarkerColors() {
         marker.style.setProperty("--tm-marker-color", color);
         marker.style.setProperty("--tm-marker-text-color", getReadableTextColor(color));
         marker.classList.toggle("tm-parent-colored-marker", !event.parent_id);
+
+        if (event.parent_id) {
+            applyChildMarkerColor(marker, color);
+        } else {
+            applyParentMarkerColor(marker, color);
+        }
     });
 }
 
@@ -313,11 +318,7 @@ function getMarkerColor(event) {
 }
 
 function getProjectColor(projectId) {
-    let hash = 0;
-    for (let i = 0; i < projectId.length; i++) {
-        hash = (hash * 31 + projectId.charCodeAt(i)) >>> 0;
-    }
-    return projectColorPalette[hash % projectColorPalette.length];
+    return projectColors[projectId] || fallbackMarkerColor;
 }
 
 function getReadableTextColor(color) {
@@ -329,6 +330,39 @@ function getReadableTextColor(color) {
     const b = parseInt(hex.slice(4, 6), 16);
     const luminance = (r * 299 + g * 587 + b * 114) / 1000;
     return luminance > 150 ? "#222222" : "#ffffff";
+}
+
+function applyParentMarkerColor(marker, color) {
+    const textColor = getReadableTextColor(color);
+    const coloredParts = [
+        marker.querySelector(".tl-timemarker-content-container"),
+        marker.querySelector(".tl-timemarker-timespan"),
+        marker.querySelector(".tl-timemarker-timespan-content")
+    ];
+
+    coloredParts.forEach(part => {
+        if (!part) return;
+        part.style.backgroundColor = color;
+        part.style.borderColor = color;
+        part.style.color = textColor;
+    });
+
+    const content = marker.querySelector(".tl-timemarker-content");
+    if (content) {
+        content.style.color = textColor;
+    }
+}
+
+function applyChildMarkerColor(marker, color) {
+    const content = marker.querySelector(".tl-timemarker-content");
+    const headline = marker.querySelector(".tl-headline");
+
+    if (content) {
+        content.style.color = color;
+    }
+    if (headline) {
+        headline.style.color = color;
+    }
 }
 
 // ユーザーがスライドを切り替えた時の処理です
