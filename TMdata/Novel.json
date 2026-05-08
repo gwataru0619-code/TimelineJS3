@@ -1,0 +1,674 @@
+[
+  {
+    "id": "Novel_Fate_Zero",
+    "unique_id": "Novel_Fate_Zero",
+    "start_date": {"year": "2006", "month": "12", "day": "29"},
+    "end_date": {"year": "2007", "month": "12", "day": "29"},
+    "text": {"headline": "Fate/Zero", "text": "虚淵玄"},
+    "background": {"color": "#c0392b"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_Fate_Zero_1",
+    "unique_id": "Novel_Fate_Zero_1",
+    "start_date": {"year": "2006", "month": "12", "day": "29"},
+    "text": {"headline": "Fate/Zero Vol.1 「第四次聖杯戦争秘話」", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_2",
+    "unique_id": "Novel_Fate_Zero_2",
+    "start_date": {"year": "2007", "month": "3", "day": "31"},
+    "text": {"headline": "Fate/Zero Vol.2 「王たちの狂宴」", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_3",
+    "unique_id": "Novel_Fate_Zero_3",
+    "start_date": {"year": "2007", "month": "7", "day": "27"},
+    "text": {"headline": "Fate/Zero Vol.3 「散りゆく者たち」", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_4",
+    "unique_id": "Novel_Fate_Zero_4",
+    "start_date": {"year": "2007", "month": "12", "day": "29"},
+    "text": {"headline": "Fate/Zero Vol.4 「煉獄の炎」", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_5",
+    "unique_id": "Novel_Fate_Zero_5",
+    "start_date": {"year": "2011", "month": "1", "day": "11"},
+    "text": {"headline": "星海社文庫版 Fate/Zero 1 -第四次聖杯戦争秘話-", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_6",
+    "unique_id": "Novel_Fate_Zero_6",
+    "start_date": {"year": "2011", "month": "2", "day": "9"},
+    "text": {"headline": "星海社文庫版 Fate/Zero 2 -英霊参集-", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_7",
+    "unique_id": "Novel_Fate_Zero_7",
+    "start_date": {"year": "2011", "month": "3", "day": "10"},
+    "text": {"headline": "星海社文庫版 Fate/Zero 3 -王たちの狂宴-", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_8",
+    "unique_id": "Novel_Fate_Zero_8",
+    "start_date": {"year": "2011", "month": "4", "day": "7"},
+    "text": {"headline": "星海社文庫版 Fate/Zero 4 -散りゆく者たち-", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_9",
+    "unique_id": "Novel_Fate_Zero_9",
+    "start_date": {"year": "2011", "month": "5", "day": "11"},
+    "text": {"headline": "星海社文庫版 Fate/Zero 5 -闇の胎動-", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Zero_10",
+    "unique_id": "Novel_Fate_Zero_10",
+    "start_date": {"year": "2011", "month": "6", "day": "10"},
+    "text": {"headline": "星海社文庫版 Fate/Zero 6 -煉獄の炎-", "text": "虚淵玄"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Zero"
+  },
+  {
+    "id": "Novel_Fate_Apocrypha",
+    "unique_id": "Novel_Fate_Apocrypha",
+    "start_date": {"year": "2012", "month": "12", "day": "31"},
+    "end_date": {"year": "2014", "month": "12", "day": "30"},
+    "text": {"headline": "Fate/Apocrypha", "text": "東出祐一郎"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Apocrypha", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_Fate_Apocrypha_1",
+    "unique_id": "Novel_Fate_Apocrypha_1",
+    "start_date": {"year": "2012", "month": "12", "day": "31"},
+    "text": {"headline": "Fate/Apocrypha 1「外典：聖杯大戦」", "text": "東出祐一郎"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Apocrypha", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Apocrypha"
+  },
+  {
+    "id": "Novel_Fate_Apocrypha_2",
+    "unique_id": "Novel_Fate_Apocrypha_2",
+    "start_date": {"year": "2013", "month": "8", "day": "16"},
+    "text": {"headline": "Fate/Apocrypha 2「黒の輪舞 / 赤の祭典」", "text": "東出祐一郎"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Apocrypha", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Apocrypha"
+  },
+  {
+    "id": "Novel_Fate_Apocrypha_3",
+    "unique_id": "Novel_Fate_Apocrypha_3",
+    "start_date": {"year": "2013", "month": "12", "day": "29"},
+    "text": {"headline": "Fate/Apocrypha 3「聖人の凱旋」", "text": "東出祐一郎"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Apocrypha", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Apocrypha"
+  },
+  {
+    "id": "Novel_Fate_Apocrypha_4",
+    "unique_id": "Novel_Fate_Apocrypha_4",
+    "start_date": {"year": "2014", "month": "5", "day": "30"},
+    "text": {"headline": "Fate/Apocrypha 4「熾天の杯」", "text": "東出祐一郎"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Apocrypha", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Apocrypha"
+  },
+  {
+    "id": "Novel_Fate_Apocrypha_5",
+    "unique_id": "Novel_Fate_Apocrypha_5",
+    "start_date": {"year": "2014", "month": "12", "day": "30"},
+    "text": {"headline": "Fate/Apocrypha 5「邪竜と聖女」", "text": "東出祐一郎"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Apocrypha", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Apocrypha"
+  },
+  {
+    "id": "Novel_Fate_Prototype",
+    "unique_id": "Novel_Fate_Prototype",
+    "start_date": {"year": "2013", "month": "8"},
+    "end_date": {"year": "2016", "month": "10"},
+    "text": {"headline": "Fate/Prototype 蒼銀のフラグメンツ", "text": "桜井光　コンプティーク連載"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_Fate_Prototype_1",
+    "unique_id": "Novel_Fate_Prototype_1",
+    "start_date": {"year": "2014", "month": "9", "day": "10"},
+    "text": {"headline": "Fate/Prototype 蒼銀のフラグメンツ 1", "text": "桜井光"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Prototype"
+  },
+  {
+    "id": "Novel_Fate_Prototype_2",
+    "unique_id": "Novel_Fate_Prototype_2",
+    "start_date": {"year": "2014", "month": "10", "day": "10"},
+    "text": {"headline": "Fate/Prototype 蒼銀のフラグメンツ 2", "text": "桜井光"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Prototype"
+  },
+  {
+    "id": "Novel_Fate_Prototype_3",
+    "unique_id": "Novel_Fate_Prototype_3",
+    "start_date": {"year": "2015", "month": "3", "day": "26"},
+    "text": {"headline": "Fate/Prototype 蒼銀のフラグメンツ 3", "text": "桜井光"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Prototype"
+  },
+  {
+    "id": "Novel_Fate_Prototype_4",
+    "unique_id": "Novel_Fate_Prototype_4",
+    "start_date": {"year": "2016", "month": "3", "day": "10"},
+    "text": {"headline": "Fate/Prototype 蒼銀のフラグメンツ 4", "text": "桜井光"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Prototype"
+  },
+  {
+    "id": "Novel_Fate_Prototype_5",
+    "unique_id": "Novel_Fate_Prototype_5",
+    "start_date": {"year": "2017", "month": "4", "day": "26"},
+    "text": {"headline": "Fate/Prototype 蒼銀のフラグメンツ 5", "text": "桜井光"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Prototype"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles",
+    "start_date": {"year": "2014", "month": "12", "day": "28"},
+    "end_date": {"year": "2019", "month": "5", "day": "17"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_1",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_1",
+    "start_date": {"year": "2014", "month": "12", "day": "28"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 1「case.剥離城アドラ」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_2",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_2",
+    "start_date": {"year": "2015", "month": "8", "day": "14"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 2「case.双貌塔イゼルマ（上）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_3",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_3",
+    "start_date": {"year": "2015", "month": "12", "day": "29"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 3「case.双貌塔イゼルマ（下）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_4",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_4",
+    "start_date": {"year": "2016", "month": "8", "day": "12"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 4「case.魔眼蒐集列車（上）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_5",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_5",
+    "start_date": {"year": "2016", "month": "12", "day": "29"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 5「case.魔眼蒐集列車（下）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_6",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_6",
+    "start_date": {"year": "2017", "month": "8", "day": "11"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 6「case.アトラスの契約（上）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_7",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_7",
+    "start_date": {"year": "2017", "month": "12", "day": "29"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 7「case.アトラスの契約（下）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_8",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_8",
+    "start_date": {"year": "2018", "month": "8", "day": "10"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 8「case.冠位決議（上）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_9",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_9",
+    "start_date": {"year": "2018", "month": "12", "day": "29"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 9「case.冠位決議（中）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_CaseFiles_10",
+    "unique_id": "Novel_Fate_El-MelloiII_CaseFiles_10",
+    "start_date": {"year": "2019", "month": "5", "day": "17"},
+    "text": {"headline": "ロード・エルメロイII世の事件簿 9「case.冠位決議（下）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_CaseFiles"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures",
+    "start_date": {"year": "2020", "month": "12", "day": "25"},
+    "end_date": {"year": "2026", "month": "5", "day": "7"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 [Ongoing]", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_1",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_1",
+    "start_date": {"year": "2020", "month": "12", "day": "25"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 1「神を喰らった男」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_2",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_2",
+    "start_date": {"year": "2021", "month": "8", "day": "13"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 2「彷徨海の魔人（上）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_3",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_3",
+    "start_date": {"year": "2022", "month": "1", "day": "28"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 3「彷徨海の魔人（下）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_4",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_4",
+    "start_date": {"year": "2022", "month": "8", "day": "19"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 4「錬金術師の遺産（上）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_5",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_5",
+    "start_date": {"year": "2022", "month": "12", "day": "31"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 5「錬金術師の遺産（下）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_6",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_6",
+    "start_date": {"year": "2023", "month": "8", "day": "13"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 6「フェムの船宴（上）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_7",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_7",
+    "start_date": {"year": "2023", "month": "12", "day": "30"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 7「フェムの船宴（中）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_8",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_8",
+    "start_date": {"year": "2024", "month": "8", "day": "12"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 8「フェムの船宴（下）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_9",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_9",
+    "start_date": {"year": "2024", "month": "12", "day": "30"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 9「星冠密議（1）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_10",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_10",
+    "start_date": {"year": "2025", "month": "8", "day": "17"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 10「星冠密議（2）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_11",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_11",
+    "start_date": {"year": "2025", "month": "12", "day": "30"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 11「星冠密議（3）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_El-MelloiII_adventures_12",
+    "unique_id": "Novel_Fate_El-MelloiII_adventures_12",
+    "start_date": {"year": "2026", "month": "8"},
+    "text": {"headline": "ロード・エルメロイII世の冒険 12「星冠密議（4）」", "text": "三田誠"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_El-MelloiII_adventures"
+  },
+  {
+    "id": "Novel_Fate_strangeFake",
+    "unique_id": "Novel_Fate_strangeFake",
+    "start_date": {"year": "2015", "month": "1", "day": "10"},
+    "end_date": {"year": "2026", "month": "5", "day": "7"},
+    "text": {"headline": "Fate/strange Fake [Ongoing]", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_Fate_strangeFake_1",
+    "unique_id": "Novel_Fate_strangeFake_1",
+    "start_date": {"year": "2015", "month": "1", "day": "10"},
+    "text": {"headline": "Fate/strange Fake 1", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_2",
+    "unique_id": "Novel_Fate_strangeFake_2",
+    "start_date": {"year": "2015", "month": "5", "day": "9"},
+    "text": {"headline": "Fate/strange Fake 2", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_3",
+    "unique_id": "Novel_Fate_strangeFake_3",
+    "start_date": {"year": "2016", "month": "5", "day": "10"},
+    "text": {"headline": "Fate/strange Fake 3", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_4",
+    "unique_id": "Novel_Fate_strangeFake_4",
+    "start_date": {"year": "2017", "month": "4", "day": "8"},
+    "text": {"headline": "Fate/strange Fake 4", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_5",
+    "unique_id": "Novel_Fate_strangeFake_5",
+    "start_date": {"year": "2019", "month": "4", "day": "10"},
+    "text": {"headline": "Fate/strange Fake 5", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_6",
+    "unique_id": "Novel_Fate_strangeFake_6",
+    "start_date": {"year": "2020", "month": "1", "day": "10"},
+    "text": {"headline": "Fate/strange Fake 6", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_7",
+    "unique_id": "Novel_Fate_strangeFake_7",
+    "start_date": {"year": "2022", "month": "3", "day": "10"},
+    "text": {"headline": "Fate/strange Fake 7", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_8",
+    "unique_id": "Novel_Fate_strangeFake_8",
+    "start_date": {"year": "2023", "month": "2", "day": "10"},
+    "text": {"headline": "Fate/strange Fake 8", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_strangeFake_9",
+    "unique_id": "Novel_Fate_strangeFake_9",
+    "start_date": {"year": "2024", "month": "3", "day": "10"},
+    "text": {"headline": "Fate/strange Fake 9", "text": "成田良悟"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_strangeFake"
+  },
+  {
+    "id": "Novel_Fate_Labyrinth",
+    "unique_id": "Novel_Fate_Labyrinth",
+    "start_date": {"year": "2015", "month": "5"},
+    "end_date": {"year": "2015", "month": "7"},
+    "text": {"headline": "Fate/Labyrinth", "text": "桜井光　コンプティーク連載"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_Fate_Labyrinth_1",
+    "unique_id": "Novel_Fate_Labyrinth_1",
+    "start_date": {"year": "2016", "month": "1", "day": "9"},
+    "text": {"headline": "Fate/Labyrinth", "text": "桜井光"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Prototype", "type": "volume_dot"},
+    "parent_id": "Novel_Fate_Labyrinth"
+  },
+  {
+    "id": "Novel_Fate_Requiem_1",
+    "unique_id": "Novel_Fate_Requiem_1",
+    "start_date": {"year": "2018", "month": "12", "day": "31"},
+    "text": {"headline": "Fate/Requiem 1「星巡る少年」", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Requiem", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_Fate_Requiem_2",
+    "unique_id": "Novel_Fate_Requiem_2",
+    "start_date": {"year": "2020", "month": "6", "day": "12"},
+    "text": {"headline": "Fate/Requiem 2「懐想都市新宿」", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Requiem", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_Fate_LostEinherjar_1",
+    "unique_id": "Novel_Fate_LostEinherjar_1",
+    "start_date": {"year": "2022", "month": "12", "day": "31"},
+    "text": {"headline": "Fate:Lost Einherjar 極光のアスラウグ 1「亜種二連聖杯戦争」", "text": "桜井光"},
+    "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "LostEinherjar", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners",
+    "unique_id": "Novel_others_TheGardenofSinners",
+    "start_date": {"year": "2001", "month": "12", "day": "30"},
+    "text": {"headline": "空の境界 同人版", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners_1",
+    "unique_id": "Novel_others_TheGardenofSinners_1",
+    "start_date": {"year": "2004", "month": "4", "day": "1"},
+    "text": {"headline": "空の境界 限定愛蔵版", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "volume_dot"},
+    "parent_id": "Novel_others_TheGardenofSinners"
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners_2",
+    "unique_id": "Novel_others_TheGardenofSinners_2",
+    "start_date": {"year": "2004", "month": "6", "day": "8"},
+    "text": {"headline": "空の境界 講談社ノベルス版", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "volume_dot"},
+    "parent_id": "Novel_others_TheGardenofSinners"
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners_3",
+    "unique_id": "Novel_others_TheGardenofSinners_3",
+    "start_date": {"year": "2007", "month": "11", "day": "15"},
+    "end_date": {"year": "2008", "month": "1", "day": "16"},
+    "text": {"headline": "空の境界 講談社文庫版", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "series_bar"},
+    "parent_id": "Novel_others_TheGardenofSinners"
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners_4",
+    "unique_id": "Novel_others_TheGardenofSinners_4",
+    "start_date": {"year": "2018", "month": "1", "day": "29"},
+    "text": {"headline": "空の境界 20周年記念版", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "volume_dot"},
+    "parent_id": "Novel_others_TheGardenofSinners"
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners_6",
+    "unique_id": "Novel_others_TheGardenofSinners_6",
+    "start_date": {"year": "2008", "month": "8", "day": "16"},
+    "text": {"headline": "空の境界 未来福音 同人版", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "volume_dot"},
+    "parent_id": "Novel_others_TheGardenofSinners"
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners_7",
+    "unique_id": "Novel_others_TheGardenofSinners_7",
+    "start_date": {"year": "2011", "month": "11", "day": "11"},
+    "text": {"headline": "空の境界 未来福音 星海社文庫版", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "volume_dot"},
+    "parent_id": "Novel_others_TheGardenofSinners"
+  },
+  {
+    "id": "Novel_others_TheGardenofSinners_8",
+    "unique_id": "Novel_others_TheGardenofSinners_8",
+    "start_date": {"year": "2013", "month": "9", "day": "28"},
+    "text": {"headline": "終末録音/the Garden of oblivion", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "volume_dot"},
+    "parent_id": "Novel_others_TheGardenofSinners"
+  },
+  {
+    "id": "Novel_others_DDD_1",
+    "unique_id": "Novel_others_DDD_1",
+    "start_date": {"year": "2007", "month": "1", "day": "1"},
+    "text": {"headline": "DDD 1", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_others_DDD_2",
+    "unique_id": "Novel_others_DDD_2",
+    "start_date": {"year": "2007", "month": "8", "day": "10"},
+    "text": {"headline": "DDD 2", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_others_316",
+    "unique_id": "Novel_others_316",
+    "start_date": {"year": "2010", "month": "7", "day": "13"},
+    "text": {"headline": "3/16事件　漫画BOX AMASIA", "text": "奈須きのこ　榎本俊二"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_others_316_1",
+    "unique_id": "Novel_others_316_1",
+    "start_date": {"year": "2011", "month": "3", "day": "1"},
+    "text": {"headline": "3/16事件", "text": "奈須きのこ　榎本俊二"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_316"
+  },
+  {
+    "id": "Novel_others_1",
+    "unique_id": "Novel_others_1",
+    "start_date": {"year": "2011", "month": "11", "day": "16"},
+    "text": {"headline": "四月の魔女の部屋", "text": "星空めてお　2011/4/1 期間限定掲載"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_others_2",
+    "unique_id": "Novel_others_2",
+    "start_date": {"year": "2011", "month": "10", "day": "13"},
+    "text": {"headline": "月の珊瑚", "text": "奈須きのこ"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_others_3",
+    "unique_id": "Novel_others_3",
+    "start_date": {"year": "2014", "month": "3", "day": "22"},
+    "text": {"headline": "世界征服 〜白いケイトと真夏のベルビアージェ〜", "text": "木村航"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"}
+  },
+  {
+    "id": "Novel_others_firegirl",
+    "unique_id": "Novel_others_firegirl",
+    "start_date": {"year": "2012", "month": "12", "day": "29"},
+    "end_date": {"year": "2016", "month": "3", "day": "18"},
+    "text": {"headline": "ファイアーガール", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "series_bar"}
+  },
+  {
+    "id": "Novel_others_firegirl_1",
+    "unique_id": "Novel_others_firegirl_1",
+    "start_date": {"year": "2012", "month": "12", "day": "29"},
+    "text": {"headline": "ファイヤーガール 1 「虚惑星の魔法使い」上巻", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_firegirl"
+  },
+  {
+    "id": "Novel_others_firegirl_2",
+    "unique_id": "Novel_others_firegirl_2",
+    "start_date": {"year": "2012", "month": "12", "day": "29"},
+    "text": {"headline": "ファイヤーガール 1 「虚惑星の魔法使い」下巻", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_firegirl"
+  },
+  {
+    "id": "Novel_others_firegirl_3",
+    "unique_id": "Novel_others_firegirl_3",
+    "start_date": {"year": "2013", "month": "7", "day": "16"},
+    "text": {"headline": "ファイヤーガール 2 「白嶺の幻肢虎」 上巻", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_firegirl"
+  },
+  {
+    "id": "Novel_others_firegirl_4",
+    "unique_id": "Novel_others_firegirl_4",
+    "start_date": {"year": "2014", "month": "12", "day": "29"},
+    "text": {"headline": "ファイヤーガール 2 「白嶺の幻肢虎」 下巻", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_firegirl"
+  },
+  {
+    "id": "Novel_others_firegirl_5",
+    "unique_id": "Novel_others_firegirl_5",
+    "start_date": {"year": "2014", "month": "12", "day": "5"},
+    "text": {"headline": "ファイヤーガール 3 「青銅の巨人」 上巻", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_firegirl"
+  },
+  {
+    "id": "Novel_others_firegirl_6",
+    "unique_id": "Novel_others_firegirl_6",
+    "start_date": {"year": "2015", "month": "8", "day": "14"},
+    "text": {"headline": "ファイヤーガール 3 「青銅の巨人」 中巻", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_firegirl"
+  },
+  {
+    "id": "Novel_others_firegirl_7",
+    "unique_id": "Novel_others_firegirl_7",
+    "start_date": {"year": "2016", "month": "3", "day": "18"},
+    "text": {"headline": "ファイヤーガール 3 「青銅の巨人」 下巻", "text": "星空めてお"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "others", "type": "volume_dot"},
+    "parent_id": "Novel_others_firegirl"
+  }
+]

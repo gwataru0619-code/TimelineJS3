@@ -1,0 +1,13 @@
+{
+  "title": {
+    "text": {
+      "headline": "TYPE-MOON Archive",
+      "text": "4段階フレームワークに基づいた型月全史データベース"
+    }
+  },
+  "sources": [
+    "TMdata/Novel.json",
+    "TMdata/Game.json",
+    "TMdata/Comic.json"
+  ]
+}

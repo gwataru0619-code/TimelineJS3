@@ -1,0 +1,9 @@
+[
+  {
+    "id": "game_fsn_original",
+    "unique_id": "game_fsn_original",
+    "start_date": {"year": "2004", "month": "1", "day": "30"},
+    "text": {"headline": "Fate/stay night (Game)", "text": "PC版発売。"},
+    "custom_tags": {"media": "Game", "series": "Fate", "project_id": "fsn_cluster", "type": "series_bar"}
+  }
+]

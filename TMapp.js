@@ -53,16 +53,38 @@ let timenavHeightMin = baseTimenavHeightMin;   // 現在の時間軸ナビの最
 // アプリの「起動スイッチ」です。データを読み込んで準備を始めます
 async function initApp() {
     try {
-        // 外部ファイル（TMdata.json）からデータを取ってきます
-        const response = await fetch('TMdata.json');
-        // 届いたデータを使いやすいように「下準備（normalize）」して保存します
-        masterData = normalizeTimelineData(await response.json());
+        // 分割したJSONを優先して読み込みます。失敗した時だけ旧TMdata.jsonへ戻します
+        masterData = normalizeTimelineData(await loadTimelineData());
         // 画面に「絞り込みボタン」を作ります
         buildFilterControls();
         // 準備ができたので年表を画面に描きます
         updateTimeline();
     } catch (error) {
         console.error("データの読み込みに失敗しました:", error);
+    }
+}
+
+// TMdata/index.jsonに書かれた複数JSONを読み込み、1つのTimelineJS用データにまとめます
+async function loadTimelineData() {
+    try {
+        const indexResponse = await fetch('TMdata/index.json');
+        if (!indexResponse.ok) throw new Error(`TMdata/index.json: ${indexResponse.status}`);
+
+        const indexData = await indexResponse.json();
+        const sourceEvents = await Promise.all(indexData.sources.map(async source => {
+            const sourceResponse = await fetch(source);
+            if (!sourceResponse.ok) throw new Error(`${source}: ${sourceResponse.status}`);
+            return sourceResponse.json();
+        }));
+
+        return {
+            title: indexData.title,
+            events: sourceEvents.flat()
+        };
+    } catch (error) {
+        console.warn("分割データの読み込みに失敗したため、TMdata.jsonを読み込みます。", error);
+        const response = await fetch('TMdata.json');
+        return response.json();
     }
 }
 
