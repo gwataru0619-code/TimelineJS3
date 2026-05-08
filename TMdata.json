@@ -9,6 +9,7 @@
       "start_date": {"year": "2006", "month": "12", "day": "29"},
       "end_date": {"year": "2007", "month": "12", "day": "29"},
       "text": {"headline": "Fate/Zero", "text": "虚淵玄"},
+      "background": {"color": "#c0392b"},
       "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "Zero", "type": "series_bar"}
     },
     {
