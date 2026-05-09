@@ -286,7 +286,7 @@ function getDetailGroupName(parent) {
 }
 
 // あるイベントが、検索条件やチェックボックスに合格しているか判定します
-function matchesFilters(event, searchText, selectedSeries, selectedMedia) {
+function matchesFilters(event, searchText, selectedSeries, selectedMedia, selectedProjects) {
     const headline = event.text && event.text.headline ? event.text.headline.toLowerCase() : "";
     const body = event.text && event.text.text ? event.text.text.toLowerCase() : "";
     
@@ -486,3 +486,4 @@ document.getElementById('increase-height').addEventListener('click', increaseTim
 document.getElementById('decrease-height').addEventListener('click', decreaseTimelineHeight);
 // 「詳細を閉じる」ボタンを押したらリセット！
 document.getElementById('collapse-details').addEventListener('click', collapseDetails);
+
