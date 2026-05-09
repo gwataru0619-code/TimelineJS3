@@ -19,7 +19,7 @@ const timelineOptions = {
 };
 
 // 手動で縦幅を伸ばすための基準値と増分です
-const baseTimelineHeight = 1100;
+const baseTimelineHeight = 2300;
 const baseTimenavHeightMin = 560;
 const heightIncreaseStep = 300;
 const timenavIncreaseStep = 180;
