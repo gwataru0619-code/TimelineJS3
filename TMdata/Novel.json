@@ -380,8 +380,8 @@
     "id": "Novel_Fate_strangeFake",
     "unique_id": "Novel_Fate_strangeFake",
     "start_date": {"year": "2015", "month": "1", "day": "10"},
-    "end_date": {"year": "2026", "month": "5", "day": "7"},
-    "text": {"headline": "Fate/strange Fake [Ongoing]", "text": "成田良悟"},
+    "end_date": "ongoing",
+    "text": {"headline": "Fate/strange Fake", "text": "成田良悟"},
     "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "strangeFake", "type": "series_bar"}
   },
   {
