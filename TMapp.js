@@ -186,8 +186,9 @@ function makeEventId(event, index) {
 
 // 画面にある「絞り込みチェックボックス」の中身を自動で作り上げます
 function buildFilterControls() {
-    buildCheckboxGroup('series-filters', 'filter-series', uniqueValues('series'));
     buildCheckboxGroup('media-filters', 'filter-media', uniqueValues('media'));
+    buildCheckboxGroup('series-filters', 'filter-series', uniqueValues('series'));
+    buildCheckboxGroup('project-filters', 'filter-project', uniqueValues('project_id'));
 }
 
 // 指定された場所（コンテナ）に、チェックボックスの塊を作成します
@@ -216,6 +217,7 @@ function uniqueValues(key) {
 // 英語のカテゴリ名を、画面表示用の日本語に翻訳します
 function displayFilterName(value) {
     const names = {
+        staynight: "Fate/stay nightシリーズ",
         Anime: "アニメ",
         Game: "ゲーム",
         Comic: "漫画",
@@ -242,12 +244,13 @@ function updateTimeline() {
     const searchText = document.getElementById('search-input').value.toLowerCase();
     const selectedSeries = Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value);
     const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
+    const selectedProjects = Array.from(document.querySelectorAll('.filter-project:checked')).map(el => el.value);
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
 
     // まずは「メインとなる項目（親）」を選び出します
     const parents = masterData.events.filter(ev => {
         const isSeriesBar = ev.custom_tags.type === 'series_bar';
-        return isSeriesBar && matchesFilters(ev, searchText, selectedSeries, selectedMedia);
+        return isSeriesBar && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects);
     });
 
     // 親→その親の詳細→次の親、の順に並べることで、詳細グループが親の直後に出やすくします
@@ -265,7 +268,7 @@ function updateTimeline() {
         const detailGroupName = getDetailGroupName(parent);
         const details = masterData.events
             .filter(child => child.parent_id === parent.unique_id)
-            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia))
+            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia, selectedProjects))
             .map(child => ({
                 ...child,
                 group: detailGroupName
@@ -290,6 +293,7 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia) {
     const matchesSearch = !searchText || headline.includes(searchText) || body.includes(searchText);
     const matchesSeries = selectedSeries.includes(event.custom_tags.series);
     const matchesMedia = selectedMedia.includes(event.custom_tags.media);
+    const matchesProject = selectedProjects.includes(event.custom_tags.project_id);
     
     return matchesSearch && matchesSeries && matchesMedia;
 }
