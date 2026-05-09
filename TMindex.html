@@ -39,6 +39,28 @@
       background: rgba(205, 18, 45, 0.08) !important;
       border-radius: 4px;
     }
+      /* --- 親バーがクリックされても巨大化しないように固定 --- */
+
+/* 1. アクティブ（選択中）になっても、バーの高さを36pxに強制固定 */
+#timeline-embed .tl-timenav-item-bar.tl-active {
+  height: 36px !important; 
+  /* TimelineJSが計算で入れる「top（位置）」のズレを抑制 */
+  margin-top: 0 !important; 
+}
+
+/* 2. バーの中身（テキストや背景色部分）も高さを固定 */
+#timeline-embed .tl-timemarker.tl-active .tl-timemarker-content-container {
+  height: 36px !important;
+  min-height: 36px !important;
+  padding: 0 8px !important; /* 上下の余計なパディングをリセット */
+  display: flex;
+  align-items: center; /* テキストを中央に */
+}
+
+/* 3. 巨大化した時に出る「時間軸の強調背景」を消す */
+#timeline-embed .tl-timemarker-active .tl-timemarker-timespan {
+  display: none !important;
+}
   </style>
 </head>
 <body>
