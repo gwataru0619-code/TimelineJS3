@@ -25,16 +25,23 @@ const timenavIncreaseStep = 180;
 
 // project_idごとの色設定です。必要に応じてここを書き換えれば色を固定できます
 const projectColors = {
+    staynight: "#ad1457",
+    hollowataraxia: "#ad1457",
     Zero: "#7b1fa2",
+    kaleidliner: "#7b1fa2",
     Apocrypha: "#c62828",
     Prototype: "#1565c0",
     "El-MelloiII": "#6d4c41",
     strangeFake: "#ef6c00",
+    GrandOrder: "#ef6c00",
     Requiem: "#00838f",
     LostEinherjar: "#558b2f",
+    SamuraiRemnant: "#558b2f",
     TheGardenofSinners: "#283593",
-    fsn_cluster: "#ad1457",
-    tsuki_cluster: "#0277bd",
+    Tsukihime: "#0277bd",
+    MELTYBLOOD: "#0277bd",
+    KOHAA: "#0277bd",
+    Ahnenerbe: "#0277bd",
     others: "#666666"
 };
 const fallbackMarkerColor = "#666666";
