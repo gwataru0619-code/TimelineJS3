@@ -285,7 +285,7 @@ function getDetailGroupName(parent) {
     return parent.unique_id;
 }
 
-// あるイベントが、検索条件やチェックボックスに合格しているか判定します
+// あるイベントが、検索条件やメディア/シリーズ/プロジェクトのチェック状態に合格しているか判定します
 function matchesFilters(event, searchText, selectedSeries, selectedMedia, selectedProjects) {
     const headline = event.text && event.text.headline ? event.text.headline.toLowerCase() : "";
     const body = event.text && event.text.text ? event.text.text.toLowerCase() : "";
@@ -295,7 +295,7 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia, select
     const matchesMedia = selectedMedia.includes(event.custom_tags.media);
     const matchesProject = selectedProjects.includes(event.custom_tags.project_id);
     
-    return matchesSearch && matchesSeries && matchesMedia;
+    return matchesSearch && matchesSeries && matchesMedia && matchesProject;
 }
 
 // 実際にHTMLの中に年表を書き込みます
