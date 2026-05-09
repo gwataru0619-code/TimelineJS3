@@ -6,12 +6,13 @@ const projectNames = {
     "tsuki_cluster": "真月譚 月姫 Project",
     "knk_cluster": "空の境界 Project"
 };
+// 上画面（スライド）の固定したい高さ（ピクセル）
+const FIXED_SLIDE_HEIGHT = 450;
 
 // 年表（TimelineJS）の見た目や動きを細かく決める設定値です
 const timelineOptions = {
     language: "ja",                   // 日本語表示
     initial_zoom: 2,                  // 最初のズーム倍率
-    timenav_height_percentage: 55,    // 下側の年表ナビの高さ（％）
     marker_height_min: 36,            // マーカーの最小の高さ
     marker_width_min: 140,            // マーカーの最小の幅
     marker_padding: 8                 // マーカー同士の隙間
@@ -317,10 +318,17 @@ function render(events, slideIdToRestore) {
     timeline.on('change', handleTimelineChange);
 }
 
-// 現在の手動高さを反映したTimelineJS設定を作ります
+//現在の縦幅から、上画面を450pxに保つための比率を逆算する
 function getTimelineOptions() {
+    // 全体の高さから450pxを引いた残りが「下画面」の占めるべき割合
+    let navPercentage = ((timelineHeight - FIXED_SLIDE_HEIGHT) / timelineHeight) * 100;
+
+    // 極端な数値にならないよう、20%〜85%の間に収める（安全策）
+    navPercentage = Math.min(Math.max(navPercentage, 20), 85);
+
     return {
         ...timelineOptions,
+        timenav_height_percentage: navPercentage,
         timenav_height_min: timenavHeightMin
     };
 }
@@ -340,6 +348,9 @@ function applyMarkerColors() {
     currentDisplayedEvents.forEach(event => {
         const marker = document.getElementById(`${event.unique_id}-marker`);
         if (!marker) return;
+
+        // 【重要】CSS側に現在の「最小高さ(36px)」を伝える
+        marker.style.setProperty("--tm-marker-fixed-height", `${timelineOptions.marker_height_min}px`);
 
         const color = getMarkerColor(event);
         marker.style.setProperty("--tm-marker-color", color);
