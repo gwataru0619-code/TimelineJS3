@@ -215,7 +215,7 @@ function displayFilterName(value) {
     const names = {
         Anime: "アニメ",
         Game: "ゲーム",
-        Manga: "漫画",
+        Comic: "漫画",
         Other: "その他",
         Tsukihime: "月姫"
     };
