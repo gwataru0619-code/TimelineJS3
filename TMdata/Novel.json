@@ -276,8 +276,8 @@
     "id": "Novel_Fate_El-MelloiII_adventures",
     "unique_id": "Novel_Fate_El-MelloiII_adventures",
     "start_date": {"year": "2020", "month": "12", "day": "25"},
-    "end_date": {"year": "2026", "month": "5", "day": "7"},
-    "text": {"headline": "ロード・エルメロイII世の冒険 [Ongoing]", "text": "三田誠"},
+    "end_date": "ongoing",
+    "text": {"headline": "ロード・エルメロイII世の冒険", "text": "三田誠"},
     "custom_tags": {"media": "Novel", "series": "Fate", "project_id": "El-MelloiII", "type": "series_bar"}
   },
   {
