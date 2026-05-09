@@ -15,7 +15,7 @@
 
     <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
     <script>
-        fetch('TMdata.json').then(r => r.json()).then(data => {
+        fetch('index.json').then(r => r.json()).then(data => {
             new Tabulator("#data-table", {
                 data: data.events,
                 layout: "fitColumns",
