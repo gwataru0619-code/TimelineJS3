@@ -92,6 +92,14 @@ async function loadTimelineData() {
 function normalizeTimelineData(data) {
     const usedIds = new Set();
 
+    // 今日の日付を取得して TimelineJS 形式に整える
+    const now = new Date();
+    const today = {
+        year: now.getFullYear().toString(),
+        month: (now.getMonth() + 1).toString(),
+        day: now.getDate().toString()
+    };
+
     data.events = data.events.map((event, index) => {
         const normalized = { ...event };
 
@@ -101,6 +109,11 @@ function normalizeTimelineData(data) {
             text: "",
             ...(normalized.text || {})
         };
+
+        // 終了日に "ongoing" が入っていたら今日の日付に差し替える
+        if (normalized.end_date === "ongoing") {
+            normalized.end_date = today;
+        }
 
         // 各イベントに「重複しない番号（ID）」を割り振ります
         if (!normalized.unique_id) {
