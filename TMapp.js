@@ -2,6 +2,7 @@
 
 // プロジェクトのID（短い名前）を、画面に表示するための正式名称に変換する辞書です
 const projectNames = {
+    "staynight": "Fate/stay night Project",
     "fsn_cluster": "Fate/stay night Project",
     "tsuki_cluster": "真月譚 月姫 Project",
     "knk_cluster": "空の境界 Project"
