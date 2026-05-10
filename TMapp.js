@@ -335,7 +335,7 @@ function getTimelineOptions() {
     let navPercentage = ((timelineHeight - FIXED_SLIDE_HEIGHT) / timelineHeight) * 100;
 
     // 極端な数値にならないよう、20%〜85%の間に収める（安全策）
-    navPercentage = Math.min(Math.max(navPercentage, 20), 85);
+    // navPercentage = Math.min(Math.max(navPercentage, 20), 85);
 
     return {
         ...timelineOptions,
