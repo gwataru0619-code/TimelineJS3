@@ -8,6 +8,7 @@
   "sources": [
     "TMdata/Novel.json",
     "TMdata/Game.json",
-    "TMdata/Comic.json"
+    "TMdata/Comic.json",
+    "TMdata/Anime.json"
   ]
 }
