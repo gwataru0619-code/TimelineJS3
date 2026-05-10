@@ -1,9 +1,376 @@
 [
-  {
-    "id": "game_fsn_original",
-    "unique_id": "game_fsn_original",
-    "start_date": {"year": "2004", "month": "1", "day": "30"},
-    "text": {"headline": "Fate/stay night (Game)", "text": "PC版発売。"},
-    "custom_tags": {"media": "Game", "series": "Fate", "project_id": "fsn_cluster", "type": "series_bar"}
-  }
+{
+      "id": "Game_Tsukihime_Tsukihime_C56",
+      "unique_id": "Game_Tsukihime_Tsukihime_C56",
+      "start_date": {"year": "1999", "month": "8", "day": "13"},
+      "text": {"headline": "月姫 無料告知フロッピー", "text": "C56"},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"},
+      "parent_id": "Game_Tsukihime_Tsukihime"
+    },
+    {
+      "id": "Game_Tsukihime_Tsukihime_C57",
+      "unique_id": "Game_Tsukihime_Tsukihime_C57",
+      "start_date": {"year": "1999", "month": "12", "day": "24"},
+      "text": {"headline": "月姫 体験版フロッピー", "text": "C57"},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"},
+      "parent_id": "Game_Tsukihime_Tsukihime"
+    },
+    {
+      "id": "Game_Tsukihime_Tsukihime_C58",
+      "unique_id": "Game_Tsukihime_Tsukihime_C58",
+      "start_date": {"year": "2000", "month": "8", "day": "11"},
+      "text": {"headline": "月姫～半月版～", "text": "C58"},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"},
+      "parent_id": "Game_Tsukihime_Tsukihime"
+    },
+    {
+      "id": "Game_Tsukihime_Tsukihime",
+      "unique_id": "Game_Tsukihime_Tsukihime",
+      "start_date": {"year": "2000", "month": "12", "day": "29"},
+      "text": {"headline": "月姫", "text": "C59"},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_Tsukihime_PLUS",
+      "unique_id": "Game_Tsukihime_Tsukihime_PLUS",
+      "start_date": {"year": "2001", "month": "1", "day": "21"},
+      "text": {"headline": "月姫PLUS-DISC", "text": "SC11"},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_Tsukihime_Twilight",
+      "unique_id": "Game_Tsukihime_Tsukihime_Twilight",
+      "start_date": {"year": "2001", "month": "8", "day": "10"},
+      "text": {"headline": "歌月十夜", "text": "C60"},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_Tsukihime_BOX",
+      "unique_id": "Game_Tsukihime_Tsukihime_BOX",
+      "start_date": {"year": "2003", "month": "4", "day": "29"},
+      "text": {"headline": "月箱", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_Tsukihime_Re1",
+      "unique_id": "Game_Tsukihime_Tsukihime_Re1",
+      "start_date": {"year": "2021", "month": "8", "day": "26"},
+      "text": {"headline": "月姫 -A piece of blue glass moon-", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "Tsukihime", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD",
+      "start_date": {"year": "2002", "month": "12", "day": "28"},
+      "text": {"headline": "MELTY BLOOD", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_Re",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_Re",
+      "start_date": {"year": "2004", "month": "5", "day": "30"},
+      "text": {"headline": "MELTY BLOOD Re・ACT", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_ReFinal",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_ReFinal",
+      "start_date": {"year": "2005", "month": "7", "day": "3"},
+      "text": {"headline": "MELTY BLOOD Re・ACT Final Tuned", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_AC",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_AC",
+      "start_date": {"year": "2005", "month": "3", "day": "25"},
+      "text": {"headline": "MELTY BLOOD Act Cadenza", "text": "ゲーセン"},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_AC_PS2",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_AC_PS2",
+      "start_date": {"year": "2006", "month": "8", "day": "10"},
+      "text": {"headline": "MELTY BLOOD Act Cadenza(PS2移植版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_ACB_PC",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_ACB_PC",
+      "start_date": {"year": "2007", "month": "7", "day": "27"},
+      "text": {"headline": "MELTY BLOOD Act Cadenza Ver.B(PC移植版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_AA",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_AA",
+      "start_date": {"year": "2008", "month": "9", "day": "19"},
+      "text": {"headline": "MELTY BLOOD Actress Again", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_AA_PS2",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_AA_PS2",
+      "start_date": {"year": "2009", "month": "8", "day": "20"},
+      "text": {"headline": "MELTY BLOOD Actress Again(PS2移植版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_AACC",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_AACC",
+      "start_date": {"year": "2010", "month": "7", "day": "29"},
+      "text": {"headline": "MELTY BLOOD Actress Again Current Code", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_AACC_PC",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_AACC_PC",
+      "start_date": {"year": "2011", "month": "12", "day": "31"},
+      "text": {"headline": "MELTY BLOOD Actress Again Current Code(PC移植版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Tsukihime_MELTYBLOOD_TYPELUMINA",
+      "unique_id": "Game_Tsukihime_MELTYBLOOD_TYPELUMINA",
+      "start_date": {"year": "2021", "month": "9", "day": "30"},
+      "text": {"headline": "MELTY BLOOD: TYPE LUMINA", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_staynight",
+      "unique_id": "Game_Fate_staynight",
+      "start_date": {"year": "2004", "month": "1", "day": "30"},
+      "text": {"headline": "Fate/stay night (CD-ROM版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_staynight_DVD",
+      "unique_id": "Game_Fate_staynight_DVD",
+      "start_date": {"year": "2006", "month": "3", "day": "29"},
+      "text": {"headline": "Fate/stay night (DVD-ROM版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"},
+      "parent_id": "Game_Fate_staynight"
+    },
+    {
+      "id": "Game_Fate_staynight_HAset",
+      "unique_id": "Game_Fate_staynight_HAset",
+      "start_date": {"year": "2014", "month": "1", "day": "30"},
+      "text": {"headline": "Fate/stay night＋hollow ataraxia セット", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"},
+      "parent_id": "Game_Fate_staynight"
+    },
+    {
+      "id": "Game_Fate_staynight_HAsetRe",
+      "unique_id": "Game_Fate_staynight_HAsetRe",
+      "start_date": {"year": "2019", "month": "6", "day": "28"},
+      "text": {"headline": "Fate/stay night＋hollow ataraxia 復刻版", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"},
+      "parent_id": "Game_Fate_staynight"
+    },
+    {
+      "id": "Game_Fate_hollowataraxia",
+      "unique_id": "Game_Fate_hollowataraxia",
+      "start_date": {"year": "2005", "month": "10", "day": "28"},
+      "text": {"headline": "Fate/hollow ataraxia", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "hollowataraxia", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_hollowataraxia_PSvita",
+      "unique_id": "Game_Fate_hollowataraxia_PSvita",
+      "start_date": {"year": "2014", "month": "11", "day": "27"},
+      "text": {"headline": "Fate/hollow ataraxia (PSVita版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "hollowataraxia", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_hollowataraxia_REMASTERED",
+      "unique_id": "Game_Fate_hollowataraxia_REMASTERED",
+      "start_date": {"year": "2025", "month": "8", "day": "7"},
+      "text": {"headline": "Fate/hollow ataraxia REMASTERED", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "hollowataraxia", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_hanahuda",
+      "unique_id": "Game_Fate_hanahuda",
+      "start_date": {"year": "2005", "month": "10", "day": "28"},
+      "text": {"headline": "トラぶる花札道中記", "text": "Fate/hollow ataraxia作中ミニゲーム"},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"},
+      "parent_id": "Game_Fate_hollowataraxia"
+    },
+    {
+      "id": "Game_Fate_hanahuda_EX",
+      "unique_id": "Game_Fate_hanahuda_EX",
+      "start_date": {"year": "2006", "month": "8", "day": "11"},
+      "text": {"headline": "トラぶる花札道中記EX", "text": "C70パッチ配布"},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"},
+      "parent_id": "Game_Fate_hollowataraxia"
+    },
+    {
+      "id": "Game_Fate_hanahuda_tobidase",
+      "unique_id": "Game_Fate_hanahuda_tobidase",
+      "start_date": {"year": "2007", "month": "4", "day": "29"},
+      "text": {"headline": "とびだせ！トラぶる花札道中記", "text": "[Réalta Nua]初回限定版特典"},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"},
+      "parent_id": "Game_Fate_staynight_RéaltaNua_PS2"
+    },
+    {
+      "id": "Game_Fate_hanahuda_tobitate",
+      "unique_id": "Game_Fate_hanahuda_tobitate",
+      "start_date": {"year": "2012", "month": "11", "day": "29"},
+      "text": {"headline": "とびたて！超時空トラぶる花札大作戦", "text": "PSVita版[Réalta Nua]購入特典"},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"},
+      "parent_id": "Game_Fate_staynight_RéaltaNua_PSVita"
+    },
+    {
+      "id": "Game_Fate_staynight_RéaltaNua_PS2",
+      "unique_id": "Game_Fate_staynight_RéaltaNua_PS2",
+      "start_date": {"year": "2007", "month": "4", "day": "19"},
+      "text": {"headline": "Fate/stay night [Réalta Nua] (PS2版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_staynight_RéaltaNua_PSVita",
+      "unique_id": "Game_Fate_staynight_RéaltaNua_PSVita",
+      "start_date": {"year": "2012", "month": "11", "day": "29"},
+      "text": {"headline": "Fate/stay night [Réalta Nua] (PSVita版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_staynight_REMASTERED",
+      "unique_id": "Game_Fate_staynight_REMASTERED",
+      "start_date": {"year": "2024", "month": "8", "day": "8"},
+      "text": {"headline": "Fate/stay night REMASTERED", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_Colosseum",
+      "unique_id": "Game_Fate_Colosseum",
+      "start_date": {"year": "2007", "month": "9", "day": "13"},
+      "text": {"headline": "フェイト/タイガーころしあむ", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_Colosseum_Upper",
+      "unique_id": "Game_Fate_Colosseum_Upper",
+      "start_date": {"year": "2008", "month": "8", "day": "28"},
+      "text": {"headline": "フェイト/タイガーころしあむ アッパー", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_unlimitedcodes",
+      "unique_id": "Game_Fate_unlimitedcodes",
+      "start_date": {"year": "2008", "month": "6", "day": "11"},
+      "text": {"headline": "Fate/unlimited codes (アーケード版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_unlimitedcodes_PS2",
+      "unique_id": "Game_Fate_unlimitedcodes_PS2",
+      "start_date": {"year": "2008", "month": "12", "day": "18"},
+      "text": {"headline": "Fate/unlimited codes (PS2版)", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_unlimitedcodes_PSP",
+      "unique_id": "Game_Fate_unlimitedcodes_PSP",
+      "start_date": {"year": "2009", "month": "6", "day": "18"},
+      "text": {"headline": "Fate/unlimited codes PORTABLE", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_EXTRA",
+      "unique_id": "Game_Fate_EXTRA",
+      "start_date": {"year": "2010", "month": "7", "day": "22"},
+      "text": {"headline": "Fate/EXTRA", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "EXTRA", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_EXTRA_CCC",
+      "unique_id": "Game_Fate_EXTRA_CCC",
+      "start_date": {"year": "2013", "month": "3", "day": "28"},
+      "text": {"headline": "Fate/EXTRA CCC", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "EXTRA", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_kaleidliner",
+      "unique_id": "Game_Fate_kaleidliner",
+      "start_date": {"year": "2014", "month": "7", "day": "31"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "kaleidliner", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_GrandOrder",
+      "unique_id": "Game_Fate_GrandOrder",
+      "start_date": {"year": "2015", "month": "7", "day": "30"},
+      "text": {"headline": "Fate/Grand Order", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_EXTRA_EXTELLA",
+      "unique_id": "Game_Fate_EXTRA_EXTELLA",
+      "start_date": {"year": "2016", "month": "11", "day": "10"},
+      "text": {"headline": "Fate/EXTELLA", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "EXTRA", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_GrandOrder_VR",
+      "unique_id": "Game_Fate_GrandOrder_VR",
+      "start_date": {"year": "2017", "month": "12", "day": "16"},
+      "text": {"headline": "Fate/Grand Order VR feat.マシュ・キリエライト", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_EXTRA_EXTELLAKINK",
+      "unique_id": "Game_Fate_EXTRA_EXTELLAKINK",
+      "start_date": {"year": "2018", "month": "6", "day": "7"},
+      "text": {"headline": "Fate/EXTELLA LINK", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "EXTRA", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_GrandOrder_Arcade",
+      "unique_id": "Game_Fate_GrandOrder_Arcade",
+      "start_date": {"year": "2018", "month": "7", "day": "26"},
+      "text": {"headline": "Fate/Grand Order Arcade", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_capsule",
+      "unique_id": "Game_Fate_capsule",
+      "start_date": {"year": "2019", "month": "12", "day": "20"},
+      "text": {"headline": "カプセルさーばんと", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "others", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_GrandOrder_Waltz",
+      "unique_id": "Game_Fate_GrandOrder_Waltz",
+      "start_date": {"year": "2020", "month": "8", "day": "11"},
+      "text": {"headline": "Fate/Grand Order Waltz in the MOONLIGHT/LOSTROOM", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_staynight_gohan",
+      "unique_id": "Game_Fate_staynight_gohan",
+      "start_date": {"year": "2021", "month": "4", "day": "28"},
+      "text": {"headline": "毎日♪ 衛宮さんちの今日のごはん", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_Fate_SamuraiRemnant",
+      "unique_id": "Game_Fate_SamuraiRemnant",
+      "start_date": {"year": "2023", "month": "9", "day": "28"},
+      "text": {"headline": "Fate/Samurai Remnant", "text": ""},
+      "custom_tags": {"media": "Game", "series": "Fate", "project_id": "SamuraiRemnant", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_others_mahoyo",
+      "unique_id": "Game_others_mahoyo",
+      "start_date": {"year": "2012", "month": "4", "day": "12"},
+      "text": {"headline": "魔法使いの夜", "text": ""},
+      "custom_tags": {"media": "Game", "series": "others", "project_id": "mahoyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Game_others_428",
+      "unique_id": "Game_others_428",
+      "start_date": {"year": "2008", "month": "12", "day": "4"},
+      "text": {"headline": "428 〜封鎖された渋谷で〜", "text": ""},
+      "custom_tags": {"media": "Game", "series": "others", "project_id": "others", "type": "volume_dot"}
+    }
 ]
