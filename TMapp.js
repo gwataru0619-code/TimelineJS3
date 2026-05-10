@@ -221,6 +221,7 @@ function displayFilterName(value) {
         Anime: "アニメ",
         Game: "ゲーム",
         Comic: "漫画",
+        Novel: "小説",
         Other: "その他",
         Tsukihime: "月姫"
     };
