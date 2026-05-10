@@ -522,7 +522,7 @@
     "start_date": {"year": "2007", "month": "11", "day": "15"},
     "end_date": {"year": "2008", "month": "1", "day": "16"},
     "text": {"headline": "空の境界 講談社文庫版", "text": "奈須きのこ"},
-    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "series_bar"},
+    "custom_tags": {"media": "Novel", "series": "others", "project_id": "TheGardenofSinners", "type": "volume_dot"},
     "parent_id": "Novel_others_TheGardenofSinners"
   },
   {
