@@ -22,6 +22,11 @@ const timelineOptions = {
 // 手動で縦幅を伸ばすための基準値と増分です
 const baseTimelineHeight = 2300;
 const baseTimenavHeightMin = 560;
+
+// これ以上は小さくならない「下限値」
+const MIN_TIMELINE_HEIGHT = 800;     // 全体の最小（例: 800px）
+const MIN_TIMENAV_HEIGHT = 300;      // 下側年表の最小（例: 300px）
+
 const heightIncreaseStep = 300;
 const timenavIncreaseStep = 180;
 
@@ -463,8 +468,8 @@ function increaseTimelineHeight() {
 
 // 広げた分を同じ段階で戻します。基準値より小さくはしません
 function decreaseTimelineHeight() {
-    timelineHeight = Math.max(baseTimelineHeight, timelineHeight - heightIncreaseStep);
-    timenavHeightMin = Math.max(baseTimenavHeightMin, timenavHeightMin - timenavIncreaseStep);
+    timelineHeight = Math.max(MIN_TIMELINE_HEIGHT, timelineHeight - heightIncreaseStep);
+    timenavHeightMin = Math.max(MIN_TIMENAV_HEIGHT, timenavHeightMin - timenavIncreaseStep);
 
     rerenderTimelineAtCurrentSlide();
 }
