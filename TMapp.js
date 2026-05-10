@@ -169,19 +169,19 @@ function normalizeTimelineData(data) {
     });
 
     // 「親」になっている項目に、特別なマーク（series_bar）をつけます
-    const referencedParentIds = new Set(data.events.map(event => event.parent_id).filter(Boolean));
-    data.events = data.events.map(event => {
-        if (!event.parent_id || referencedParentIds.has(event.unique_id)) {
-            return {
-                ...event,
-                custom_tags: {
-                    ...event.custom_tags,
-                    type: "series_bar"
-                }
-            };
-        }
-        return event;
-    });
+    //const referencedParentIds = new Set(data.events.map(event => event.parent_id).filter(Boolean));
+    //data.events = data.events.map(event => {
+      //  if (!event.parent_id || referencedParentIds.has(event.unique_id)) {
+        //    return {
+          //      ...event,
+            //    custom_tags: {
+              //      ...event.custom_tags,
+                //    type: "series_bar"
+               // }
+            //};
+        //}
+       // return event;
+    //});
 
     return data;
 }
