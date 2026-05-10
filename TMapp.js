@@ -30,6 +30,15 @@ const MIN_TIMENAV_HEIGHT = 300;      // 下側年表の最小（例: 300px）
 const heightIncreaseStep = 300;
 const timenavIncreaseStep = 180;
 
+// 【追加】メディアごとの枠線の色設定です
+const mediaBorderColors = {
+    "Game": "#FFD700",  // 金
+    "Anime": "#C0C0C0", // 銀
+    "Novel": "#FFFFFF", // 白
+    "Comic": "#E0E0E0", // 漫画（必要なら）
+    "other": "#666666"  // その他
+};
+
 // project_idごとの色設定です。必要に応じてここを書き換えれば色を固定できます
 const projectColors = {
     staynight: "#ad1457",
@@ -371,7 +380,7 @@ function applyMarkerColors() {
         if (event.parent_id) {
             applyChildMarkerColor(marker, color);
         } else {
-            applyParentMarkerColor(marker, color);
+            applyParentMarkerColor(marker, color, event);
         }
     });
 }
@@ -398,8 +407,14 @@ function getReadableTextColor(color) {
     return luminance > 150 ? "#222222" : "#ffffff";
 }
 
-function applyParentMarkerColor(marker, color) {
+function applyParentMarkerColor(marker, color, event) {
     const textColor = getReadableTextColor(color);
+
+    // --- 1. 媒体（メディア）に基づいた枠線の色を決定 ---
+    const mediaType = event.custom_tags.media;
+    // mediaBorderColors辞書から取得し、なければ背景色(color)をそのまま使う
+    const borderColor = mediaBorderColors[mediaType] || color;
+    
     const coloredParts = [
         marker.querySelector(".tl-timemarker-content-container"),
         marker.querySelector(".tl-timemarker-timespan"),
@@ -409,7 +424,9 @@ function applyParentMarkerColor(marker, color) {
     coloredParts.forEach(part => {
         if (!part) return;
         part.style.backgroundColor = color;
-        part.style.borderColor = color;
+        part.style.borderColor = borderColor;
+        part.style.borderWidth = "3px";           // 枠を目立たせるために少し太く
+        part.style.borderStyle = "solid";
         part.style.color = textColor;
     });
 
