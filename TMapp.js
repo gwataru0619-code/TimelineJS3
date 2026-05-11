@@ -250,8 +250,8 @@ function updateTimeline() {
 
     // まずは「メインとなる項目（親）」を選び出します
     const parents = masterData.events.filter(ev => {
-        const isSeriesBar = ev.custom_tags.type === 'series_bar';
-        return isSeriesBar && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects);
+        const isTopLevel = !ev.parent_id; // 親IDがない ＝ 最初に表示すべきデータ
+        return isTopLevel && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects);
     });
 
     // 親→その親の詳細→次の親、の順に並べることで、詳細グループが親の直後に出やすくします
