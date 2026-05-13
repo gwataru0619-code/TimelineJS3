@@ -247,7 +247,7 @@ function updateTimeline() {
     const selectedSeries = Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value);
     const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
     const selectedProjects = Array.from(document.querySelectorAll('.filter-project:checked')).map(el => el.value);
-    const selectedfgo_event1 = Array.form(document.querySelectorAll('.filter-fgo_event1:checked')).map(el => el.value);
+    const selectedfgo_event1 = Array.from(document.querySelectorAll('.filter-fgo_event1:checked')).map(el => el.value);
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
 
     // まずは「メインとなる項目（親）」を選び出します
@@ -271,7 +271,7 @@ function updateTimeline() {
         const detailGroupName = getDetailGroupName(parent);
         const details = masterData.events
             .filter(child => child.parent_id === parent.unique_id)
-            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia, selectedProjects))
+            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1))
             .map(child => ({
                 ...child,
                 group: detailGroupName
