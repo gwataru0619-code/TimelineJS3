@@ -189,6 +189,7 @@ function buildFilterControls() {
     buildCheckboxGroup('media-filters', 'filter-media', uniqueValues('media'));
     buildCheckboxGroup('series-filters', 'filter-series', uniqueValues('series'));
     buildCheckboxGroup('project-filters', 'filter-project', uniqueValues('project_id'));
+    buildCheckboxGroup('fgo_event1-filters', 'filter-fgo_event1', uniqueValues('fgo_event1'));
 }
 
 // 指定された場所（コンテナ）に、チェックボックスの塊を作成します
@@ -246,12 +247,13 @@ function updateTimeline() {
     const selectedSeries = Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value);
     const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
     const selectedProjects = Array.from(document.querySelectorAll('.filter-project:checked')).map(el => el.value);
+    const selectedfgo_event1 = Array.form(document.querySelectorAll('.filter-fgo_event1:checked')).map(el => el.value);
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
 
     // まずは「メインとなる項目（親）」を選び出します
     const parents = masterData.events.filter(ev => {
         const isTopLevel = !ev.parent_id; // 親IDがない ＝ 最初に表示すべきデータ
-        return isTopLevel && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects);
+        return isTopLevel && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1);
     });
 
     // 親→その親の詳細→次の親、の順に並べることで、詳細グループが親の直後に出やすくします
@@ -287,7 +289,7 @@ function getDetailGroupName(parent) {
 }
 
 // あるイベントが、検索条件やメディア/シリーズ/プロジェクトのチェック状態に合格しているか判定します
-function matchesFilters(event, searchText, selectedSeries, selectedMedia, selectedProjects) {
+function matchesFilters(event, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1) {
     const headline = event.text && event.text.headline ? event.text.headline.toLowerCase() : "";
     const body = event.text && event.text.text ? event.text.text.toLowerCase() : "";
     
@@ -295,8 +297,9 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia, select
     const matchesSeries = selectedSeries.includes(event.custom_tags.series);
     const matchesMedia = selectedMedia.includes(event.custom_tags.media);
     const matchesProject = selectedProjects.includes(event.custom_tags.project_id);
+    const matchesfgo_event1 = selectedfgo_event1.includes(event.custom_tags.fgo_event1);
     
-    return matchesSearch && matchesSeries && matchesMedia && matchesProject;
+    return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesfgo_event1;
 }
 
 // 実際にHTMLの中に年表を書き込みます
