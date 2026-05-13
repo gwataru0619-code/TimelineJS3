@@ -297,8 +297,9 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia, select
     const matchesSeries = selectedSeries.includes(event.custom_tags.series);
     const matchesMedia = selectedMedia.includes(event.custom_tags.media);
     const matchesProject = selectedProjects.includes(event.custom_tags.project_id);
+    
     const eventTag = event.custom_tags.fgo_event1;
-    const matchesfgo_event1 = selectedfgo_event1.includes(event.custom_tags.fgo_event1);
+    const matchesfgo_event1 = !eventTag || selectedfgo_event1.includes(eventTag);
     
     return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesfgo_event1;
 }
