@@ -1,0 +1,56 @@
+[
+   {
+      "id": "FGO_event_2015_1",
+      "unique_id": "FGO_event_2015_1",
+      "start_date": {"year": "2015", "month": "8", "day": "19"},
+      "text": {"headline": "激闘！クラス別サーヴァント戦", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "9", "day": "9"},
+      "fgo_event1": "others"
+    },
+    {
+      "id": "FGO_event_2015_2",
+      "unique_id": "FGO_event_2015_2",
+      "start_date": {"year": "2015", "month": "9", "day": "16"},
+      "text": {"headline": "ネロ祭 〜勝ち抜け熱闘コロシアム〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "9", "day": "25"},
+      "fgo_event1": "box"
+    },
+    {
+      "id": "FGO_event_2015_3",
+      "unique_id": "FGO_event_2015_3",
+      "start_date": {"year": "2015", "month": "9", "day": "25"},
+      "text": {"headline": "月の女神はお団子の夢を見るか?", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "10", "day": "2"},
+      "fgo_event1": "others"
+    },
+    {
+      "id": "FGO_event_2015_4",
+      "unique_id": "FGO_event_2015_4",
+      "start_date": {"year": "2015", "month": "10", "day": "21"},
+      "text": {"headline": "歌うカボチャ城の冒険 〜マッドパーティー2015〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "11", "day": "5"},
+      "fgo_event1": "halloween"
+    },
+    {
+      "id": "FGO_event_2015_5",
+      "unique_id": "FGO_event_2015_5",
+      "start_date": {"year": "2015", "month": "11", "day": "25"},
+      "text": {"headline": "ぐだぐだ本能寺", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "12", "day": "11"},
+      "fgo_event1": "gudaguda"
+    },
+    {
+      "id": "FGO_event_2015_6",
+      "unique_id": "FGO_event_2015_6",
+      "start_date": {"year": "2015", "month": "12", "day": "16"},
+      "text": {"headline": "ほぼ週間 サンタオルタさん", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "12", "day": "25"},
+      "fgo_event1": "Xmas"
+    }
+]
