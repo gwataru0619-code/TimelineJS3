@@ -1,0 +1,352 @@
+[
+    {
+      "id": "FGO_main_1",
+      "unique_id": "FGO_main_1",
+      "start_date": {"year": "2015", "month": "7", "day": "30"},
+      "text": {"headline": "特異点F 炎上汚染都市 冬木「序章」", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_2",
+      "unique_id": "FGO_main_2",
+      "start_date": {"year": "2015", "month": "7", "day": "30"},
+      "text": {"headline": "第一特異点 邪竜百年戦争 オルレアン「救国の聖処女」", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_3",
+      "unique_id": "FGO_main_3",
+      "start_date": {"year": "2015", "month": "7", "day": "30"},
+      "text": {"headline": "第二特異点 永続狂気帝国 セプテム「薔薇の皇帝」", "text": "桜井光"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_4",
+      "unique_id": "FGO_main_4",
+      "start_date": {"year": "2015", "month": "11", "day": "5"},
+      "text": {"headline": "第三特異点 封鎖終局四海 オケアノス「嵐の航海者」", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_5",
+      "unique_id": "FGO_main_5",
+      "start_date": {"year": "2015", "month": "12", "day": "28"},
+      "text": {"headline": "第四特異点 死界魔霧都市（ミストシティ） ロンドン「ロンディニウムの騎士」", "text": "桜井光"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_6",
+      "unique_id": "FGO_main_6",
+      "start_date": {"year": "2016", "month": "3", "day": "30"},
+      "text": {"headline": "第五特異点 北米神話大戦 イ・プルーリバス・ウナム「鋼鉄の白衣」", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_7",
+      "unique_id": "FGO_main_7",
+      "start_date": {"year": "2016", "month": "7", "day": "25"},
+      "text": {"headline": "第六特異点 神聖円卓領域 キャメロット「輝けるアガートラム」", "text": "桜井光　奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_8",
+      "unique_id": "FGO_main_8",
+      "start_date": {"year": "2016", "month": "12", "day": "7"},
+      "text": {"headline": "第七特異点 絶対魔獣戦線 バビロニア「天の鎖」", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_9",
+      "unique_id": "FGO_main_9",
+      "start_date": {"year": "2016", "month": "12", "day": "22"},
+      "text": {"headline": "終局特異点 冠位時間神殿 ソロモン「極天の流星雨」", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_10",
+      "unique_id": "FGO_main_10",
+      "start_date": {"year": "2017", "month": "2", "day": "24"},
+      "text": {"headline": "亜種特異点I 悪性隔絶魔境 新宿「新宿幻霊事件」", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_11",
+      "unique_id": "FGO_main_11",
+      "start_date": {"year": "2017", "month": "6", "day": "29"},
+      "text": {"headline": "亜種特異点II 伝承地底世界 アガルタ「アガルタの女」", "text": "水瀬葉月"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_12",
+      "unique_id": "FGO_main_12",
+      "start_date": {"year": "2017", "month": "10", "day": "14"},
+      "text": {"headline": "亜種特異点III 屍山血河舞台 下総国「英霊剣豪七番勝負」", "text": "桜井光"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_13",
+      "unique_id": "FGO_main_13",
+      "start_date": {"year": "2017", "month": "11", "day": "29"},
+      "text": {"headline": "亜種特異点IV 禁忌降臨庭園 セイレム「異端なるセイレム」", "text": "星空めてお"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_14",
+      "unique_id": "FGO_main_14",
+      "start_date": {"year": "2017", "month": "12", "day": "26"},
+      "text": {"headline": "プロローグ「序/2017年 12月26日」", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_15",
+      "unique_id": "FGO_main_15",
+      "start_date": {"year": "2017", "month": "12", "day": "31"},
+      "text": {"headline": "プロローグ「序/2017年 12月31日」", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_16",
+      "unique_id": "FGO_main_16",
+      "start_date": {"year": "2018", "month": "4", "day": "4"},
+      "text": {"headline": "Lostbelt No.1 永久凍土帝国 アナスタシア「獣国の皇女」", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_17",
+      "unique_id": "FGO_main_17",
+      "start_date": {"year": "2018", "month": "7", "day": "18"},
+      "text": {"headline": "Lostbelt No.2 無間氷焔世紀 ゲッテルデメルング「消えぬ炎の快男児」", "text": "桜井光"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_18",
+      "unique_id": "FGO_main_18",
+      "start_date": {"year": "2018", "month": "11", "day": "27"},
+      "text": {"headline": "Lostbelt No.3 人智統合真国 シン「紅の月下美人」", "text": "虚淵玄"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_19",
+      "unique_id": "FGO_main_19",
+      "start_date": {"year": "2019", "month": "6", "day": "15"},
+      "text": {"headline": "Lostbelt No.4 創世滅亡輪迴 ユガ・クシェートラ「黒き最後の神」", "text": "水瀬葉月"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_20",
+      "unique_id": "FGO_main_20",
+      "start_date": {"year": "2019", "month": "12", "day": "18"},
+      "text": {"headline": "Lostbelt No.5 神代巨神海洋 アトランティス「神を撃ち落とす日」", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_21",
+      "unique_id": "FGO_main_21",
+      "start_date": {"year": "2020", "month": "4", "day": "9"},
+      "text": {"headline": "Lostbelt No.5 星間都市山脈 オリュンポス「神を撃ち落とす日」", "text": "桜井光　奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_22",
+      "unique_id": "FGO_main_22",
+      "start_date": {"year": "2020", "month": "12", "day": "4"},
+      "text": {"headline": "第5.5章 地獄界曼荼羅 平安京「轟雷一閃」", "text": "桜井光"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_23",
+      "unique_id": "FGO_main_23",
+      "start_date": {"year": "2021", "month": "6", "day": "11"},
+      "text": {"headline": "Lostbelt No.6 妖精円卓領域 アヴァロン・ル・フェ「星の生まれる刻」 前編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_24",
+      "unique_id": "FGO_main_24",
+      "start_date": {"year": "2021", "month": "7", "day": "14"},
+      "text": {"headline": "Lostbelt No.6 妖精円卓領域 アヴァロン・ル・フェ「星の生まれる刻」 後編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_25",
+      "unique_id": "FGO_main_25",
+      "start_date": {"year": "2021", "month": "8", "day": "4"},
+      "text": {"headline": "Lostbelt No.6 妖精円卓領域 アヴァロン・ル・フェ「星の生まれる刻」 崩壊編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_26",
+      "unique_id": "FGO_main_26",
+      "start_date": {"year": "2022", "month": "6", "day": "1"},
+      "text": {"headline": "第6.5章 死想顕現界域 トラオム「或る幻想の生と死」", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_27",
+      "unique_id": "FGO_main_27",
+      "start_date": {"year": "2022", "month": "12", "day": "25"},
+      "text": {"headline": "Lostbelt No.7 黄金樹海紀行 ナウイ・ミクトラン「惑星を統べるもの」 前編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_28",
+      "unique_id": "FGO_main_28",
+      "start_date": {"year": "2023", "month": "1", "day": "31"},
+      "text": {"headline": "Lostbelt No.7 黄金樹海紀行 ナウイ・ミクトラン「惑星を統べるもの」 後編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_29",
+      "unique_id": "FGO_main_29",
+      "start_date": {"year": "2023", "month": "2", "day": "10"},
+      "text": {"headline": "奏章プロローグ", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_30",
+      "unique_id": "FGO_main_30",
+      "start_date": {"year": "2023", "month": "6", "day": "18"},
+      "text": {"headline": "奏章I 虚数羅針内界 ペーパームーン", "text": "水瀬葉月"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_31",
+      "unique_id": "FGO_main_31",
+      "start_date": {"year": "2023", "month": "9", "day": "10"},
+      "text": {"headline": "オルガマリークエスト_1", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_32",
+      "unique_id": "FGO_main_32",
+      "start_date": {"year": "2024", "month": "3", "day": "20"},
+      "text": {"headline": "奏章II 不可逆廃棄孔 イド", "text": "桜井光"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_33",
+      "unique_id": "FGO_main_33",
+      "start_date": {"year": "2024", "month": "4", "day": "12"},
+      "text": {"headline": "オルガマリークエスト_2", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_34",
+      "unique_id": "FGO_main_34",
+      "start_date": {"year": "2024", "month": "8", "day": "28"},
+      "text": {"headline": "奏章III 新霊長後継戦 アーキタイプ・インセプション 前編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_35",
+      "unique_id": "FGO_main_35",
+      "start_date": {"year": "2024", "month": "9", "day": "11"},
+      "text": {"headline": "奏章III 新霊長後継戦 アーキタイプ・インセプション 中編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_36",
+      "unique_id": "FGO_main_36",
+      "start_date": {"year": "2024", "month": "9", "day": "20"},
+      "text": {"headline": "奏章III 新霊長後継戦 アーキタイプ・インセプション 後編", "text": "奈須きのこ"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_37",
+      "unique_id": "FGO_main_37",
+      "start_date": {"year": "2025", "month": "2", "day": "28"},
+      "text": {"headline": "オルガマリークエスト_3", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_38",
+      "unique_id": "FGO_main_38",
+      "start_date": {"year": "2025", "month": "4", "day": "30"},
+      "text": {"headline": "奏章IV 人類裁決法廷 トリニティ・メタトロニオス", "text": "東出祐一郎"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_39",
+      "unique_id": "FGO_main_39",
+      "start_date": {"year": "2025", "month": "7", "day": "25"},
+      "text": {"headline": "オルガマリークエスト_4", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_40",
+      "unique_id": "FGO_main_40",
+      "start_date": {"year": "2025", "month": "5", "day": "21"},
+      "text": {"headline": "冠位戴冠戦 剣 冠位英霊 新免武蔵守藤原玄信", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_41",
+      "unique_id": "FGO_main_41",
+      "start_date": {"year": "2025", "month": "6", "day": "20"},
+      "text": {"headline": "冠位戴冠戦 狂 冠位英霊 ヘラクレス・イーコール", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_42",
+      "unique_id": "FGO_main_42",
+      "start_date": {"year": "2025", "month": "7", "day": "16"},
+      "text": {"headline": "冠位戴冠戦 槍 冠位英霊 インドラ・マカヴァーン", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_43",
+      "unique_id": "FGO_main_43",
+      "start_date": {"year": "2025", "month": "8", "day": "6"},
+      "text": {"headline": "冠位戴冠戦 EX 異星化神 U－プラネット・オルガマリー", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_44",
+      "unique_id": "FGO_main_44",
+      "start_date": {"year": "2025", "month": "9", "day": "9"},
+      "text": {"headline": "冠位戴冠戦 騎 冠位英霊 ノア・ゾーハル", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_45",
+      "unique_id": "FGO_main_45",
+      "start_date": {"year": "2025", "month": "10", "day": "15"},
+      "text": {"headline": "冠位戴冠戦 殺 冠位英霊 蒼きアズライール", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_46",
+      "unique_id": "FGO_main_46",
+      "start_date": {"year": "2025", "month": "11", "day": "14"},
+      "text": {"headline": "冠位戴冠戦 弓 冠位英霊 ギルガメッシュ・ネイキッド", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_47",
+      "unique_id": "FGO_main_47",
+      "start_date": {"year": "2025", "month": "12", "day": "3"},
+      "text": {"headline": "冠位戴冠戦 術 冠位英霊 偽典ソロモン", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_48",
+      "unique_id": "FGO_main_48",
+      "start_date": {"year": "2025", "month": "12", "day": "1"},
+      "text": {"headline": "終章_序", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_49",
+      "unique_id": "FGO_main_49",
+      "start_date": {"year": "2025", "month": "12", "day": "20"},
+      "text": {"headline": "終章", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    },
+    {
+      "id": "FGO_main_50",
+      "unique_id": "FGO_main_50",
+      "start_date": {"year": "2026", "month": "1", "day": "7"},
+      "text": {"headline": "アフタータイムのはじまり", "text": ""},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "mainstory", "type": "volume_dot"}
+    }
+]
