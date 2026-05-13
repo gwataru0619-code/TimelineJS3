@@ -10,6 +10,7 @@
     "TMdata/Game.json",
     "TMdata/Comic.json",
     "TMdata/Anime.json",
-    "TMdata/FGO_Main.json"
+    "TMdata/FGO_Main.json",
+    "TMdata/FGO_event.json"
   ]
 }
