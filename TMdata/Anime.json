@@ -1,0 +1,382 @@
+[
+    {
+      "id": "Anime_Tsukihime_Tsukihime",
+      "unique_id": "Anime_Tsukihime_Tsukihime",
+      "start_date": {"year": "2003", "month": "10"},
+      "text": {"headline": "真月譚 月姫", "text": "J.C.STAFF"},
+      "custom_tags": {"media": "Anime", "series": "Tsukihime", "project_id": "Tsukihime", "type": "series_bar"},
+      "end_date": {"year": "2003", "month": "12"}
+    },
+    {
+      "id": "Anime_Fate_staynight_DEEN",
+      "unique_id": "Anime_Fate_staynight_DEEN",
+      "start_date": {"year": "2006", "month": "1"},
+      "text": {"headline": "Fate/stay night", "text": "スタジオディーン"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "staynight", "type": "series_bar"},
+      "end_date": {"year": "2006", "month": "6"}
+    },
+    {
+      "id": "Anime_Fate_staynight_DEEN_UBW",
+      "unique_id": "Anime_Fate_staynight_DEEN_UBW",
+      "start_date": {"year": "2010", "month": "1", "day": "28"},
+      "text": {"headline": "Fate/stay night UNLIMITED BLADE WORKS", "text": "スタジオディーン"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_staynight_ufo_UBW_1",
+      "unique_id": "Anime_Fate_staynight_ufo_UBW_1",
+      "start_date": {"year": "2014", "month": "10"},
+      "text": {"headline": "Fate/stay night [Unlimited Blade Works] 1stシーズン", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "staynight", "type": "series_bar"},
+      "end_date": {"year": "2014", "month": "12"}
+    },
+    {
+      "id": "Anime_Fate_staynight_ufo_UBW_2",
+      "unique_id": "Anime_Fate_staynight_ufo_UBW_2",
+      "start_date": {"year": "2015", "month": "4"},
+      "text": {"headline": "Fate/stay night [Unlimited Blade Works] 2ndシーズン", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "staynight", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "6"}
+    },
+    {
+      "id": "Anime_Fate_staynight_ufo_HF_1",
+      "unique_id": "Anime_Fate_staynight_ufo_HF_1",
+      "start_date": {"year": "2017", "month": "10", "day": "14"},
+      "text": {"headline": "Fate/stay night [Heaven's Feel] I.presage flower", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_staynight_ufo_HF_2",
+      "unique_id": "Anime_Fate_staynight_ufo_HF_2",
+      "start_date": {"year": "2019", "month": "1", "day": "12"},
+      "text": {"headline": "Fate/stay night [Heaven's Feel] II.lost butterfly", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_staynight_ufo_HF_3",
+      "unique_id": "Anime_Fate_staynight_ufo_HF_3",
+      "start_date": {"year": "2020", "month": "8", "day": "15"},
+      "text": {"headline": "Fate/stay night [Heaven's Feel] III.spring song", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "staynight", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_1",
+      "unique_id": "Anime_others_rakkyo_1",
+      "start_date": {"year": "2007", "month": "12", "day": "1"},
+      "text": {"headline": "劇場版 空の境界 第一章 俯瞰風景", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_2",
+      "unique_id": "Anime_others_rakkyo_2",
+      "start_date": {"year": "2007", "month": "12", "day": "29"},
+      "text": {"headline": "劇場版 空の境界 第二章 殺人考察（前）", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_3",
+      "unique_id": "Anime_others_rakkyo_3",
+      "start_date": {"year": "2008", "month": "2", "day": "9"},
+      "text": {"headline": "劇場版 空の境界 第三章 痛覚残留", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_4",
+      "unique_id": "Anime_others_rakkyo_4",
+      "start_date": {"year": "2008", "month": "5", "day": "24"},
+      "text": {"headline": "劇場版 空の境界 第四章 伽藍の洞", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_5",
+      "unique_id": "Anime_others_rakkyo_5",
+      "start_date": {"year": "2008", "month": "8", "day": "16"},
+      "text": {"headline": "劇場版 空の境界 第五章 矛盾螺旋", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_6",
+      "unique_id": "Anime_others_rakkyo_6",
+      "start_date": {"year": "2008", "month": "12", "day": "20"},
+      "text": {"headline": "劇場版 空の境界 第六章 忘却録音", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_7",
+      "unique_id": "Anime_others_rakkyo_7",
+      "start_date": {"year": "2009", "month": "8", "day": "8"},
+      "text": {"headline": "劇場版 空の境界 第七章 殺人考察（後）", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_8",
+      "unique_id": "Anime_others_rakkyo_8",
+      "start_date": {"year": "2010", "month": "12", "day": "18"},
+      "text": {"headline": "劇場版 空の境界 終章/空の境界", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_9",
+      "unique_id": "Anime_others_rakkyo_9",
+      "start_date": {"year": "2009", "month": "3", "day": "14"},
+      "text": {"headline": "劇場版 空の境界 Remix", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_10",
+      "unique_id": "Anime_others_rakkyo_10",
+      "start_date": {"year": "2013", "month": "7", "day": "13"},
+      "text": {"headline": "劇場版 空の境界 俯瞰風景３D", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_rakkyo_11",
+      "unique_id": "Anime_others_rakkyo_11",
+      "start_date": {"year": "2013", "month": "9", "day": "28"},
+      "text": {"headline": "劇場版 空の境界 未来福音", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "rakkyo", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_CANAAN",
+      "unique_id": "Anime_others_CANAAN",
+      "start_date": {"year": "2009", "month": "7"},
+      "text": {"headline": "CANAAN", "text": "P.A.Works"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2009", "month": "9"}
+    },
+    {
+      "id": "Anime_others_Carnival_1",
+      "unique_id": "Anime_others_Carnival_1",
+      "start_date": {"year": "2011", "month": "8", "day": "14"},
+      "text": {"headline": "カーニバル・ファンタズム 1st Season", "text": "Lerche　OVA　DVD/BD発売日"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "Carnival", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_Carnival_2",
+      "unique_id": "Anime_others_Carnival_2",
+      "start_date": {"year": "2011", "month": "10", "day": "28"},
+      "text": {"headline": "カーニバル・ファンタズム 2nd Season", "text": "Lerche　OVA　DVD/BD発売日"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "Carnival", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_Carnival_3",
+      "unique_id": "Anime_others_Carnival_3",
+      "start_date": {"year": "2011", "month": "12", "day": "31"},
+      "text": {"headline": "カーニバル・ファンタズム 3rd Season", "text": "Lerche　OVA　DVD/BD発売日"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "Carnival", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_others_Carnival_4",
+      "unique_id": "Anime_others_Carnival_4",
+      "start_date": {"year": "2011", "month": "11", "day": "26"},
+      "text": {"headline": "カーニバル・ファンタズム EX Season", "text": "Lerche　OVA　TAKEMOON 武梨えりTYPE-MOON作品集 特別版　収録"},
+      "custom_tags": {"media": "Anime", "series": "others", "project_id": "Carnival", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_Prototype",
+      "unique_id": "Anime_Fate_Prototype",
+      "start_date": {"year": "2011", "month": "12", "day": "31"},
+      "text": {"headline": "Fate/Prototype", "text": "Lerche　『カーニバル・ファンタズム 3rd Season』の映像特典"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "Prototype", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_Zero_1",
+      "unique_id": "Anime_Fate_Zero_1",
+      "start_date": {"year": "2011", "month": "10"},
+      "text": {"headline": "Fate/Zero　第1期", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "Zero", "type": "series_bar"},
+      "end_date": {"year": "2011", "month": "12"}
+    },
+    {
+      "id": "Anime_Fate_Zero_2",
+      "unique_id": "Anime_Fate_Zero_2",
+      "start_date": {"year": "2012", "month": "4"},
+      "text": {"headline": "Fate/Zero　第2期", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "Zero", "type": "series_bar"},
+      "end_date": {"year": "2012", "month": "6"}
+    },
+    {
+      "id": "Anime_Fate_kaleidliner_1",
+      "unique_id": "Anime_Fate_kaleidliner_1",
+      "start_date": {"year": "2013", "month": "7", "day": "6"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ", "text": "SILVER LINK."},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "kaleidliner", "type": "series_bar"},
+      "end_date": {"year": "2013", "month": "9", "day": "7"}
+    },
+    {
+      "id": "Anime_Fate_kaleidliner_2",
+      "unique_id": "Anime_Fate_kaleidliner_2",
+      "start_date": {"year": "2014", "month": "7", "day": "10"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！", "text": "SILVER LINK."},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "kaleidliner", "type": "series_bar"},
+      "end_date": {"year": "2014", "month": "9", "day": "11"}
+    },
+    {
+      "id": "Anime_Fate_kaleidliner_3",
+      "unique_id": "Anime_Fate_kaleidliner_3",
+      "start_date": {"year": "2015", "month": "7", "day": "24"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ ヘルツ！", "text": "SILVER LINK."},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "kaleidliner", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "9", "day": "26"}
+    },
+    {
+      "id": "Anime_Fate_kaleidliner_4",
+      "unique_id": "Anime_Fate_kaleidliner_4",
+      "start_date": {"year": "2016", "month": "7", "day": "6"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!", "text": "SILVER LINK."},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "kaleidliner", "type": "series_bar"},
+      "end_date": {"year": "2016", "month": "9", "day": "21"}
+    },
+    {
+      "id": "Anime_Fate_kaleidliner_5",
+      "unique_id": "Anime_Fate_kaleidliner_5",
+      "start_date": {"year": "2017", "month": "8", "day": "26"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ 雪下の誓い", "text": "SILVER LINK."},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "kaleidliner", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_kaleidliner_6",
+      "unique_id": "Anime_Fate_kaleidliner_6",
+      "start_date": {"year": "2021", "month": "8", "day": "27"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ Licht 名前の無い少女", "text": "SILVER LINK."},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "kaleidliner", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_kaleidliner_7",
+      "unique_id": "Anime_Fate_kaleidliner_7",
+      "start_date": {"year": "2019", "month": "6", "day": "14"},
+      "text": {"headline": "Fate/kaleid liner Prisma☆Illya プリズマ☆ファンタズム", "text": "SILVER LINK.　OVA　劇場上映"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "kaleidliner", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_1",
+      "unique_id": "Anime_Fate_GrandOrder_1",
+      "start_date": {"year": "2016", "month": "12", "day": "31"},
+      "text": {"headline": "Fate/Grand Order -First Order-", "text": "Lay-duce"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_2",
+      "unique_id": "Anime_Fate_GrandOrder_2",
+      "start_date": {"year": "2016", "month": "12", "day": "31"},
+      "text": {"headline": "ぐだぐだオーダー", "text": "TROYCA"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_3",
+      "unique_id": "Anime_Fate_GrandOrder_3",
+      "start_date": {"year": "2017", "month": "12", "day": "31"},
+      "text": {"headline": "Fate/Grand Order -MOONLIGHT/LOSTROOM-", "text": "Lay-duce"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_4",
+      "unique_id": "Anime_Fate_GrandOrder_4",
+      "start_date": {"year": "2017", "month": "12", "day": "31"},
+      "text": {"headline": "Fate/Grand Order × 氷室の天地　〜7人の最強偉人篇〜", "text": "ufotable"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_5",
+      "unique_id": "Anime_Fate_GrandOrder_5",
+      "start_date": {"year": "2018", "month": "12", "day": "31"},
+      "text": {"headline": "マンガで分かる!Fate/Grand Order", "text": "A-1 Pictures"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_6",
+      "unique_id": "Anime_Fate_GrandOrder_6",
+      "start_date": {"year": "2021", "month": "6", "day": "2"},
+      "text": {"headline": "Fate/Grand Carnival 1st Season", "text": "Lerche　OVA　DVD/BD発売日"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_7",
+      "unique_id": "Anime_Fate_GrandOrder_7",
+      "start_date": {"year": "2021", "month": "10", "day": "13"},
+      "text": {"headline": "Fate/Grand Carnival 2nd Season", "text": "Lerche　OVA　DVD/BD発売日"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_Babylonia0",
+      "unique_id": "Anime_Fate_GrandOrder_Babylonia0",
+      "start_date": {"year": "2019", "month": "8", "day": "3"},
+      "text": {"headline": "Fate/Grand Order -絶対魔獣戦線バビロニア- Episode 0 Initium Iter", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_Babylonia",
+      "unique_id": "Anime_Fate_GrandOrder_Babylonia",
+      "start_date": {"year": "2019", "month": "10", "day": "5"},
+      "text": {"headline": "Fate/Grand Order -絶対魔獣戦線バビロニア-", "text": "CloverWorks"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2020", "month": "3", "day": "21"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_Camelot_1",
+      "unique_id": "Anime_Fate_GrandOrder_Camelot_1",
+      "start_date": {"year": "2020", "month": "12", "day": "5"},
+      "text": {"headline": "劇場版 Fate/Grand Order -神聖円卓領域 キャメロット- 前編 Wandering; Agateram", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_Camelot_2",
+      "unique_id": "Anime_Fate_GrandOrder_Camelot_2",
+      "start_date": {"year": "2021", "month": "5", "day": "15"},
+      "text": {"headline": "劇場版 Fate/Grand Order -神聖円卓領域 キャメロット- 後編 Paladin; Agateram", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_GrandOrder_Solomon",
+      "unique_id": "Anime_Fate_GrandOrder_Solomon",
+      "start_date": {"year": "2021", "month": "7", "day": "30"},
+      "text": {"headline": "Fate/Grand Order -終局特異点 冠位時間神殿ソロモン-", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_Apocrypha",
+      "unique_id": "Anime_Fate_Apocrypha",
+      "start_date": {"year": "2017", "month": "7", "day": "2"},
+      "text": {"headline": "Fate/Apocrypha", "text": "A-1 Pictures"},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "Apocrypha", "type": "series_bar"},
+      "end_date": {"year": "2017", "month": "12", "day": "31"}
+    },
+    {
+      "id": "Anime_Fate_LastEncore_1",
+      "unique_id": "Anime_Fate_LastEncore_1",
+      "start_date": {"year": "2018", "month": "1", "day": "28"},
+      "text": {"headline": "Fate/EXTRA Last Encore オブリトゥス地動説", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "EXTRA", "type": "series_bar"},
+      "end_date": {"year": "2018", "month": "4", "day": "1"}
+    },
+    {
+      "id": "Anime_Fate_LastEncore_2",
+      "unique_id": "Anime_Fate_LastEncore_2",
+      "start_date": {"year": "2018", "month": "7", "day": "29"},
+      "text": {"headline": "Fate/EXTRA Last Encore イルステリアス天動説", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "EXTRA", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_El-MelloiII",
+      "unique_id": "Anime_Fate_El-MelloiII",
+      "start_date": {"year": "2019", "month": "7", "day": "7"},
+      "text": {"headline": "ロード・エルメロイII世の事件簿 -魔眼蒐集列車 Grace note-", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "El-MelloiII", "type": "series_bar"},
+      "end_date": {"year": "2019", "month": "9", "day": "29"}
+    },
+    {
+      "id": "Anime_Fate_strangeFake",
+      "unique_id": "Anime_Fate_strangeFake",
+      "start_date": {"year": "2023", "month": "7", "day": "2"},
+      "text": {"headline": "Fate/strange Fake -Whispers of Dawn-", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "strangeFake", "type": "volume_dot"}
+    },
+    {
+      "id": "Anime_Fate_strangeFake_1",
+      "unique_id": "Anime_Fate_strangeFake_1",
+      "start_date": {"year": "2026", "month": "1", "day": "3"},
+      "text": {"headline": "Fate/strange Fake", "text": ""},
+      "custom_tags": {"media": "Anime", "series": "Fate", "project_id": "strangeFake", "type": "series_bar"},
+      "end_date": {"year": "2026", "month": "3", "day": "28"}
+    }
+]

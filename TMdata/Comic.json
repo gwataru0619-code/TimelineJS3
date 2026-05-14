@@ -1,0 +1,520 @@
+[
+    {
+      "id": "Comic_Tsukihime_Tsukihime_Sasaki",
+      "unique_id": "Comic_Tsukihime_Tsukihime_Sasaki",
+      "start_date": {"year": "2003", "month": "8", "day": "21"},
+      "text": {"headline": "真月譚 月姫", "text": "佐々木少年　月刊コミック電撃大王　全10巻"},
+      "custom_tags": {"media": "Comic", "series": "Tsukihime", "project_id": "Tsukihime", "type": "series_bar"},
+      "end_date": {"year": "2010", "month": "7", "day": "27"}
+    },
+    {
+      "id": "Comic_Tsukihime_MELTYBLOOD",
+      "unique_id": "Comic_Tsukihime_MELTYBLOOD",
+      "start_date": {"year": "2005", "month": "3", "day": "26"},
+      "text": {"headline": "MELTY BLOOD", "text": "桐嶋たける　月刊コンプエース　VOL.1から2010年10月号　全9巻"},
+      "custom_tags": {"media": "Comic", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "series_bar"},
+      "end_date": {"year": "2010", "month": "6", "day": "26"}
+    },
+    {
+      "id": "Comic_Tsukihime_MELTYBLOOD_X",
+      "unique_id": "Comic_Tsukihime_MELTYBLOOD_X",
+      "start_date": {"year": "2010", "month": "10", "day": "26"},
+      "text": {"headline": "MELTY BLOOD X", "text": "桐嶋たける　月刊コンプエース　2010年12月号から2011年11月号　全2巻"},
+      "custom_tags": {"media": "Comic", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "series_bar"},
+      "end_date": {"year": "2011", "month": "9", "day": "26"}
+    },
+    {
+      "id": "Comic_Tsukihime_MELTYBLOOD_Nightmare",
+      "unique_id": "Comic_Tsukihime_MELTYBLOOD_Nightmare",
+      "start_date": {"year": "2015", "month": "12", "day": "26"},
+      "text": {"headline": "MELTY BLOOD 路地裏ナイトメア", "text": "桐嶋たける　月刊コンプエース　2016年2月号から12月号　全2巻"},
+      "custom_tags": {"media": "Comic", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "series_bar"},
+      "end_date": {"year": "2016", "month": "10", "day": "26"}
+    },
+    {
+      "id": "Comic_Tsukihime_MELTYBLOOD_PieceinParadise",
+      "unique_id": "Comic_Tsukihime_MELTYBLOOD_PieceinParadise",
+      "start_date": {"year": "2022", "month": "12", "day": "8"},
+      "text": {"headline": "MELTY BLOOD: TYPE LUMINA Piece in Paradise", "text": "めたろぐ　TYPE-MOONコミックエース　既刊2巻"},
+      "custom_tags": {"media": "Comic", "series": "Tsukihime", "project_id": "MELTYBLOOD", "type": "series_bar"},
+      "end_date": {"year": "2025", "month": "12", "day": "17"}
+    },
+    {
+      "id": "Comic_others_hananaomiyako",
+      "unique_id": "Comic_others_hananaomiyako",
+      "start_date": {"year": "2011", "month": "11", "day": "26"},
+      "text": {"headline": "花のみやこ！", "text": "桐嶋たける　月刊コンプエース　2013年1月号から2014年7月号　全3巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2014", "month": "5", "day": "26"}
+    },
+    {
+      "id": "Comic_Tsukihime_Tsukihime_Moonphase",
+      "unique_id": "Comic_Tsukihime_Tsukihime_Moonphase",
+      "start_date": {"year": "2024", "month": "12", "day": "26"},
+      "text": {"headline": "月姫 -A piece of blue glass moon- ムーンフェイズ", "text": "中谷　TYPE-MOONコミックエース　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "Tsukihime", "project_id": "Tsukihime", "type": "series_bar"},
+      "end_date": {"year": "2025", "month": "3", "day": "26"}
+    },
+    {
+      "id": "Comic_Fate_staynight_SN",
+      "unique_id": "Comic_Fate_staynight_SN",
+      "start_date": {"year": "2005", "month": "12", "day": "26"},
+      "text": {"headline": "Fate/stay night", "text": "西脇だっと　月刊少年エース　2006年2月号から2012年12月号 全20巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "staynight", "type": "series_bar"},
+      "end_date": {"year": "2012", "month": "10", "day": "26"}
+    },
+    {
+      "id": "Comic_Fate_staynight_UBW",
+      "unique_id": "Comic_Fate_staynight_UBW",
+      "start_date": {"year": "2015", "month": "4", "day": "4"},
+      "text": {"headline": "Fate/stay night [Heaven's Feel]", "text": "タスクオーナ　ヤングエース　2015年5月号から　既刊11巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "staynight", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_staynight_HF",
+      "unique_id": "Comic_Fate_staynight_HF",
+      "start_date": {"year": "2021", "month": "12", "day": "25"},
+      "text": {"headline": "Fate/stay night [Unlimited Blade Works]", "text": "森山大輔　月刊コミック大王　2022年2月号から　既刊7巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "staynight", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_hollowataraxia",
+      "unique_id": "Comic_Fate_hollowataraxia",
+      "start_date": {"year": "2013", "month": "5", "day": "25"},
+      "text": {"headline": "Fate/hollow ataraxia", "text": "雌鳥　月刊少年エース　2013年7月号から2016年8月号まで単行本化　既刊2巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "hollowataraxia", "type": "series_bar"},
+      "end_date": {"year": "2016", "month": "6", "day": "25"}
+    },
+    {
+      "id": "Comic_Fate_Zero",
+      "unique_id": "Comic_Fate_Zero",
+      "start_date": {"year": "2010", "month": "12", "day": "29"},
+      "text": {"headline": "Fate/Zero", "text": "真じろう　ヤングエース　2011年2月号から2017年7月号　全14巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "Zero", "type": "series_bar"},
+      "end_date": {"year": "2017", "month": "6", "day": "2"}
+    },
+    {
+      "id": "Comic_Fate_Zero_black",
+      "unique_id": "Comic_Fate_Zero_black",
+      "start_date": {"year": "2011", "month": "10", "day": "18"},
+      "text": {"headline": "Fate/Zero 黒　要訂正", "text": "雌鳥　アルティマエースVol.1からVol.7（休刊）　月刊Asuka2013年1月号から4月号　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "Zero", "type": "series_bar"},
+      "end_date": {"year": "2013", "month": "2", "day": "23"}
+    },
+    {
+      "id": "Comic_Fate_EXTRA",
+      "unique_id": "Comic_Fate_EXTRA",
+      "start_date": {"year": "2011", "month": "4", "day": "9"},
+      "text": {"headline": "Fate/EXTRA", "text": "ろび〜な　コンプティーク　2011年5月号から2014年12月号　全6巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "EXTRA", "type": "series_bar"},
+      "end_date": {"year": "2014", "month": "11", "day": "10"}
+    },
+    {
+      "id": "Comic_Fate_EXTRA_CCC",
+      "unique_id": "Comic_Fate_EXTRA_CCC",
+      "start_date": {"year": "2015", "month": "6", "day": "10"},
+      "text": {"headline": "Fate/EXTRA CCC", "text": "ろび〜な　コンプティーク　2015年7月号から2024年1月号　全8巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "EXTRA", "type": "series_bar"},
+      "end_date": {"year": "2023", "month": "12", "day": "8"}
+    },
+    {
+      "id": "Comic_Fate_EXTRA_CCCFoxTail",
+      "unique_id": "Comic_Fate_EXTRA_CCCFoxTail",
+      "start_date": {"year": "2013", "month": "10", "day": "26"},
+      "text": {"headline": "Fate/EXTRA CCC FoxTail", "text": "たけのこ星人　月刊コンプエース　2013年12月号から　既刊12巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "EXTRA", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_kaleidliner",
+      "unique_id": "Comic_Fate_kaleidliner",
+      "start_date": {"year": "2007", "month": "9", "day": "26"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ", "text": "ひろやまひろし　月刊コンプエース　2007年11月号から2009年1月号　全2巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "kaleidliner", "type": "series_bar"},
+      "end_date": {"year": "2008", "month": "11", "day": "26"}
+    },
+    {
+      "id": "Comic_Fate_kaleidliner_zwei",
+      "unique_id": "Comic_Fate_kaleidliner_zwei",
+      "start_date": {"year": "2009", "month": "4", "day": "26"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！", "text": "ひろやまひろし　月刊コンプエース　2009年6月号から2012年5月号　全5巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "kaleidliner", "type": "series_bar"},
+      "end_date": {"year": "2012", "month": "3", "day": "26"}
+    },
+    {
+      "id": "Comic_Fate_kaleidliner_drei",
+      "unique_id": "Comic_Fate_kaleidliner_drei",
+      "start_date": {"year": "2012", "month": "5", "day": "26"},
+      "text": {"headline": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!", "text": "ひろやまひろし　月刊コンプエース　2012年7月号から　既刊14巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "kaleidliner", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_himuten",
+      "unique_id": "Comic_Fate_himuten",
+      "start_date": {"year": "2006", "month": "11", "day": "25"},
+      "text": {"headline": "氷室の天地 Fate/school life", "text": "磨伸映一郎　まんが4コマぱれっとVOL.2から2022年4月号（休刊）　月刊ComicREX2022年5月号から2025年3月号　全17巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2025", "month": "1", "day": "27"}
+    },
+    {
+      "id": "Comic_Fate_strangeFake",
+      "unique_id": "Comic_Fate_strangeFake",
+      "start_date": {"year": "2015", "month": "1", "day": "10"},
+      "text": {"headline": "Fate/strange Fake (TYPE-MOON BOOKS)", "text": "森井しづき　TYPE-MOON BOOKS　既刊5巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "strangeFake", "type": "series_bar"},
+      "end_date": {"year": "2022", "month": "2", "day": "10"}
+    },
+    {
+      "id": "Comic_Fate_strangeFake_new",
+      "unique_id": "Comic_Fate_strangeFake_new",
+      "start_date": {"year": "2025", "month": "12", "day": "27"},
+      "text": {"headline": "新装版 Fate/strange Fake", "text": ""},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "strangeFake", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_mahjong",
+      "unique_id": "Comic_Fate_mahjong",
+      "start_date": {"year": "2015", "month": "6", "day": "30"},
+      "text": {"headline": "Fate/mahjong night 聖牌戦争", "text": "サテー　ツイ4　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2017", "month": "7", "day": "31"}
+    },
+    {
+      "id": "Comic_Fate_staynight_gohan",
+      "unique_id": "Comic_Fate_staynight_gohan",
+      "start_date": {"year": "2016", "month": "2", "day": "9"},
+      "text": {"headline": "衛宮さんちの今日のごはん", "text": "TAa　ヤングエースUP　既刊11巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "staynight", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_Apocrypha",
+      "unique_id": "Comic_Fate_Apocrypha",
+      "start_date": {"year": "2016", "month": "6", "day": "25"},
+      "text": {"headline": "Fate/Apocrypha", "text": "石田あきら　月刊コンプエース　2016年8月号から2024年6月号　全16巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "Apocrypha", "type": "series_bar"},
+      "end_date": {"year": "2024", "month": "4", "day": "26"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_mortalis",
+      "unique_id": "Comic_Fate_GrandOrder_mortalis",
+      "start_date": {"year": "2017", "month": "7", "day": "28"},
+      "text": {"headline": "Fate/Grand Order -mortalis:stella-", "text": "白峰　月刊コミックZERO-SUM　2017年9月号から　既刊5巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_turas",
+      "unique_id": "Comic_Fate_GrandOrder_turas",
+      "start_date": {"year": "2017", "month": "8", "day": "9"},
+      "text": {"headline": "Fate/Grand Order -turas réalta-", "text": "カワグチタケシ　別冊少年マガジン　2017年9月号から　既刊20巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_Ordu",
+      "unique_id": "Comic_Fate_GrandOrder_Ordu",
+      "start_date": {"year": "2020", "month": "7", "day": "22"},
+      "text": {"headline": "Fate/Grand Order -Ordu Beag-", "text": "ナギ晃聡　週刊少年マガジン2020年34号　読切"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_EoR1",
+      "unique_id": "Comic_Fate_GrandOrder_EoR1",
+      "start_date": {"year": "2019", "month": "1", "day": "26"},
+      "text": {"headline": "Fate/Grand Order -Epic of Remnant- 亜種特異点I 悪性隔絶魔境 新宿 新宿幻霊事件", "text": "佐々木少年　月刊少年エース　2019年3月号から　既刊6巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_EoR2",
+      "unique_id": "Comic_Fate_GrandOrder_EoR2",
+      "start_date": {"year": "2019", "month": "2", "day": "4"},
+      "text": {"headline": "Fate/Grand Order -Epic of Remnant- 亜種特異点II 伝承地底世界 アガルタ アガルタの女", "text": "武中英雄　ヤングエース　2019年3月号から2022年4月号　全6巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2022", "month": "3", "day": "3"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_EoR3",
+      "unique_id": "Comic_Fate_GrandOrder_EoR3",
+      "start_date": {"year": "2019", "month": "1", "day": "29"},
+      "text": {"headline": "Fate/Grand Order -Epic of Remnant- 亜種特異点III 屍山血河舞台 下総国 英霊剣豪七番勝負", "text": "渡れい　マガジンポケット　2019年1月29日から　既刊5巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_EoR4",
+      "unique_id": "Comic_Fate_GrandOrder_EoR4",
+      "start_date": {"year": "2019", "month": "1", "day": "26"},
+      "text": {"headline": "Fate/Grand Order -Epic of Remnant- 亜種特異点IV 禁忌降臨庭園 セイレム 異端なるセイレム", "text": "大森葵　月刊ComicREX　2019年3月号から2025年2月号　全8巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2024", "month": "12", "day": "26"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_EoR5",
+      "unique_id": "Comic_Fate_GrandOrder_EoR5",
+      "start_date": {"year": "2019", "month": "7", "day": "9"},
+      "text": {"headline": "Fate/Grand Order -Epic of Remnant- 亜種特異点EX 深海電脳楽土 SE.RA.PH", "text": "西出ケンゴロー　ヤングエースUP　2019年2月20日から　TMCA移籍　既刊8巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_guda",
+      "unique_id": "Comic_Fate_GrandOrder_guda",
+      "start_date": {"year": "2015", "month": "1", "day": "22"},
+      "text": {"headline": "Fate/ぐだぐだオーダー", "text": "経験値　FGO公式サイト　2015年1月22日から2015年7月30日　以後ぐだイベに合わせて公開"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2015", "month": "7", "day": "30"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_manwaka",
+      "unique_id": "Comic_Fate_GrandOrder_manwaka",
+      "start_date": {"year": "2017", "month": "8", "day": "2"},
+      "text": {"headline": "マンガで分かる！Fate/Grand Order", "text": "リヨ　FGO公式サイト　2015年8月13日から　既刊4巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_osiete",
+      "unique_id": "Comic_Fate_GrandOrder_osiete",
+      "start_date": {"year": "2016", "month": "8", "day": "16"},
+      "text": {"headline": "教えてFGO！ 偉人と神話のぐらんどおーだー", "text": "津留崎優　ツイ４　2016年8月16日から　全2巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2020", "month": "3", "day": "30"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_Duel",
+      "unique_id": "Comic_Fate_GrandOrder_Duel",
+      "start_date": {"year": "2019", "month": "2", "day": "4"},
+      "text": {"headline": "Fate/Grand Order Duel YA特異点 密室遊戯魔境 渋谷 渋谷決闘事件", "text": "磨伸映一郎　邪武丸　ヤングエース　2019年3月号から2020年2月号　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2020", "month": "1", "day": "4"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_eat",
+      "unique_id": "Comic_Fate_GrandOrder_eat",
+      "start_date": {"year": "2019", "month": "12", "day": "20"},
+      "text": {"headline": "Fate/Grand Order 英霊食聞録", "text": "十駒マコト　TYPE-MOONコミックエース　2019年12月20日から　7話掲載　まだ続く？"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2024", "month": "8", "day": "7"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_lost",
+      "unique_id": "Comic_Fate_GrandOrder_lost",
+      "start_date": {"year": "2019", "month": "12", "day": "20"},
+      "text": {"headline": "Fate/Grand Order フロム ロストベルト", "text": "中谷　TYPE-MOONコミックエース　2019年12月20日から2024年3月14日　全6巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2024", "month": "3", "day": "14"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_wakaranai",
+      "unique_id": "Comic_Fate_GrandOrder_wakaranai",
+      "start_date": {"year": "2020", "month": "6", "day": "1"},
+      "text": {"headline": "Fate/Grand Order 藤丸立香はわからない", "text": "槌田　TYPE-MOONコミックエース　2020年6月1日から　既刊6巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_saberwars",
+      "unique_id": "Comic_Fate_GrandOrder_saberwars",
+      "start_date": {"year": "2021", "month": "7", "day": "27"},
+      "text": {"headline": "Fate/Grand Order SABER WARS II 番外編 ジェーン&イシュタル〜100万光年の流れ星〜", "text": "森山大輔　月刊コミック電撃大王　2021年9月号・10月号　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "series_bar"},
+      "end_date": {"year": "2021", "month": "8", "day": "27"}
+    },
+    {
+      "id": "Comic_Fate_GrandOrder_doman",
+      "unique_id": "Comic_Fate_GrandOrder_doman",
+      "start_date": {"year": "2025", "month": "12", "day": "1"},
+      "text": {"headline": "Fate/Grand Order 英霊伝承異聞 ～蘆屋道満～", "text": "古海鐘一　桜井光　TYPE-MOONコミックエース　2023年11月29日読切掲載　2025年7月24日以降連載化"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "GrandOrder", "type": "volume_dot"}
+    },
+    {
+      "id": "Comic_Fate_El-MelloiII",
+      "unique_id": "Comic_Fate_El-MelloiII",
+      "start_date": {"year": "2017", "month": "10", "day": "4"},
+      "text": {"headline": "ロード・エルメロイII世の事件簿", "text": "東冬　ヤングエース　2017年11月号から　既刊13巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "El-MelloiII", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_EXTRA_ikusutera",
+      "unique_id": "Comic_Fate_EXTRA_ikusutera",
+      "start_date": {"year": "2018", "month": "3", "day": "6"},
+      "text": {"headline": "フェイト／育ステラ", "text": "兎ろうと　ヤングエースUP　2018年3月6日から2018年8月15日　以後休載"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "EXTRA", "type": "series_bar"},
+      "end_date": {"year": "2018", "month": "8", "day": "15"}
+    },
+    {
+      "id": "Comic_Fate_typeRedline",
+      "unique_id": "Comic_Fate_typeRedline",
+      "start_date": {"year": "2020", "month": "6", "day": "4"},
+      "text": {"headline": "帝都聖杯奇譚 Fate/type Redline", "text": "平野稜二　TYPE-MOONコミックエース　2019年12月20日から　既刊5巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "others", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_Prototype",
+      "unique_id": "Comic_Fate_Prototype",
+      "start_date": {"year": "2024", "month": "12", "day": "26"},
+      "text": {"headline": "Fate/Prototype 蒼銀のフラグメンツ", "text": "鈴木ツタ　TYPE-MOONコミックエース　2023年7月26日から　既刊1巻"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "Prototype", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_Fate_SamuraiRemnant",
+      "unique_id": "Comic_Fate_SamuraiRemnant",
+      "start_date": {"year": "2025", "month": "7", "day": "28"},
+      "text": {"headline": "Fate/Samurai Remnant", "text": "霧月　TYPE-MOONコミックエース　2025年7月28日から"},
+      "custom_tags": {"media": "Comic", "series": "Fate", "project_id": "SamuraiRemnant", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_others_CANAAN",
+      "unique_id": "Comic_others_CANAAN",
+      "start_date": {"year": "2009", "month": "6", "day": "26"},
+      "text": {"headline": "CANAAN", "text": "石田あきら　月刊コンプエース　2009年8月号から2011年3月号　全3巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2011", "month": "1", "day": "26"}
+    },
+    {
+      "id": "Comic_others_AATM",
+      "unique_id": "Comic_others_AATM",
+      "start_date": {"year": "2008", "month": "6", "day": "1"},
+      "text": {"headline": "AATM", "text": "Bすけ　TYPE-MOONエースVOL.1からVOL.7月刊コンプエース　2010年2月号・2012年11月号　全2巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "Ahnenerbe", "type": "series_bar"},
+      "end_date": {"year": "2012", "month": "9", "day": "26"}
+    },
+    {
+      "id": "Comic_others_hibichikatime",
+      "unique_id": "Comic_others_hibichikatime",
+      "start_date": {"year": "2010", "month": "9", "day": "10"},
+      "text": {"headline": "ひびちかタイム", "text": "大森林　月刊コンプティーク　2010年10月号から2013年6月号　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "Ahnenerbe", "type": "series_bar"},
+      "end_date": {"year": "2013", "month": "5", "day": "10"}
+    },
+    {
+      "id": "Comic_others_StarlitMarmalade",
+      "unique_id": "Comic_others_StarlitMarmalade",
+      "start_date": {"year": "2013", "month": "7", "day": "26"},
+      "text": {"headline": "まほうつかいの箱 スターリット・マーマレード", "text": "久松士郎　月刊コンプエース　2013年9月号から2014年3月号　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "Ahnenerbe", "type": "series_bar"},
+      "end_date": {"year": "2014", "month": "1", "day": "25"}
+    },
+    {
+      "id": "Comic_others_TheGardenofSinners",
+      "unique_id": "Comic_others_TheGardenofSinners",
+      "start_date": {"year": "2010", "month": "9", "day": "15"},
+      "text": {"headline": "空の境界", "text": "天空すふぃあ　最前線　2010年9月15日　既刊12巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "TheGardenofSinners", "type": "series_bar"},
+      "end_date": "ongoing"
+    },
+    {
+      "id": "Comic_others_KOHAA",
+      "unique_id": "Comic_others_KOHAA",
+      "start_date": {"year": "2011", "month": "5", "day": "10"},
+      "text": {"headline": "コハエース", "text": "経験値　コンプティーク　2011年6月号から2017年10月号　全6巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "series_bar"},
+      "end_date": {"year": "2017", "month": "9", "day": "8"}
+    },
+    {
+      "id": "Comic_others_KOHAA_1",
+      "unique_id": "Comic_others_KOHAA_1",
+      "start_date": {"year": "2012", "month": "6", "day": "22"},
+      "text": {"headline": "コハエース", "text": ""},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "volume_dot"},
+      "parent_id": "Comic_others_KOHAA"
+    },
+    {
+      "id": "Comic_others_KOHAA_2",
+      "unique_id": "Comic_others_KOHAA_2",
+      "start_date": {"year": "2013", "month": "6", "day": "21"},
+      "text": {"headline": "コハエース＋", "text": ""},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "volume_dot"},
+      "parent_id": "Comic_others_KOHAA"
+    },
+    {
+      "id": "Comic_others_KOHAA_3",
+      "unique_id": "Comic_others_KOHAA_3",
+      "start_date": {"year": "2014", "month": "7", "day": "10"},
+      "text": {"headline": "コハエースEX", "text": ""},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "volume_dot"},
+      "parent_id": "Comic_others_KOHAA"
+    },
+    {
+      "id": "Comic_others_KOHAA_4",
+      "unique_id": "Comic_others_KOHAA_4",
+      "start_date": {"year": "2015", "month": "9", "day": "10"},
+      "text": {"headline": "コハエースXP", "text": ""},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "volume_dot"},
+      "parent_id": "Comic_others_KOHAA"
+    },
+    {
+      "id": "Comic_others_KOHAA_5",
+      "unique_id": "Comic_others_KOHAA_5",
+      "start_date": {"year": "2016", "month": "11", "day": "10"},
+      "text": {"headline": "コハエースGO 帝都聖杯奇譚", "text": ""},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "volume_dot"},
+      "parent_id": "Comic_others_KOHAA"
+    },
+    {
+      "id": "Comic_others_KOHAA_6",
+      "unique_id": "Comic_others_KOHAA_6",
+      "start_date": {"year": "2018", "month": "1", "day": "9"},
+      "text": {"headline": "コハエースEX", "text": ""},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "volume_dot"},
+      "parent_id": "Comic_others_KOHAA"
+    },
+    {
+      "id": "Comic_others_KOHAA_7",
+      "unique_id": "Comic_others_KOHAA_7",
+      "start_date": {"year": "2015", "month": "3", "day": "10"},
+      "text": {"headline": "コハエースこれくしょん", "text": "経験値　傑作選　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "volume_dot"},
+      "parent_id": "Comic_others_KOHAA"
+    },
+    {
+      "id": "Comic_others_KOHAA_gudagudaA",
+      "unique_id": "Comic_others_KOHAA_gudagudaA",
+      "start_date": {"year": "2017", "month": "10", "day": "10"},
+      "text": {"headline": "ぐだぐだエース", "text": "経験値　コンプティーク　2017年11月号から2022年4月号　全4巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "series_bar"},
+      "end_date": {"year": "2022", "month": "3", "day": "10"}
+    },
+    {
+      "id": "Comic_others_KOHAA_ZIPANG",
+      "unique_id": "Comic_others_KOHAA_ZIPANG",
+      "start_date": {"year": "2022", "month": "4", "day": "8"},
+      "text": {"headline": "ぐだぐだ太閤伝 ZIPANG", "text": "経験値　コンプティーク　2022年5月号から2023年6月号　全1巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "KOHAA", "type": "series_bar"},
+      "end_date": {"year": "2023", "month": "5", "day": "10"}
+    },
+    {
+      "id": "Comic_others_sango",
+      "unique_id": "Comic_others_sango",
+      "start_date": {"year": "2012", "month": "7", "day": "7"},
+      "text": {"headline": "月の珊瑚", "text": "佐々木少年　最前線　2012年7月7日から2019年1月22日　全2巻"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2019", "month": "1", "day": "22"}
+    },
+    {
+      "id": "Comic_others_Voyage",
+      "unique_id": "Comic_others_Voyage",
+      "start_date": {"year": "2012", "month": "8", "day": "16"},
+      "text": {"headline": "月世界旅行〜Fly me to TYPE-MOON〜", "text": "山田石人　GA文庫マガジンVol.8から2015年11月26日号　19話連載　最終3巻2016年6月14日発売　合ってるか？"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2016", "month": "6", "day": "14"}
+    },
+    {
+      "id": "Comic_others_chibi",
+      "unique_id": "Comic_others_chibi",
+      "start_date": {"year": "2013", "month": "9", "day": "10"},
+      "text": {"headline": "TYPE-MOON学園 ちびちゅき!", "text": "華々つぼみ　コンプティーク　2013年10月号から2020年2月号　既刊7巻　2020年9月号まで連載"},
+      "custom_tags": {"media": "Comic", "series": "others", "project_id": "others", "type": "series_bar"},
+      "end_date": {"year": "2020", "month": "8", "day": "6"}
+    }
+  ]

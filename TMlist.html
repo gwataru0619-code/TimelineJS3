@@ -15,17 +15,25 @@
 
     <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
     <script>
-        fetch('TMdata.json').then(r => r.json()).then(data => {
+        fetch('index.json').then(r => r.json()).then(data => {
             new Tabulator("#data-table", {
                 data: data.events,
                 layout: "fitColumns",
                 columns: [
                     {title:"ID", field:"id"},
                     {title:"親ID", field:"parent_id"},
-                    {title:"見出し", field:"text.headline"},
                     {title:"開始年", field:"start_date.year"},
+                    {title:"開始月", field:"start_date.month"},
+                    {title:"開始日", field:"start_date.day"},
+                    {title:"終了年", field:"end_date.year"},
+                    {title:"終了月", field:"end_date.month"},
+                    {title:"終了日", field:"end_date.day"},
+                    {title:"ヘッドライン", field:"text.headline"},
+                    {title:"テキスト", field:"text.text"},
                     {title:"媒体", field:"custom_tags.media"},
-                    {title:"シリーズ", field:"custom_tags.series"}
+                    {title:"シリーズ", field:"custom_tags.series"},
+                    {title:"プロジェクト", field:"custom_tags.project_id"},
+                    {title:"タイプ", field:"custom_tags.type"}
                 ]
             });
         });
