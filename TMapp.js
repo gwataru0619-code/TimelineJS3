@@ -190,6 +190,10 @@ function buildFilterControls() {
     buildCheckboxGroup('series-filters', 'filter-series', uniqueValues('series'));
     buildCheckboxGroup('project-filters', 'filter-project', uniqueValues('project_id'));
     buildCheckboxGroup('fgo_event1-filters', 'filter-fgo_event1', uniqueValues('fgo_event1'));
+    buildCheckboxGroup('fgo_event_box-filters', 'filter-fgo_event_box', uniqueValues('fgo_event_box'));
+    buildCheckboxGroup('fgo_event_raid-filters', 'filter-fgo_event_raid', uniqueValues('fgo_event_raid'));
+    buildCheckboxGroup('fgo_event_grailfront-filters', 'filter-fgo_event_grailfront', uniqueValues('fgo_event_grailfront'));
+    buildCheckboxGroup('fgo_event_treasure-filters', 'filter-fgo_event_treasure', uniqueValues('fgo_event_treasure'));
 }
 
 // 指定された場所（コンテナ）に、チェックボックスの塊を作成します
@@ -248,12 +252,16 @@ function updateTimeline() {
     const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
     const selectedProjects = Array.from(document.querySelectorAll('.filter-project:checked')).map(el => el.value);
     const selectedfgo_event1 = Array.from(document.querySelectorAll('.filter-fgo_event1:checked')).map(el => el.value);
+    const selectedfgo_event_box = Array.from(document.querySelectorAll('.filter-fgo_event_box:checked')).map(el => el.value);
+    const selectedfgo_event_raid = Array.from(document.querySelectorAll('.filter-fgo_event_raid:checked')).map(el => el.value);
+    const selectedfgo_event_grailfront = Array.from(document.querySelectorAll('.filter-fgo_event_grailfront:checked')).map(el => el.value);
+    const selectedfgo_event_treasure = Array.from(document.querySelectorAll('.filter-fgo_event_treasure:checked')).map(el => el.value);
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
 
     // まずは「メインとなる項目（親）」を選び出します
     const parents = masterData.events.filter(ev => {
         const isTopLevel = !ev.parent_id; // 親IDがない ＝ 最初に表示すべきデータ
-        return isTopLevel && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1);
+        return isTopLevel && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1, selectedfgo_event_box, selectedfgo_event_raid, selectedfgo_event_grailfront, selectedfgo_event_treasure);
     });
 
     // 親→その親の詳細→次の親、の順に並べることで、詳細グループが親の直後に出やすくします
@@ -271,7 +279,7 @@ function updateTimeline() {
         const detailGroupName = getDetailGroupName(parent);
         const details = masterData.events
             .filter(child => child.parent_id === parent.unique_id)
-            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1))
+            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1, selectedfgo_event_box, selectedfgo_event_raid, selectedfgo_event_grailfront, selectedfgo_event_treasure))
             .map(child => ({
                 ...child,
                 group: detailGroupName
@@ -289,7 +297,7 @@ function getDetailGroupName(parent) {
 }
 
 // あるイベントが、検索条件やメディア/シリーズ/プロジェクトのチェック状態に合格しているか判定します
-function matchesFilters(event, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1) {
+function matchesFilters(event, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1, selectedfgo_event_box, selectedfgo_event_raid, selectedfgo_event_grailfront, selectedfgo_event_treasure) {
     const headline = event.text && event.text.headline ? event.text.headline.toLowerCase() : "";
     const body = event.text && event.text.text ? event.text.text.toLowerCase() : "";
     
@@ -300,8 +308,20 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia, select
     
     const eventTag = event.custom_tags.fgo_event1;
     const matchesfgo_event1 = !eventTag || selectedfgo_event1.includes(eventTag);
+
+    const eventTag = event.custom_tags.fgo_event_box;
+    const matchesfgo_event_box = !eventTag || selectedfgo_event_box.includes(eventTag);
+
+    const eventTag = event.custom_tags.fgo_event_raid;
+    const matchesfgo_event_raid = !eventTag || selectedfgo_event_raid.includes(eventTag);
+
+    const eventTag = event.custom_tags.fgo_event_grailfront;
+    const matchesfgo_event_grailfront = !eventTag || selectedfgo_event_grailfront.includes(eventTag);
+
+    const eventTag = event.custom_tags.fgo_event_treasure;
+    const matchesfgo_event_treasure = !eventTag || selectedfgo_event_treasure.includes(eventTag);
     
-    return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesfgo_event1;
+    return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesfgo_event1 && matchesfgo_event_box && matchesfgo_event_raid && matchesfgo_event_grailfront && matchesfgo_event_treasure;
 }
 
 // 実際にHTMLの中に年表を書き込みます
