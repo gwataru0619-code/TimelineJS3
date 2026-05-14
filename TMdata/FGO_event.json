@@ -730,7 +730,7 @@
       "unique_id": "FGO_event_2020_14",
       "start_date": {"year": "2020", "month": "9", "day": "18"},
       "text": {"headline": "影の国の舞闘会 〜ネコとバニーと聖杯戦争〜", "text": "FGO イベント"},
-      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event_series": "box", "fgo_event_special": "box", "grailfront"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event_series": "box", "fgo_event_special": ["box", "grailfront"]},
       "end_date": {"year": "2020", "month": "10", "day": "2"}
     },
     {

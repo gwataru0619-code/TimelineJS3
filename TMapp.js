@@ -128,19 +128,17 @@ function normalizeTimelineData(data) {
     data.events = data.events.map((event, index) => {
         const normalized = { ...event };
 
-        // 既存のタグを維持しつつ、新しいFGO系タグを確実にcustom_tagsの中へ格納する
+        // 既存のタグを維持しつつ、FGO系タグを確実にcustom_tagsの中へ格納する
         const baseTags = normalized.custom_tags || {};
         normalized.custom_tags = {
             media: baseTags.media || "Other",
             series: baseTags.series || "Other",
             project_id: baseTags.project_id || "other_cluster",
             type: normalized.parent_id ? "volume_dot" : "series_bar",
-            // スプレッドシートの各列から直接、またはcustom_tagsの中から値を拾う
-            fgo_event1: event.fgo_event1 || baseTags.fgo_event1 || "",
-            fgo_event_box: event.fgo_event_box || baseTags.fgo_event_box || "",
-            fgo_event_raid: event.fgo_event_raid || baseTags.fgo_event_raid || "",
-            fgo_event_grailfront: event.fgo_event_grailfront || baseTags.fgo_event_grailfront || "",
-            fgo_event_treasure: event.fgo_event_treasure || baseTags.fgo_event_treasure || ""
+            ...baseTags,
+            // データは文字列でも配列でも可。カンマ区切り文字列も複数タグとして扱います
+            fgo_event_series: normalizeTagList(event.fgo_event_series || baseTags.fgo_event_series),
+            fgo_event_special: normalizeTagList(event.fgo_event_special || baseTags.fgo_event_special)
         };
 
         // 文章が空っぽでもエラーにならないように空文字を入れておきます
@@ -197,6 +195,18 @@ function makeEventId(event, index) {
         .replace(/[^\w-]/g, "") || `event_${index}`;
 }
 
+function normalizeTagList(value) {
+    if (!value) return [];
+    if (Array.isArray(value)) {
+        return value.map(tag => tag.toString().trim()).filter(Boolean);
+    }
+    return value
+        .toString()
+        .split(/[,\s、|/]+/)
+        .map(tag => tag.trim())
+        .filter(Boolean);
+}
+
 // --- 画面操作（ボタンなど）の処理 ---
 
 // 画面にある「絞り込みチェックボックス」の中身を自動で作り上げます
@@ -204,11 +214,8 @@ function buildFilterControls() {
     buildCheckboxGroup('media-filters', 'filter-media', uniqueValues('media'));
     buildCheckboxGroup('series-filters', 'filter-series', uniqueValues('series'));
     buildCheckboxGroup('project-filters', 'filter-project', uniqueValues('project_id'));
-    buildCheckboxGroup('fgo_event1-filters', 'filter-fgo_event1', uniqueValues('fgo_event1'));
-    buildCheckboxGroup('fgo_event_box-filters', 'filter-fgo_event_box', uniqueValues('fgo_event_box'));
-    buildCheckboxGroup('fgo_event_raid-filters', 'filter-fgo_event_raid', uniqueValues('fgo_event_raid'));
-    buildCheckboxGroup('fgo_event_grailfront-filters', 'filter-fgo_event_grailfront', uniqueValues('fgo_event_grailfront'));
-    buildCheckboxGroup('fgo_event_treasure-filters', 'filter-fgo_event_treasure', uniqueValues('fgo_event_treasure'));
+    buildCheckboxGroup('fgo-event-series-filters', 'filter-fgo-event-series', uniqueTagValues('fgo_event_series'));
+    buildCheckboxGroup('fgo-event-special-filters', 'filter-fgo-event-special', uniqueTagValues('fgo_event_special'));
 }
 
 // 指定された場所（コンテナ）に、チェックボックスの塊を作成します
@@ -232,6 +239,10 @@ function buildCheckboxGroup(containerId, className, values) {
 // 全データの中から、重複なしでカテゴリ名（シリーズ名など）を抜き出します
 function uniqueValues(key) {
     return [...new Set(masterData.events.map(ev => ev.custom_tags[key]).filter(Boolean))].sort();
+}
+
+function uniqueTagValues(key) {
+    return [...new Set(masterData.events.flatMap(ev => ev.custom_tags[key] || []))].sort();
 }
 
 // 英語のカテゴリ名を、画面表示用の日本語に翻訳します
@@ -269,11 +280,10 @@ function updateTimeline() {
         series: Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value),
         media: Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value),
         project: Array.from(document.querySelectorAll('.filter-project:checked')).map(el => el.value),
-        fgo1: Array.from(document.querySelectorAll('.filter-fgo_event1:checked')).map(el => el.value),
-        fgoBox: Array.from(document.querySelectorAll('.filter-fgo_event_box:checked')).map(el => el.value),
-        fgoRaid: Array.from(document.querySelectorAll('.filter-fgo_event_raid:checked')).map(el => el.value),
-        fgoGrail: Array.from(document.querySelectorAll('.filter-fgo_event_grailfront:checked')).map(el => el.value),
-        fgoTreasure: Array.from(document.querySelectorAll('.filter-fgo_event_treasure:checked')).map(el => el.value)
+        fgoSeries: getCheckedValues('.filter-fgo-event-series:checked'),
+        fgoSpecial: getCheckedValues('.filter-fgo-event-special:checked'),
+        allFgoSeries: uniqueTagValues('fgo_event_series'),
+        allFgoSpecial: uniqueTagValues('fgo_event_special')
     };
 
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
@@ -311,6 +321,10 @@ function updateTimeline() {
     render(currentDisplayedEvents, pendingSlideId);
 }
 
+function getCheckedValues(selector) {
+    return Array.from(document.querySelectorAll(selector)).map(el => el.value);
+}
+
 // 詳細グループ名は表示名ではなく親の unique_id を使い、データ上の親子関係と一致させます
 function getDetailGroupName(parent) {
     return parent.unique_id;
@@ -329,22 +343,25 @@ function matchesFilters(event, searchText, filters) {
     const matchesMedia = filters.media.includes(event.custom_tags.media);
     const matchesProject = filters.project.includes(event.custom_tags.project_id);
     
-    // 3. FGO詳細タグ判定（ここを共通ルールでチェック）
-    const checkTag = (tagKey, selectedList) => {
-        const val = event.custom_tags[tagKey];
-        // タグが空（FGO以外など）なら通過、値があるならチェックされているか確認
-        return !val || selectedList.includes(val);
-    };
-
-    const matchesFgo = 
-        checkTag('fgo_event1', filters.fgo1) &&
-        checkTag('fgo_event_box', filters.fgoBox) &&
-        checkTag('fgo_event_raid', filters.fgoRaid) &&
-        checkTag('fgo_event_grailfront', filters.fgoGrail) &&
-        checkTag('fgo_event_treasure', filters.fgoTreasure);
+    // 3. FGOタグ判定。各タグ種別の中はOR、シリーズタグとスペシャルタグの間はANDです
+    const matchesFgo = matchesFgoTags(event, filters);
     
     // すべての条件が true なら表示
     return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesFgo;
+}
+
+function matchesFgoTags(event, filters) {
+    if (event.custom_tags.media !== "FGO" && event.custom_tags.series !== "FGO") return true;
+
+    return matchesTagGroup(event.custom_tags.fgo_event_series, filters.fgoSeries, filters.allFgoSeries) &&
+        matchesTagGroup(event.custom_tags.fgo_event_special, filters.fgoSpecial, filters.allFgoSpecial);
+}
+
+function matchesTagGroup(eventTags, selectedTags, allTags) {
+    const isRestricted = selectedTags.length < allTags.length;
+    if (!isRestricted) return true;
+    if (!eventTags.length) return false;
+    return eventTags.some(tag => selectedTags.includes(tag));
 }
 
 // 実際にHTMLの中に年表を書き込みます
