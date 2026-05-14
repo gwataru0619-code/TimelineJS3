@@ -4,7 +4,7 @@
       "unique_id": "FGO_event_2015_1",
       "start_date": {"year": "2015", "month": "8", "day": "19"},
       "text": {"headline": "激闘！クラス別サーヴァント戦", "text": "FGO イベント"},
-      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
       "end_date": {"year": "2015", "month": "9", "day": "9"}
     },
     {
@@ -12,7 +12,7 @@
       "unique_id": "FGO_event_2015_2",
       "start_date": {"year": "2015", "month": "9", "day": "16"},
       "text": {"headline": "ネロ祭 〜勝ち抜け熱闘コロシアム〜", "text": "FGO イベント"},
-      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
       "end_date": {"year": "2015", "month": "9", "day": "25"}
     },
     {
@@ -20,7 +20,7 @@
       "unique_id": "FGO_event_2015_3",
       "start_date": {"year": "2015", "month": "9", "day": "25"},
       "text": {"headline": "月の女神はお団子の夢を見るか?", "text": "FGO イベント"},
-      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
       "end_date": {"year": "2015", "month": "10", "day": "2"}
     },
     {
@@ -28,7 +28,7 @@
       "unique_id": "FGO_event_2015_4",
       "start_date": {"year": "2015", "month": "10", "day": "21"},
       "text": {"headline": "歌うカボチャ城の冒険 〜マッドパーティー2015〜", "text": "FGO イベント"},
-      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
       "end_date": {"year": "2015", "month": "11", "day": "5"}
     },
     {
@@ -36,7 +36,7 @@
       "unique_id": "FGO_event_2015_5",
       "start_date": {"year": "2015", "month": "11", "day": "25"},
       "text": {"headline": "ぐだぐだ本能寺", "text": "FGO イベント"},
-      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
       "end_date": {"year": "2015", "month": "12", "day": "11"}
     },
     {
@@ -44,7 +44,1319 @@
       "unique_id": "FGO_event_2015_6",
       "start_date": {"year": "2015", "month": "12", "day": "16"},
       "text": {"headline": "ほぼ週間 サンタオルタさん", "text": "FGO イベント"},
-      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
       "end_date": {"year": "2015", "month": "12", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2016_1",
+      "unique_id": "FGO_event_2016_1",
+      "start_date": {"year": "2016", "month": "1", "day": "20"},
+      "text": {"headline": "セイバーウォーズ〜リリィのコスモ武者修行〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "2", "day": "3"}
+    },
+    {
+      "id": "FGO_event_2016_2",
+      "unique_id": "FGO_event_2016_2",
+      "start_date": {"year": "2016", "month": "2", "day": "10"},
+      "text": {"headline": "チョコレート・レディの空騒ぎ ～Valentine 2016～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "2", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2016_3",
+      "unique_id": "FGO_event_2016_3",
+      "start_date": {"year": "2016", "month": "2", "day": "25"},
+      "text": {"headline": "空の境界 ～the Garden of Order～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "3", "day": "9"}
+    },
+    {
+      "id": "FGO_event_2016_4",
+      "unique_id": "FGO_event_2016_4",
+      "start_date": {"year": "2016", "month": "3", "day": "16"},
+      "text": {"headline": "監獄塔に復讐鬼は哭く", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "3", "day": "23"}
+    },
+    {
+      "id": "FGO_event_2016_5",
+      "unique_id": "FGO_event_2016_5",
+      "start_date": {"year": "2016", "month": "4", "day": "11"},
+      "text": {"headline": "ダ・ヴィンチと七人の贋作英霊", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "4", "day": "20"}
+    },
+    {
+      "id": "FGO_event_2016_6",
+      "unique_id": "FGO_event_2016_6",
+      "start_date": {"year": "2016", "month": "4", "day": "27"},
+      "text": {"headline": "Fate/Accel Zero Order", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "5", "day": "18"}
+    },
+    {
+      "id": "FGO_event_2016_7",
+      "unique_id": "FGO_event_2016_7",
+      "start_date": {"year": "2016", "month": "5", "day": "31"},
+      "text": {"headline": "鬼哭酔夢魔京 羅生門", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "6", "day": "15"}
+    },
+    {
+      "id": "FGO_event_2016_8",
+      "unique_id": "FGO_event_2016_8",
+      "start_date": {"year": "2016", "month": "6", "day": "15"},
+      "text": {"headline": "星の三蔵ちゃん、天竺に行く", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "6", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2016_9",
+      "unique_id": "FGO_event_2016_9",
+      "start_date": {"year": "2016", "month": "7", "day": "11"},
+      "text": {"headline": "天魔御伽草子 鬼ヶ島", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "7", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2016_10",
+      "unique_id": "FGO_event_2016_10",
+      "start_date": {"year": "2016", "month": "8", "day": "11"},
+      "text": {"headline": "カルデアサマーメモリー 〜癒やしのホワイトビーチ〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "8", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2016_11",
+      "unique_id": "FGO_event_2016_11",
+      "start_date": {"year": "2016", "month": "8", "day": "22"},
+      "text": {"headline": "カルデアヒートオデッセイ 〜進化のシヴィライゼーション〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "8", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2016_12",
+      "unique_id": "FGO_event_2016_12",
+      "start_date": {"year": "2016", "month": "9", "day": "8"},
+      "text": {"headline": "魔法少女紀行 〜プリズマ・コーズ〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "9", "day": "21"}
+    },
+    {
+      "id": "FGO_event_2016_13",
+      "unique_id": "FGO_event_2016_13",
+      "start_date": {"year": "2016", "month": "9", "day": "28"},
+      "text": {"headline": "ネロ祭再び 〜2016 Autumn〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "10", "day": "10"}
+    },
+    {
+      "id": "FGO_event_2016_14",
+      "unique_id": "FGO_event_2016_14",
+      "start_date": {"year": "2016", "month": "10", "day": "12"},
+      "text": {"headline": "復刻：歌うカボチャ城の冒険 〜マッドパーティー2015〜ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "10", "day": "26"}
+    },
+    {
+      "id": "FGO_event_2016_15",
+      "unique_id": "FGO_event_2016_15",
+      "start_date": {"year": "2016", "month": "10", "day": "19"},
+      "text": {"headline": "ハロウィン・カムバック！超極☆大かぼちゃ村 〜そして冒険へ…〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "11", "day": "2"}
+    },
+    {
+      "id": "FGO_event_2016_16",
+      "unique_id": "FGO_event_2016_16",
+      "start_date": {"year": "2016", "month": "11", "day": "16"},
+      "text": {"headline": "復刻：ほぼ週間 サンタオルタさん ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "11", "day": "22"}
+    },
+    {
+      "id": "FGO_event_2016_17",
+      "unique_id": "FGO_event_2016_17",
+      "start_date": {"year": "2016", "month": "11", "day": "28"},
+      "text": {"headline": "二代目はオルタちゃん 〜2016 クリスマス〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2016", "month": "12", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2017_1",
+      "unique_id": "FGO_event_2017_1",
+      "start_date": {"year": "2017", "month": "1", "day": "18"},
+      "text": {"headline": "復刻：月の女神はお団子の夢を見るか? ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "1", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2017_2",
+      "unique_id": "FGO_event_2017_2",
+      "start_date": {"year": "2017", "month": "1", "day": "25"},
+      "text": {"headline": "復刻：監獄塔に復讐鬼は哭く", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "2", "day": "8"}
+    },
+    {
+      "id": "FGO_event_2017_3",
+      "unique_id": "FGO_event_2017_3",
+      "start_date": {"year": "2017", "month": "2", "day": "8"},
+      "text": {"headline": "復刻：チョコレート・レディの空騒ぎ ～Valentine 2016～ 拡大版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "2", "day": "22"}
+    },
+    {
+      "id": "FGO_event_2017_4",
+      "unique_id": "FGO_event_2017_4",
+      "start_date": {"year": "2017", "month": "3", "day": "15"},
+      "text": {"headline": "復刻：ぐだぐだ本能寺 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "3", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2017_5",
+      "unique_id": "FGO_event_2017_5",
+      "start_date": {"year": "2017", "month": "4", "day": "5"},
+      "text": {"headline": "ぐだぐだ明治維新", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "4", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2017_6",
+      "unique_id": "FGO_event_2017_6",
+      "start_date": {"year": "2017", "month": "5", "day": "1"},
+      "text": {"headline": "深海電脳楽土 SE.RA.PH", "text": "FGO メインストーリー"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "5", "day": "24"}
+    },
+    {
+      "id": "FGO_event_2017_7",
+      "unique_id": "FGO_event_2017_7",
+      "start_date": {"year": "2017", "month": "5", "day": "31"},
+      "text": {"headline": "復刻：鬼哭酔夢魔京羅生門 ショート版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "6", "day": "8"}
+    },
+    {
+      "id": "FGO_event_2017_8",
+      "unique_id": "FGO_event_2017_8",
+      "start_date": {"year": "2017", "month": "6", "day": "14"},
+      "text": {"headline": "復刻：天魔御伽草子鬼ヶ島 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "6", "day": "28"}
+    },
+    {
+      "id": "FGO_event_2017_9",
+      "unique_id": "FGO_event_2017_9",
+      "start_date": {"year": "2017", "month": "7", "day": "12"},
+      "text": {"headline": "復刻：カルデアサマーメモリー 〜癒やしのホワイトビーチ〜 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "7", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2017_10",
+      "unique_id": "FGO_event_2017_10",
+      "start_date": {"year": "2017", "month": "7", "day": "20"},
+      "text": {"headline": "復刻：カルデアヒートオデッセイ 〜進化のシヴィライゼーション〜 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "7", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2017_11",
+      "unique_id": "FGO_event_2017_11",
+      "start_date": {"year": "2017", "month": "8", "day": "2"},
+      "text": {"headline": "オール・ザ・ステイツメン!〜マンガで分かる合衆国開拓史〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "8", "day": "16"}
+    },
+    {
+      "id": "FGO_event_2017_12",
+      "unique_id": "FGO_event_2017_12",
+      "start_date": {"year": "2017", "month": "8", "day": "9"},
+      "text": {"headline": "デッドヒート・サマーレース！〜夢と希望のイシュタルカップ2017〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "8", "day": "30"}
+    },
+    {
+      "id": "FGO_event_2017_13",
+      "unique_id": "FGO_event_2017_13",
+      "start_date": {"year": "2017", "month": "8", "day": "16"},
+      "text": {"headline": "デスジェイル・サマーエスケイプ 〜罪と絶望のメイヴ大監獄2017〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "8", "day": "30"}
+    },
+    {
+      "id": "FGO_event_2017_14",
+      "unique_id": "FGO_event_2017_14",
+      "start_date": {"year": "2017", "month": "9", "day": "6"},
+      "text": {"headline": "ネロ祭再び 〜2017 Autumn〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "9", "day": "20"}
+    },
+    {
+      "id": "FGO_event_2017_15",
+      "unique_id": "FGO_event_2017_15",
+      "start_date": {"year": "2017", "month": "9", "day": "27"},
+      "text": {"headline": "復刻：ハロウィン･カムバック！ 超極☆大かぼちゃ村 〜そして冒険へ……〜 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "10", "day": "11"}
+    },
+    {
+      "id": "FGO_event_2017_16",
+      "unique_id": "FGO_event_2017_16",
+      "start_date": {"year": "2017", "month": "10", "day": "25"},
+      "text": {"headline": "ハロウィン・ストライク！ 魔のビルドクライマー 姫路城大決戦", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "11", "day": "10"}
+    },
+    {
+      "id": "FGO_event_2017_17",
+      "unique_id": "FGO_event_2017_17",
+      "start_date": {"year": "2017", "month": "11", "day": "15"},
+      "text": {"headline": "復刻：二代目はオルタちゃん ～2016 クリスマス～ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "11", "day": "24"}
+    },
+    {
+      "id": "FGO_event_2017_18",
+      "unique_id": "FGO_event_2017_18",
+      "start_date": {"year": "2017", "month": "12", "day": "15"},
+      "text": {"headline": "冥界のメリークリスマス", "text": "FGO メインストーリー"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2017", "month": "12", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2018_1",
+      "unique_id": "FGO_event_2018_1",
+      "start_date": {"year": "2018", "month": "1", "day": "10"},
+      "text": {"headline": "復刻：ダ・ヴィンチと七人の贋作英霊 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "1", "day": "24"}
+    },
+    {
+      "id": "FGO_event_2018_2",
+      "unique_id": "FGO_event_2018_2",
+      "start_date": {"year": "2018", "month": "1", "day": "24"},
+      "text": {"headline": "節分酒宴絵巻 鬼楽百重塔", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "tower", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "1", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2018_3",
+      "unique_id": "FGO_event_2018_3",
+      "start_date": {"year": "2018", "month": "1", "day": "31"},
+      "text": {"headline": "バレンタイン2018 〜繁栄のチョコレートガーデンズ・オブ・バレンタイン〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "2", "day": "15"}
+    },
+    {
+      "id": "FGO_event_2018_4",
+      "unique_id": "FGO_event_2018_4",
+      "start_date": {"year": "2018", "month": "2", "day": "15"},
+      "text": {"headline": "復刻：空の境界/the Garden of Order - Revival-", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "2", "day": "28"}
+    },
+    {
+      "id": "FGO_event_2018_5",
+      "unique_id": "FGO_event_2018_5",
+      "start_date": {"year": "2018", "month": "3", "day": "15"},
+      "text": {"headline": "復刻：セイバーウォーズ 〜リリィのコスモ武者修行〜ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "3", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2018_6",
+      "unique_id": "FGO_event_2018_6",
+      "start_date": {"year": "2018", "month": "4", "day": "18"},
+      "text": {"headline": "復刻：星の三蔵ちゃん、天竺に行く ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "4", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2018_7",
+      "unique_id": "FGO_event_2018_7",
+      "start_date": {"year": "2018", "month": "4", "day": "29"},
+      "text": {"headline": "Fate/Apocrypha Inheritance of Glory", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "5", "day": "13"}
+    },
+    {
+      "id": "FGO_event_2018_8",
+      "unique_id": "FGO_event_2018_8",
+      "start_date": {"year": "2018", "month": "5", "day": "11"},
+      "text": {"headline": "虚月館殺人事件", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "5", "day": "18"}
+    },
+    {
+      "id": "FGO_event_2018_9",
+      "unique_id": "FGO_event_2018_9",
+      "start_date": {"year": "2018", "month": "5", "day": "18"},
+      "text": {"headline": "復刻：ぐだぐだ明治維新ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "5", "day": "30"}
+    },
+    {
+      "id": "FGO_event_2018_10",
+      "unique_id": "FGO_event_2018_10",
+      "start_date": {"year": "2018", "month": "6", "day": "13"},
+      "text": {"headline": "ぐだぐだ帝都聖杯奇譚 -極東魔人戦線1945-", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "6", "day": "27"}
+    },
+    {
+      "id": "FGO_event_2018_11",
+      "unique_id": "FGO_event_2018_11",
+      "start_date": {"year": "2018", "month": "6", "day": "27"},
+      "text": {"headline": "復刻：デッドヒート・サマーレース！ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "7", "day": "13"}
+    },
+    {
+      "id": "FGO_event_2018_12",
+      "unique_id": "FGO_event_2018_12",
+      "start_date": {"year": "2018", "month": "7", "day": "4"},
+      "text": {"headline": "復刻：デスジェイル･サマーエスケイプ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "7", "day": "13"}
+    },
+    {
+      "id": "FGO_event_2018_13",
+      "unique_id": "FGO_event_2018_13",
+      "start_date": {"year": "2018", "month": "7", "day": "29"},
+      "text": {"headline": "復刻：オール・ザ・ステイツメン！", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "8", "day": "12"}
+    },
+    {
+      "id": "FGO_event_2018_14",
+      "unique_id": "FGO_event_2018_14",
+      "start_date": {"year": "2018", "month": "8", "day": "9"},
+      "text": {"headline": "サーヴァント・サマー・フェスティバル！", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "8", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2018_15",
+      "unique_id": "FGO_event_2018_15",
+      "start_date": {"year": "2018", "month": "9", "day": "5"},
+      "text": {"headline": "復刻：Fate/Accel Zero Order ～LAP2～", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "9", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2018_16",
+      "unique_id": "FGO_event_2018_16",
+      "start_date": {"year": "2018", "month": "9", "day": "19"},
+      "text": {"headline": "バトル・イン・ニューヨーク2018", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "10", "day": "5"}
+    },
+    {
+      "id": "FGO_event_2018_17",
+      "unique_id": "FGO_event_2018_17",
+      "start_date": {"year": "2018", "month": "10", "day": "5"},
+      "text": {"headline": "復刻：ハロウィン・ストライク！ 魔のビルドクライマー 姫路城大決戦 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "10", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2018_18",
+      "unique_id": "FGO_event_2018_18",
+      "start_date": {"year": "2018", "month": "10", "day": "24"},
+      "text": {"headline": "神秘の国のONILAND！！ 〜鬼の王とカムイの黄金〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "11", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2018_19",
+      "unique_id": "FGO_event_2018_19",
+      "start_date": {"year": "2018", "month": "11", "day": "14"},
+      "text": {"headline": "復刻：冥界のメリークリスマス ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "11", "day": "23"}
+    },
+    {
+      "id": "FGO_event_2018_20",
+      "unique_id": "FGO_event_2018_20",
+      "start_date": {"year": "2018", "month": "12", "day": "12"},
+      "text": {"headline": "クリスマス2018 ホーリー・サンバ・ナイト 〜雪降る遺跡と少女騎士〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2018", "month": "12", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2019_1",
+      "unique_id": "FGO_event_2019_1",
+      "start_date": {"year": "2019", "month": "1", "day": "1"},
+      "text": {"headline": "雀のお宿の活動日誌 〜閻魔亭繁盛記〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "1", "day": "15"}
+    },
+    {
+      "id": "FGO_event_2019_2",
+      "unique_id": "FGO_event_2019_2",
+      "start_date": {"year": "2019", "month": "1", "day": "23"},
+      "text": {"headline": "復刻：魔法少女紀行 プリズマ・コーズ ～Re-install～", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "2", "day": "6"}
+    },
+    {
+      "id": "FGO_event_2019_3",
+      "unique_id": "FGO_event_2019_3",
+      "start_date": {"year": "2019", "month": "2", "day": "6"},
+      "text": {"headline": "バレンタイン2019 ボイス＆レター・これくしょん！ 〜紫式部と7つの呪本〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "2", "day": "20"}
+    },
+    {
+      "id": "FGO_event_2019_4",
+      "unique_id": "FGO_event_2019_4",
+      "start_date": {"year": "2019", "month": "2", "day": "20"},
+      "text": {"headline": "復刻：深海電脳楽土 SE.RA.PH ～Second Ballet～", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "3", "day": "11"}
+    },
+    {
+      "id": "FGO_event_2019_5",
+      "unique_id": "FGO_event_2019_5",
+      "start_date": {"year": "2019", "month": "3", "day": "11"},
+      "text": {"headline": "旧き蜘蛛は懐古と共に糸を紡ぐ", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "3", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2019_6",
+      "unique_id": "FGO_event_2019_6",
+      "start_date": {"year": "2019", "month": "3", "day": "27"},
+      "text": {"headline": "徳川廻天迷宮 大奥", "text": "FGO メインストーリー"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "4", "day": "10"}
+    },
+    {
+      "id": "FGO_event_2019_7",
+      "unique_id": "FGO_event_2019_7",
+      "start_date": {"year": "2019", "month": "4", "day": "12"},
+      "text": {"headline": "復刻：ぐだぐだ帝都聖杯奇譚 ～極東魔人戦線1945～ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "4", "day": "26"}
+    },
+    {
+      "id": "FGO_event_2019_8",
+      "unique_id": "FGO_event_2019_8",
+      "start_date": {"year": "2019", "month": "4", "day": "27"},
+      "text": {"headline": "レディ・ライネスの事件簿", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "5", "day": "11"}
+    },
+    {
+      "id": "FGO_event_2019_9",
+      "unique_id": "FGO_event_2019_9",
+      "start_date": {"year": "2019", "month": "5", "day": "15"},
+      "text": {"headline": "惑う鳴鳳荘の考察", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "5", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2019_10",
+      "unique_id": "FGO_event_2019_10",
+      "start_date": {"year": "2019", "month": "7", "day": "4"},
+      "text": {"headline": "オール信長総進撃 ぐだぐだファイナル本能寺2019", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "7", "day": "18"}
+    },
+    {
+      "id": "FGO_event_2019_11",
+      "unique_id": "FGO_event_2019_11",
+      "start_date": {"year": "2019", "month": "7", "day": "17"},
+      "text": {"headline": "監獄塔に復讐鬼は哭く(メイン・インタールード)", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2019_12",
+      "unique_id": "FGO_event_2019_12",
+      "start_date": {"year": "2019", "month": "7", "day": "17"},
+      "text": {"headline": "復刻：サーヴァント･サマー･フェスティバル! ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "8", "day": "3"}
+    },
+    {
+      "id": "FGO_event_2019_13",
+      "unique_id": "FGO_event_2019_13",
+      "start_date": {"year": "2019", "month": "8", "day": "14"},
+      "text": {"headline": "見参！ラスベガス御前試合 〜水着剣豪七色勝負！", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "9", "day": "4"}
+    },
+    {
+      "id": "FGO_event_2019_14",
+      "unique_id": "FGO_event_2019_14",
+      "start_date": {"year": "2019", "month": "9", "day": "18"},
+      "text": {"headline": "バトル・イン・ニューヨーク2019", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "10", "day": "2"}
+    },
+    {
+      "id": "FGO_event_2019_15",
+      "unique_id": "FGO_event_2019_15",
+      "start_date": {"year": "2019", "month": "10", "day": "11"},
+      "text": {"headline": "復刻：神秘の国のONILAND！！ 〜鬼の王とカムイの黄金〜 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "10", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2019_16",
+      "unique_id": "FGO_event_2019_16",
+      "start_date": {"year": "2019", "month": "10", "day": "30"},
+      "text": {"headline": "セイバーウォーズ2 〜始まりの宇宙へ〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "11", "day": "13"}
+    },
+    {
+      "id": "FGO_event_2019_17",
+      "unique_id": "FGO_event_2019_17",
+      "start_date": {"year": "2019", "month": "11", "day": "28"},
+      "text": {"headline": "クリスマス2019 ナイチンゲールのクリスマス・キャロル", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2019", "month": "12", "day": "12"}
+    },
+    {
+      "id": "FGO_event_2020_1",
+      "unique_id": "FGO_event_2020_1",
+      "start_date": {"year": "2020", "month": "1", "day": "4"},
+      "text": {"headline": "復刻：雀のお宿の活動日誌 ～閻魔亭繁盛記～ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "1", "day": "18"}
+    },
+    {
+      "id": "FGO_event_2020_2",
+      "unique_id": "FGO_event_2020_2",
+      "start_date": {"year": "2020", "month": "1", "day": "22"},
+      "text": {"headline": "救え！アマゾネス・ドットコム 〜CEOクライシス2020〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "tower", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "2", "day": "5"}
+    },
+    {
+      "id": "FGO_event_2020_3",
+      "unique_id": "FGO_event_2020_3",
+      "start_date": {"year": "2020", "month": "2", "day": "12"},
+      "text": {"headline": "バレンタイン2020 いみじかりしバレンタイン 〜紫式部と5人のパリピギャル軍団〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "2", "day": "26"}
+    },
+    {
+      "id": "FGO_event_2020_4",
+      "unique_id": "FGO_event_2020_4",
+      "start_date": {"year": "2020", "month": "2", "day": "26"},
+      "text": {"headline": "冥界のメリークリスマス　(メイン・インタールード)", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "3", "day": "6"}
+    },
+    {
+      "id": "FGO_event_2020_5",
+      "unique_id": "FGO_event_2020_5",
+      "start_date": {"year": "2020", "month": "3", "day": "6"},
+      "text": {"headline": "アイアイエーの春風 〜魔女と愉快な仲間と新しい冒険〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "3", "day": "16"}
+    },
+    {
+      "id": "FGO_event_2020_6",
+      "unique_id": "FGO_event_2020_6",
+      "start_date": {"year": "2020", "month": "3", "day": "25"},
+      "text": {"headline": "復刻：Fate/Apocrypha Inheritance of Glory -Triumphal-", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "4", "day": "8"}
+    },
+    {
+      "id": "FGO_event_2020_7",
+      "unique_id": "FGO_event_2020_7",
+      "start_date": {"year": "2020", "month": "5", "day": "8"},
+      "text": {"headline": "復刻：オール信長総進撃 ぐだぐだファイナル本能寺2019 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "5", "day": "17"}
+    },
+    {
+      "id": "FGO_event_2020_8",
+      "unique_id": "FGO_event_2020_8",
+      "start_date": {"year": "2020", "month": "5", "day": "25"},
+      "text": {"headline": "Fate/Requiem 盤上遊戯黙示録", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "6", "day": "8"}
+    },
+    {
+      "id": "FGO_event_2020_9",
+      "unique_id": "FGO_event_2020_9",
+      "start_date": {"year": "2020", "month": "6", "day": "8"},
+      "text": {"headline": "復刻：見参！ラスベガス御前試合 〜水着剣豪七色勝負！ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "6", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2020_10",
+      "unique_id": "FGO_event_2020_10",
+      "start_date": {"year": "2020", "month": "7", "day": "15"},
+      "text": {"headline": "深海電脳楽土 SE.RA.PH　(メイン・インタールード)", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2020_11",
+      "unique_id": "FGO_event_2020_11",
+      "start_date": {"year": "2020", "month": "7", "day": "22"},
+      "text": {"headline": "復刻：徳川廻天迷宮 大奥", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "8", "day": "5"}
+    },
+    {
+      "id": "FGO_event_2020_12",
+      "unique_id": "FGO_event_2020_12",
+      "start_date": {"year": "2020", "month": "8", "day": "10"},
+      "text": {"headline": "復刻：オール・ザ・ステイツメン！ ～マンガで分かる合衆国開拓使～", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "8", "day": "17"}
+    },
+    {
+      "id": "FGO_event_2020_13",
+      "unique_id": "FGO_event_2020_13",
+      "start_date": {"year": "2020", "month": "8", "day": "17"},
+      "text": {"headline": "FGO Summer Event 2020 サーヴァント・サマーキャンプ！ ～カルデア・スリラーナイト～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "9", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2020_14",
+      "unique_id": "FGO_event_2020_14",
+      "start_date": {"year": "2020", "month": "9", "day": "18"},
+      "text": {"headline": "影の国の舞闘会 〜ネコとバニーと聖杯戦争〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "grailfront", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "10", "day": "2"}
+    },
+    {
+      "id": "FGO_event_2020_15",
+      "unique_id": "FGO_event_2020_15",
+      "start_date": {"year": "2020", "month": "10", "day": "9"},
+      "text": {"headline": "超古代新選組列伝 ぐだぐだ邪馬台国2020", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "10", "day": "23"}
+    },
+    {
+      "id": "FGO_event_2020_16",
+      "unique_id": "FGO_event_2020_16",
+      "start_date": {"year": "2020", "month": "10", "day": "23"},
+      "text": {"headline": "復刻：クリスマス2019 ナイチンゲールのクリスマス・キャロル ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "11", "day": "4"}
+    },
+    {
+      "id": "FGO_event_2020_17",
+      "unique_id": "FGO_event_2020_17",
+      "start_date": {"year": "2020", "month": "11", "day": "11"},
+      "text": {"headline": "虚数大海戦イマジナリ･スクランブル ～ノーチラス浮上せよ～", "text": "FGO メインストーリー"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "11", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2020_18",
+      "unique_id": "FGO_event_2020_18",
+      "start_date": {"year": "2020", "month": "12", "day": "16"},
+      "text": {"headline": "栄光のサンタクロース・ロード ～封じられたクリスマスプレゼント～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2020", "month": "12", "day": "30"}
+    },
+    {
+      "id": "FGO_event_2021_1",
+      "unique_id": "FGO_event_2021_1",
+      "start_date": {"year": "2021", "month": "1", "day": "6"},
+      "text": {"headline": "復刻：セイバーウォーズ2〜始まりの宇宙へ〜 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "1", "day": "20"}
+    },
+    {
+      "id": "FGO_event_2021_2",
+      "unique_id": "FGO_event_2021_2",
+      "start_date": {"year": "2021", "month": "1", "day": "20"},
+      "text": {"headline": "いざ鎌倉にさよならを 〜Little Big Tengu〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "2", "day": "3"}
+    },
+    {
+      "id": "FGO_event_2021_3",
+      "unique_id": "FGO_event_2021_3",
+      "start_date": {"year": "2021", "month": "2", "day": "3"},
+      "text": {"headline": "聖杯戦線 （グレイルフロント）～ブルータスよ、おまえもか～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "grailfront", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "2", "day": "17"}
+    },
+    {
+      "id": "FGO_event_2021_4",
+      "unique_id": "FGO_event_2021_4",
+      "start_date": {"year": "2021", "month": "2", "day": "10"},
+      "text": {"headline": "愛の伝道師アムールちゃんのサン・バレンティーノ！ ～カルデア・ビター・バレンタイン2021～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "2", "day": "24"}
+    },
+    {
+      "id": "FGO_event_2021_5",
+      "unique_id": "FGO_event_2021_5",
+      "start_date": {"year": "2021", "month": "3", "day": "3"},
+      "text": {"headline": "聖杯怪盗天草四郎 〜スラップスティック・ミュージアム〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "3", "day": "15"}
+    },
+    {
+      "id": "FGO_event_2021_6",
+      "unique_id": "FGO_event_2021_6",
+      "start_date": {"year": "2021", "month": "3", "day": "24"},
+      "text": {"headline": "アキハバラ・エクスプロージョン！ 〜願いの街と愛を刻まれた彫像たち〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "tower", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "4", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2021_7",
+      "unique_id": "FGO_event_2021_7",
+      "start_date": {"year": "2021", "month": "4", "day": "26"},
+      "text": {"headline": "輝け！グレイルライブ！！ 〜鶴のアイドル恩返し〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "5", "day": "10"}
+    },
+    {
+      "id": "FGO_event_2021_8",
+      "unique_id": "FGO_event_2021_8",
+      "start_date": {"year": "2021", "month": "5", "day": "12"},
+      "text": {"headline": "聖杯戦線 （グレイルフロント）～僕のスーパー・キャメロット2021～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "grailfront", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "5", "day": "26"}
+    },
+    {
+      "id": "FGO_event_2021_9",
+      "unique_id": "FGO_event_2021_9",
+      "start_date": {"year": "2021", "month": "5", "day": "19"},
+      "text": {"headline": "復刻：サーヴァント・サマーキャンプ！ ～カルデア・スリラーナイト～ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "6", "day": "9"}
+    },
+    {
+      "id": "FGO_event_2021_10",
+      "unique_id": "FGO_event_2021_10",
+      "start_date": {"year": "2021", "month": "6", "day": "30"},
+      "text": {"headline": "復刻：Grandネロ祭〜2021 Early Summer〜", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "7", "day": "14"}
+    },
+    {
+      "id": "FGO_event_2021_11",
+      "unique_id": "FGO_event_2021_11",
+      "start_date": {"year": "2021", "month": "9", "day": "8"},
+      "text": {"headline": "カルデア・サマーアドベンチャー！ 〜夢追う少年と夢見る少女〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": "treasure"},
+      "end_date": {"year": "2021", "month": "9", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2021_12",
+      "unique_id": "FGO_event_2021_12",
+      "start_date": {"year": "2021", "month": "10", "day": "6"},
+      "text": {"headline": "チェイテ・ハロウィン・トリロジー ウルトラデラックス総集編！", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "11", "day": "3"}
+    },
+    {
+      "id": "FGO_event_2021_13",
+      "unique_id": "FGO_event_2021_13",
+      "start_date": {"year": "2021", "month": "10", "day": "20"},
+      "text": {"headline": "ハロウィン・ライジング！ ～砂塵の女王と暗黒の使徒～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "11", "day": "3"}
+    },
+    {
+      "id": "FGO_event_2021_14",
+      "unique_id": "FGO_event_2021_14",
+      "start_date": {"year": "2021", "month": "11", "day": "3"},
+      "text": {"headline": "復刻：超古代新選組列伝 ぐだぐだ邪馬台国2020 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "11", "day": "17"}
+    },
+    {
+      "id": "FGO_event_2021_15",
+      "unique_id": "FGO_event_2021_15",
+      "start_date": {"year": "2021", "month": "11", "day": "17"},
+      "text": {"headline": "昭和キ神計画 ぐだぐだ龍馬危機一髪！ 〜消えたノッブヘッドの謎〜", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "12", "day": "1"}
+    },
+    {
+      "id": "FGO_event_2021_16",
+      "unique_id": "FGO_event_2021_16",
+      "start_date": {"year": "2021", "month": "12", "day": "8"},
+      "text": {"headline": "メイキング・クリスマス・パーティー！", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "12", "day": "17"}
+    },
+    {
+      "id": "FGO_event_2021_17",
+      "unique_id": "FGO_event_2021_17",
+      "start_date": {"year": "2021", "month": "12", "day": "22"},
+      "text": {"headline": "非霊長生存圏 ツングースカ・サンクチュアリ", "text": "FGO メインストーリー"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2021", "month": "12", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2022_1",
+      "unique_id": "FGO_event_2022_1",
+      "start_date": {"year": "2022", "month": "1", "day": "12"},
+      "text": {"headline": "復刻：レディ・ライネスの事件簿 Plus Episode 儀典の帰還", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "2", "day": "2"}
+    },
+    {
+      "id": "FGO_event_2022_2",
+      "unique_id": "FGO_event_2022_2",
+      "start_date": {"year": "2022", "month": "1", "day": "19"},
+      "text": {"headline": "監獄塔に復讐鬼は哭く （常設化）", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2022_3",
+      "unique_id": "FGO_event_2022_3",
+      "start_date": {"year": "2022", "month": "1", "day": "26"},
+      "text": {"headline": "冥界のメリークリスマス （常設化）", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2022_4",
+      "unique_id": "FGO_event_2022_4",
+      "start_date": {"year": "2022", "month": "2", "day": "9"},
+      "text": {"headline": "マナナン･スーベニア･バレンタイン ～チョコの樹と女神の選択～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "2", "day": "23"}
+    },
+    {
+      "id": "FGO_event_2022_5",
+      "unique_id": "FGO_event_2022_5",
+      "start_date": {"year": "2022", "month": "2", "day": "23"},
+      "text": {"headline": "深海電脳楽土 SE.RA.PH （常設化）", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2022_6",
+      "unique_id": "FGO_event_2022_6",
+      "start_date": {"year": "2022", "month": "3", "day": "2"},
+      "text": {"headline": "15人の理知的なメガネたち", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "3", "day": "16"}
+    },
+    {
+      "id": "FGO_event_2022_7",
+      "unique_id": "FGO_event_2022_7",
+      "start_date": {"year": "2022", "month": "3", "day": "16"},
+      "text": {"headline": "バトル・イン・ニューヨーク2022 ～スペース・オデュッセウス対ニコラ・テスラ～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "3", "day": "30"}
+    },
+    {
+      "id": "FGO_event_2022_8",
+      "unique_id": "FGO_event_2022_8",
+      "start_date": {"year": "2022", "month": "4", "day": "6"},
+      "text": {"headline": "水怪クライシス ～無垢なる者たちの浮島～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "4", "day": "27"}
+    },
+    {
+      "id": "FGO_event_2022_9",
+      "unique_id": "FGO_event_2022_9",
+      "start_date": {"year": "2022", "month": "4", "day": "27"},
+      "text": {"headline": "連続活劇神話 ミシシッピ・ミササイザーズ", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "5", "day": "18"}
+    },
+    {
+      "id": "FGO_event_2022_10",
+      "unique_id": "FGO_event_2022_10",
+      "start_date": {"year": "2022", "month": "5", "day": "25"},
+      "text": {"headline": "非霊長生存圏 ツングースカ・サンクチュアリ （常設化）", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2022_11",
+      "unique_id": "FGO_event_2022_11",
+      "start_date": {"year": "2022", "month": "6", "day": "15"},
+      "text": {"headline": "聖杯戦線 ～ムーンサルト・オペレーション～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "grailfront", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "6", "day": "29"}
+    },
+    {
+      "id": "FGO_event_2022_12",
+      "unique_id": "FGO_event_2022_12",
+      "start_date": {"year": "2022", "month": "6", "day": "29"},
+      "text": {"headline": "南溟弓張八犬伝", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "7", "day": "20"}
+    },
+    {
+      "id": "FGO_event_2022_13",
+      "unique_id": "FGO_event_2022_13",
+      "start_date": {"year": "2022", "month": "7", "day": "13"},
+      "text": {"headline": "徳川廻天迷宮 大奥 （常設化）", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2022_14",
+      "unique_id": "FGO_event_2022_14",
+      "start_date": {"year": "2022", "month": "8", "day": "10"},
+      "text": {"headline": "アークティック・サマーワールド！ ～カルデア真夏の魔園観光～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "8", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2022_15",
+      "unique_id": "FGO_event_2022_15",
+      "start_date": {"year": "2022", "month": "9", "day": "14"},
+      "text": {"headline": "ぶっちぎり茶の湯バトル ぐだぐだ新邪馬台国 ～地獄から帰ってきた男～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "10", "day": "5"}
+    },
+    {
+      "id": "FGO_event_2022_16",
+      "unique_id": "FGO_event_2022_16",
+      "start_date": {"year": "2022", "month": "10", "day": "12"},
+      "text": {"headline": "108人のハロウィン・リベリオン！ ～小竜娘水滸演義～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "11", "day": "2"}
+    },
+    {
+      "id": "FGO_event_2022_17",
+      "unique_id": "FGO_event_2022_17",
+      "start_date": {"year": "2022", "month": "10", "day": "26"},
+      "text": {"headline": "虚数大海戦イマジナリ･スクランブル ～ノーチラス浮上せよ～ （常設化）", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""}
+    },
+    {
+      "id": "FGO_event_2022_18",
+      "unique_id": "FGO_event_2022_18",
+      "start_date": {"year": "2022", "month": "11", "day": "9"},
+      "text": {"headline": "カルデア妖精騎士杯 ～二代目の凱旋～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "11", "day": "30"}
+    },
+    {
+      "id": "FGO_event_2022_19",
+      "unique_id": "FGO_event_2022_19",
+      "start_date": {"year": "2022", "month": "12", "day": "7"},
+      "text": {"headline": "復刻：栄光のサンタクロース・ロード ～封じられたクリスマスプレゼント～ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2022", "month": "12", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2023_1",
+      "unique_id": "FGO_event_2023_1",
+      "start_date": {"year": "2023", "month": "2", "day": "17"},
+      "text": {"headline": "ヨハンナさんと未確認の愛 ～ぶっ壊せ☆ラブラブはぁと大石像～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "3", "day": "10"}
+    },
+    {
+      "id": "FGO_event_2023_2",
+      "unique_id": "FGO_event_2023_2",
+      "start_date": {"year": "2023", "month": "3", "day": "17"},
+      "text": {"headline": "CBC2023 カルデア重工物語 ～君と僕のBtoB～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "4", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2023_3",
+      "unique_id": "FGO_event_2023_3",
+      "start_date": {"year": "2023", "month": "4", "day": "26"},
+      "text": {"headline": "螺旋証明世界 リリムハーロット ～喝采なき薔薇～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "5", "day": "17"}
+    },
+    {
+      "id": "FGO_event_2023_4",
+      "unique_id": "FGO_event_2023_4",
+      "start_date": {"year": "2023", "month": "5", "day": "24"},
+      "text": {"headline": "風雲からくりイリヤ城 ～果心居士のささやかな野望～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "6", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2023_5",
+      "unique_id": "FGO_event_2023_5",
+      "start_date": {"year": "2023", "month": "7", "day": "5"},
+      "text": {"headline": "ミスティックアイズ・シンフォニー ～妖しの森と麗しの足跡～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "tower", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "7", "day": "26"}
+    },
+    {
+      "id": "FGO_event_2023_6",
+      "unique_id": "FGO_event_2023_6",
+      "start_date": {"year": "2023", "month": "8", "day": "11"},
+      "text": {"headline": "サーヴァント・サマー・フェスティバル2023！", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "9", "day": "1"}
+    },
+    {
+      "id": "FGO_event_2023_7",
+      "unique_id": "FGO_event_2023_7",
+      "start_date": {"year": "2023", "month": "9", "day": "20"},
+      "text": {"headline": "ワンジナ･ワールドツアー！ ～大精霊と巡る世界一周～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "10", "day": "11"}
+    },
+    {
+      "id": "FGO_event_2023_8",
+      "unique_id": "FGO_event_2023_8",
+      "start_date": {"year": "2023", "month": "10", "day": "25"},
+      "text": {"headline": "聖杯戦線 ～白天の城、黒夜の城～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "grailfront", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "11", "day": "15"}
+    },
+    {
+      "id": "FGO_event_2023_9",
+      "unique_id": "FGO_event_2023_9",
+      "start_date": {"year": "2023", "month": "11", "day": "29"},
+      "text": {"headline": "激走！川中島24時 ぐだぐだ超五稜郭 ～殺しのサインはM51～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "12", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2023_10",
+      "unique_id": "FGO_event_2023_10",
+      "start_date": {"year": "2023", "month": "12", "day": "20"},
+      "text": {"headline": "雪原のメリー・クリスマス2023 ～7days / 8years Snow Carol～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2023", "month": "12", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2024_1",
+      "unique_id": "FGO_event_2024_1",
+      "start_date": {"year": "2024", "month": "1", "day": "17"},
+      "text": {"headline": "盈月剣風帖", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "2", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2024_2",
+      "unique_id": "FGO_event_2024_2",
+      "start_date": {"year": "2024", "month": "2", "day": "14"},
+      "text": {"headline": "バレンタイン2024 ～チョコレート・リバーのその先に～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "3", "day": "6"}
+    },
+    {
+      "id": "FGO_event_2024_3",
+      "unique_id": "FGO_event_2024_3",
+      "start_date": {"year": "2024", "month": "3", "day": "6"},
+      "text": {"headline": "CBC2024 シャルルマーニュのモンジョワ・騎士道！", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "3", "day": "27"}
+    },
+    {
+      "id": "FGO_event_2024_4",
+      "unique_id": "FGO_event_2024_4",
+      "start_date": {"year": "2024", "month": "4", "day": "26"},
+      "text": {"headline": "魔法使いの夜 アフターナイト 隈乃温泉殺人事件 ～駒鳥は見た！魔法使いは二度死ぬ～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "5", "day": "17"}
+    },
+    {
+      "id": "FGO_event_2024_5",
+      "unique_id": "FGO_event_2024_5",
+      "start_date": {"year": "2024", "month": "5", "day": "17"},
+      "text": {"headline": "カルデア・サマーアドベンチャー！ ～夢追う少年と夢見る少女～ アンケート復刻版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": "treasure"},
+      "end_date": {"year": "2024", "month": "6", "day": "7"}
+    },
+    {
+      "id": "FGO_event_2024_6",
+      "unique_id": "FGO_event_2024_6",
+      "start_date": {"year": "2024", "month": "6", "day": "7"},
+      "text": {"headline": "螺旋証明世界 リリムハーロット ～喝采なき薔薇～ アンケート復刻版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "6", "day": "28"}
+    },
+    {
+      "id": "FGO_event_2024_7",
+      "unique_id": "FGO_event_2024_7",
+      "start_date": {"year": "2024", "month": "6", "day": "28"},
+      "text": {"headline": "踊るドラゴン・キャッスル！～深海の姫君とふたつの宝玉～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "7", "day": "19"}
+    },
+    {
+      "id": "FGO_event_2024_8",
+      "unique_id": "FGO_event_2024_8",
+      "start_date": {"year": "2024", "month": "8", "day": "14"},
+      "text": {"headline": "BBプレゼンツ★ セレブサマー・エクスペリエンス！～逆襲のドバイ～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "10", "day": "2"}
+    },
+    {
+      "id": "FGO_event_2024_9",
+      "unique_id": "FGO_event_2024_9",
+      "start_date": {"year": "2024", "month": "10", "day": "16"},
+      "text": {"headline": "妖精双六虫籠遊戯 ～まだ見ぬ完璧なあなたへ～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "11", "day": "6"}
+    },
+    {
+      "id": "FGO_event_2024_10",
+      "unique_id": "FGO_event_2024_10",
+      "start_date": {"year": "2024", "month": "11", "day": "13"},
+      "text": {"headline": "ぶち壊せ！ミステリーハウス・クラフターズ ～星の鉱員と日の出の翼～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "12", "day": "4"}
+    },
+    {
+      "id": "FGO_event_2024_11",
+      "unique_id": "FGO_event_2024_11",
+      "start_date": {"year": "2024", "month": "12", "day": "11"},
+      "text": {"headline": "ポホヨラのクリスマス・イブ ～夢見るサンタとくるみ割り人形～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "12", "day": "24"}
+    },
+    {
+      "id": "FGO_event_2024_12",
+      "unique_id": "FGO_event_2024_12",
+      "start_date": {"year": "2024", "month": "12", "day": "25"},
+      "text": {"headline": "スペース・ファンタズムーン アナザー・クリスマス ～真夜中のこんふぁんた～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "Xmas", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2024", "month": "12", "day": "31"}
+    },
+    {
+      "id": "FGO_event_2025_1",
+      "unique_id": "FGO_event_2025_1",
+      "start_date": {"year": "2025", "month": "1", "day": "15"},
+      "text": {"headline": "育て！マイ・リトル・ドラゴン ～鱗ある者たちの見る幻想～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "2", "day": "5"}
+    },
+    {
+      "id": "FGO_event_2025_2",
+      "unique_id": "FGO_event_2025_2",
+      "start_date": {"year": "2025", "month": "2", "day": "12"},
+      "text": {"headline": "小野小町古今抄 ～雪消月のキラキラ蓮華～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "3", "day": "5"}
+    },
+    {
+      "id": "FGO_event_2025_3",
+      "unique_id": "FGO_event_2025_3",
+      "start_date": {"year": "2025", "month": "3", "day": "5"},
+      "text": {"headline": "CBC2025 彼の名はダンテ ～ホテル・デノヴォのコンシェルジュ～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "3", "day": "26"}
+    },
+    {
+      "id": "FGO_event_2025_4",
+      "unique_id": "FGO_event_2025_4",
+      "start_date": {"year": "2025", "month": "4", "day": "2"},
+      "text": {"headline": "復刻：昭和キ神計画 ぐだぐだ龍馬危機一髪！ ～消えたノッブヘッドの謎～ ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "4", "day": "23"}
+    },
+    {
+      "id": "FGO_event_2025_5",
+      "unique_id": "FGO_event_2025_5",
+      "start_date": {"year": "2025", "month": "6", "day": "4"},
+      "text": {"headline": "落涙の翼", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "6", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2025_6",
+      "unique_id": "FGO_event_2025_6",
+      "start_date": {"year": "2025", "month": "7", "day": "2"},
+      "text": {"headline": "インドラの大試練 ～巡るブロークン・スカイ～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "7", "day": "14"}
+    },
+    {
+      "id": "FGO_event_2025_7",
+      "unique_id": "FGO_event_2025_7",
+      "start_date": {"year": "2025", "month": "8", "day": "13"},
+      "text": {"headline": "カルデア・U-サマーアイランド ～大統領は夏の夢を見るか？～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "summer", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": "treasure"},
+      "end_date": {"year": "2025", "month": "9", "day": "3"}
+    },
+    {
+      "id": "FGO_event_2025_8",
+      "unique_id": "FGO_event_2025_8",
+      "start_date": {"year": "2025", "month": "9", "day": "5"},
+      "text": {"headline": "失われた創世（ヴァニッシュド・ビギニング） ～未来からの方舟～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "9", "day": "24"}
+    },
+    {
+      "id": "FGO_event_2025_9",
+      "unique_id": "FGO_event_2025_9",
+      "start_date": {"year": "2025", "month": "9", "day": "24"},
+      "text": {"headline": "幕末チャンバラ神話 ぐだぐだ新選組・ジ・エンド ～REVENGE OF MAKOTO～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "gudaguda", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "10", "day": "15"}
+    },
+    {
+      "id": "FGO_event_2025_10",
+      "unique_id": "FGO_event_2025_10",
+      "start_date": {"year": "2025", "month": "10", "day": "22"},
+      "text": {"headline": "ファイナルハロウィン2025 ～パンプキンプラネットに輝く歌姫～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "halloween", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "11", "day": "12"}
+    },
+    {
+      "id": "FGO_event_2025_11",
+      "unique_id": "FGO_event_2025_11",
+      "start_date": {"year": "2025", "month": "12", "day": "3"},
+      "text": {"headline": "最終物資補給作戦 ～Final Logistics Operation～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "box", "fgo_event_box": "box", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2025", "month": "12", "day": "10"}
+    },
+    {
+      "id": "FGO_event_2026_1",
+      "unique_id": "FGO_event_2026_1",
+      "start_date": {"year": "2026", "month": "1", "day": "23"},
+      "text": {"headline": "カルデアン・フロラリア ～あなたの花が咲く頃に～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2026", "month": "2", "day": "13"}
+    },
+    {
+      "id": "FGO_event_2026_2",
+      "unique_id": "FGO_event_2026_2",
+      "start_date": {"year": "2026", "month": "2", "day": "13"},
+      "text": {"headline": "アフタータイムバレンタイン2026 ～お母さんチョコの謎～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2026", "month": "3", "day": "6"}
+    },
+    {
+      "id": "FGO_event_2026_3",
+      "unique_id": "FGO_event_2026_3",
+      "start_date": {"year": "2026", "month": "3", "day": "11"},
+      "text": {"headline": "CBC2026 マイ・カインド・オブ・アブダクション 〜ふたりのモレーと果てなき遺産～", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "chocolate", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2026", "month": "3", "day": "25"}
+    },
+    {
+      "id": "FGO_event_2026_4",
+      "unique_id": "FGO_event_2026_4",
+      "start_date": {"year": "2026", "month": "3", "day": "19"},
+      "text": {"headline": "復刻：水怪クライシス 〜無垢なる者たちの浮島〜 ライト版", "text": "FGO イベント復刻等"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "revival", "type": "series_bar", "fgo_event1": "others", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2026", "month": "4", "day": "9"}
+    },
+    {
+      "id": "FGO_event_2026_5",
+      "unique_id": "FGO_event_2026_5",
+      "start_date": {"year": "2026", "month": "4", "day": "25"},
+      "text": {"headline": "剽滅十字前線 アンティオキア", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "raid", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2026", "month": "5", "day": "16"}
+    },
+    {
+      "id": "FGO_event_2026_6",
+      "unique_id": "FGO_event_2026_6",
+      "start_date": {"year": "2026", "month": "5", "day": "1"},
+      "text": {"headline": "儀典共鳴幻想 スノーフィールド", "text": "FGO イベント"},
+      "custom_tags": {"media": "FGO", "series": "FGO", "project_id": "event", "type": "series_bar", "fgo_event1": "collaboration", "fgo_event_box": "", "fgo_event_raid": "", "fgo_event_grailfront": "", "fgo_event_treasure": ""},
+      "end_date": {"year": "2026", "month": "5", "day": "16"}
     }
   ]
