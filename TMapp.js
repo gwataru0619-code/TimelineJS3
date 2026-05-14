@@ -261,9 +261,10 @@ function getGroupName(event, mode) {
 function updateTimeline() {
     if (!masterData) return;
 
-    // 現在のユーザーの入力（検索・チェック）を取得します
+    // 現在のユーザーの入力（検索・チェック）を取得
     const searchText = document.getElementById('search-input').value.toLowerCase();
 
+    // 1. 各チェックボックスの状態を「filters」という1つの塊にまとめる
     const filters = {
         series: Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value),
         media: Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value),
@@ -277,13 +278,13 @@ function updateTimeline() {
 
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
 
-    // まずは「メインとなる項目（親）」を選び出します
+    // 2. メイン項目（親）を抽出
     const parents = masterData.events.filter(ev => {
-        const isTopLevel = !ev.parent_id; // 親IDがない ＝ 最初に表示すべきデータ
+        const isTopLevel = !ev.parent_id; 
+        // matchesFiltersに「filters」の塊を渡すように統一
         return isTopLevel && matchesFilters(ev, searchText, filters);
     });
 
-    // 親→その親の詳細→次の親、の順に並べることで、詳細グループが親の直後に出やすくします
     currentDisplayedEvents = [];
 
     parents.forEach(parent => {
@@ -294,11 +295,11 @@ function updateTimeline() {
 
         if (!expandedParentIds.has(parent.unique_id)) return;
 
-        // 子データは親の unique_id をグループ名にして、親専用の詳細行にまとめます
+        // 3. 子データを抽出
         const detailGroupName = getDetailGroupName(parent);
         const details = masterData.events
             .filter(child => child.parent_id === parent.unique_id)
-            .filter(child => matchesFilters(child, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1, selectedfgo_event_box, selectedfgo_event_raid, selectedfgo_event_grailfront, selectedfgo_event_treasure))
+            .filter(child => matchesFilters(child, searchText, filters))
             .map(child => ({
                 ...child,
                 group: detailGroupName
@@ -316,22 +317,22 @@ function getDetailGroupName(parent) {
 }
 
 // あるイベントが、検索条件やメディア/シリーズ/プロジェクトのチェック状態に合格しているか判定します
-function matchesFilters(event, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1, selectedfgo_event_box, selectedfgo_event_raid, selectedfgo_event_grailfront, selectedfgo_event_treasure) {
+function matchesFilters(event, searchText, filters) {
     const headline = event.text && event.text.headline ? event.text.headline.toLowerCase() : "";
     const body = event.text && event.text.text ? event.text.text.toLowerCase() : "";
     
     // 1. 検索ワード判定
     const matchesSearch = !searchText || headline.includes(searchText) || body.includes(searchText);
 
-    // 2. 基本タグ判定（Series, Media, Project）
-    const matchesSeries = selectedSeries.includes(event.custom_tags.series);
-    const matchesMedia = selectedMedia.includes(event.custom_tags.media);
-    const matchesProject = selectedProjects.includes(event.custom_tags.project_id);
+    // 2. 基本タグ判定（filtersオブジェクトの中から探す）
+    const matchesSeries = filters.series.includes(event.custom_tags.series);
+    const matchesMedia = filters.media.includes(event.custom_tags.media);
+    const matchesProject = filters.project.includes(event.custom_tags.project_id);
     
-    // 3. FGO詳細タグ判定（ここをスッキリさせる）
-    // 「タグが設定されていない」or「チェックがついている」なら合格
+    // 3. FGO詳細タグ判定（ここを共通ルールでチェック）
     const checkTag = (tagKey, selectedList) => {
         const val = event.custom_tags[tagKey];
+        // タグが空（FGO以外など）なら通過、値があるならチェックされているか確認
         return !val || selectedList.includes(val);
     };
 
@@ -342,7 +343,8 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia, select
         checkTag('fgo_event_grailfront', filters.fgoGrail) &&
         checkTag('fgo_event_treasure', filters.fgoTreasure);
     
-    return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesfgo_event1 && matchesfgo_event_box && matchesfgo_event_raid && matchesfgo_event_grailfront && matchesfgo_event_treasure;
+    // すべての条件が true なら表示
+    return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesFgo;
 }
 
 // 実際にHTMLの中に年表を書き込みます
