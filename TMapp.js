@@ -280,7 +280,7 @@ function updateTimeline() {
     // まずは「メインとなる項目（親）」を選び出します
     const parents = masterData.events.filter(ev => {
         const isTopLevel = !ev.parent_id; // 親IDがない ＝ 最初に表示すべきデータ
-        return isTopLevel && matchesFilters(ev, searchText, selectedSeries, selectedMedia, selectedProjects, selectedfgo_event1, selectedfgo_event_box, selectedfgo_event_raid, selectedfgo_event_grailfront, selectedfgo_event_treasure);
+        return isTopLevel && matchesFilters(ev, searchText, filters);
     });
 
     // 親→その親の詳細→次の親、の順に並べることで、詳細グループが親の直後に出やすくします
