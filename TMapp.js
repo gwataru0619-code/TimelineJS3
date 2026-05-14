@@ -128,6 +128,21 @@ function normalizeTimelineData(data) {
     data.events = data.events.map((event, index) => {
         const normalized = { ...event };
 
+        // 既存のタグを維持しつつ、新しいFGO系タグを確実にcustom_tagsの中へ格納する
+        const baseTags = normalized.custom_tags || {};
+        normalized.custom_tags = {
+            media: baseTags.media || "Other",
+            series: baseTags.series || "Other",
+            project_id: baseTags.project_id || "other_cluster",
+            type: normalized.parent_id ? "volume_dot" : "series_bar",
+            // スプレッドシートの各列から直接、またはcustom_tagsの中から値を拾う
+            fgo_event1: event.fgo_event1 || baseTags.fgo_event1 || "",
+            fgo_event_box: event.fgo_event_box || baseTags.fgo_event_box || "",
+            fgo_event_raid: event.fgo_event_raid || baseTags.fgo_event_raid || "",
+            fgo_event_grailfront: event.fgo_event_grailfront || baseTags.fgo_event_grailfront || "",
+            fgo_event_treasure: event.fgo_event_treasure || baseTags.fgo_event_treasure || ""
+        };
+
         // 文章が空っぽでもエラーにならないように空文字を入れておきます
         normalized.text = {
             headline: "",
@@ -248,14 +263,18 @@ function updateTimeline() {
 
     // 現在のユーザーの入力（検索・チェック）を取得します
     const searchText = document.getElementById('search-input').value.toLowerCase();
-    const selectedSeries = Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value);
-    const selectedMedia = Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value);
-    const selectedProjects = Array.from(document.querySelectorAll('.filter-project:checked')).map(el => el.value);
-    const selectedfgo_event1 = Array.from(document.querySelectorAll('.filter-fgo_event1:checked')).map(el => el.value);
-    const selectedfgo_event_box = Array.from(document.querySelectorAll('.filter-fgo_event_box:checked')).map(el => el.value);
-    const selectedfgo_event_raid = Array.from(document.querySelectorAll('.filter-fgo_event_raid:checked')).map(el => el.value);
-    const selectedfgo_event_grailfront = Array.from(document.querySelectorAll('.filter-fgo_event_grailfront:checked')).map(el => el.value);
-    const selectedfgo_event_treasure = Array.from(document.querySelectorAll('.filter-fgo_event_treasure:checked')).map(el => el.value);
+
+    const filters = {
+        series: Array.from(document.querySelectorAll('.filter-series:checked')).map(el => el.value),
+        media: Array.from(document.querySelectorAll('.filter-media:checked')).map(el => el.value),
+        project: Array.from(document.querySelectorAll('.filter-project:checked')).map(el => el.value),
+        fgo1: Array.from(document.querySelectorAll('.filter-fgo_event1:checked')).map(el => el.value),
+        fgoBox: Array.from(document.querySelectorAll('.filter-fgo_event_box:checked')).map(el => el.value),
+        fgoRaid: Array.from(document.querySelectorAll('.filter-fgo_event_raid:checked')).map(el => el.value),
+        fgoGrail: Array.from(document.querySelectorAll('.filter-fgo_event_grailfront:checked')).map(el => el.value),
+        fgoTreasure: Array.from(document.querySelectorAll('.filter-fgo_event_treasure:checked')).map(el => el.value)
+    };
+
     const groupMode = document.querySelector('input[name="group-mode"]:checked').value;
 
     // まずは「メインとなる項目（親）」を選び出します
@@ -301,25 +320,27 @@ function matchesFilters(event, searchText, selectedSeries, selectedMedia, select
     const headline = event.text && event.text.headline ? event.text.headline.toLowerCase() : "";
     const body = event.text && event.text.text ? event.text.text.toLowerCase() : "";
     
+    // 1. 検索ワード判定
     const matchesSearch = !searchText || headline.includes(searchText) || body.includes(searchText);
+
+    // 2. 基本タグ判定（Series, Media, Project）
     const matchesSeries = selectedSeries.includes(event.custom_tags.series);
     const matchesMedia = selectedMedia.includes(event.custom_tags.media);
     const matchesProject = selectedProjects.includes(event.custom_tags.project_id);
     
-    const eventTag = event.custom_tags.fgo_event1;
-    const matchesfgo_event1 = !eventTag || selectedfgo_event1.includes(eventTag);
+    // 3. FGO詳細タグ判定（ここをスッキリさせる）
+    // 「タグが設定されていない」or「チェックがついている」なら合格
+    const checkTag = (tagKey, selectedList) => {
+        const val = event.custom_tags[tagKey];
+        return !val || selectedList.includes(val);
+    };
 
-    const eventTag = event.custom_tags.fgo_event_box;
-    const matchesfgo_event_box = !eventTag || selectedfgo_event_box.includes(eventTag);
-
-    const eventTag = event.custom_tags.fgo_event_raid;
-    const matchesfgo_event_raid = !eventTag || selectedfgo_event_raid.includes(eventTag);
-
-    const eventTag = event.custom_tags.fgo_event_grailfront;
-    const matchesfgo_event_grailfront = !eventTag || selectedfgo_event_grailfront.includes(eventTag);
-
-    const eventTag = event.custom_tags.fgo_event_treasure;
-    const matchesfgo_event_treasure = !eventTag || selectedfgo_event_treasure.includes(eventTag);
+    const matchesFgo = 
+        checkTag('fgo_event1', filters.fgo1) &&
+        checkTag('fgo_event_box', filters.fgoBox) &&
+        checkTag('fgo_event_raid', filters.fgoRaid) &&
+        checkTag('fgo_event_grailfront', filters.fgoGrail) &&
+        checkTag('fgo_event_treasure', filters.fgoTreasure);
     
     return matchesSearch && matchesSeries && matchesMedia && matchesProject && matchesfgo_event1 && matchesfgo_event_box && matchesfgo_event_raid && matchesfgo_event_grailfront && matchesfgo_event_treasure;
 }
